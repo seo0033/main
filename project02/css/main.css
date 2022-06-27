@@ -1,0 +1,227 @@
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    line-height: 100px;
+    z-index: 1;
+}
+
+header .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+header .container .right {
+    vertical-align: middle;
+}
+
+header .container h1 {}
+
+.container nav {
+    margin: 0 0 0 auto;
+}
+
+.container nav>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.container .right {
+    margin: 0 0 0 60px;
+}
+
+/* main_visual */
+.main_visual {
+    position: relative;
+    margin: 0 0 100px 0;
+}
+
+.main_visual .inner {
+    width: 1200px;
+}
+
+.main_visual .main_slider figure {
+    position: relative;
+    height: 100vh;
+}
+
+.main_visual .itm01 {
+    background: url(../img/visual1.jpg)no-repeat center center/cover;
+}
+
+.main_visual .itm02 {
+    background: url(../img/visual2.jpg)no-repeat center center/cover;
+}
+
+.main_visual .itm03 {
+    background: url(../img/visual3.jpg)no-repeat center center/cover;
+}
+
+.main_visual .itm04 {
+    background: url(../img/visual4.jpg)no-repeat center center/cover;
+}
+
+.main_visual .main_slider .inner {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_visual .main_slider .inner h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    margin: 0 0 30px 0;
+}
+
+.main_visual .main_slider .inner p {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    margin: 0 0 15px 0;
+}
+
+.main_visual .main_slider .inner strong {
+    font-size: 19px;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+}
+
+.main_visual .main_arrow {
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.main_visual .main_arrow i:nth-child(1) {
+    margin: 0 0 20px 0;
+}
+
+.main_visual .main_arrow ul li {
+    margin: 0 0 20px 0;
+}
+
+/* ❓ 중앙배열*/
+.main_visual .main_arrow ul>li~li::before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100px;
+    background: #fff;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.scroll_down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: #fff;
+
+}
+
+.scroll_down i {
+    display: block;
+}
+
+/* ❓ 간격 */
+
+.main_content01 .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_content01 h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+
+.main_content01 h2::after {
+    content: "";
+    width: 180px;
+    height: 3px;
+    background: #333;
+    text-align: center;
+    margin: -5px 0 0 20px;
+}
+
+.main_content01 .content01 {
+    position: relative;
+}
+
+.main_content01 .content01 .box {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    width: 500px;
+    height: 270px;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 1px #000;
+    opacity: 0.9;
+}
+
+.content01 .box>div {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.main_content01 .num {
+    position: relative;
+    font-size: 90px;
+    font-weight: 900;
+    color: #555;
+    opacity: 0.7;
+    margin: 0 10px 0 0;
+}
+
+.main_content01 h3 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.content01 .num::after {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    display: inline-block;
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: #555;
+    opacity: 0.7;
+}
+
+.main_content01 p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.main_content01 strong {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+.content02 figure {
+    right: 0;
+}
