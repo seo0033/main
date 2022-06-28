@@ -700,7 +700,7 @@ ex) 19px * -0.025
     white-space: nowrap;
     text-overflow: ellipsis;
     /* 넘치는 텍스트 ... 처리 */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .serviceTab .right {
