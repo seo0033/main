@@ -26,7 +26,7 @@ header .container .right {
     margin: 0 0 0 60px;
 }
 
-header.container nav {
+header .container nav {
     margin: 0 0 0 auto;
     font-size: 21px;
     font-weight: 500;
@@ -393,7 +393,7 @@ header .container nav>ul {
     margin: 0 0 15px 0;
 }
 
-.main_content03 p {
+.main_content03>p {
     font-size: 17px;
     font-weight: 300;
     margin: 0 0 50px 0;
@@ -404,6 +404,85 @@ header .container nav>ul {
     width: 1200px;
     margin: 0 auto;
 }
+
+.main_content03 .container .ct01 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.main_content03 .container .ct02 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.main_content03 .container .ct03 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.main_content03 .container .ct04 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+}
+
+.main_content03 .container .ct05 {
+    position: absolute;
+    top: 75%;
+    left: 90%;
+}
+
+.pin {
+    font-size: 21px;
+    color: #f00;
+}
+
+.ct>a {
+    font-size: 17px;
+    font-weight: 700;
+}
+.ct>a:hover ~ .content_h{
+    visibility: visible;
+}
+.main_content03 .container .content_h {
+    width: 250px;
+    background: #000;
+    opacity: 0.7;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.content_h h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.content_h p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.content_h strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 0 0 5px 0;
+}
+
+.content_h a {
+    display: block;
+    text-align: right;
+    margin: 0 10px 0 0;
+}
+
 
 
 /* main_content04 */
@@ -456,6 +535,7 @@ header .container nav>ul {
 .main_content04 .left div>a {
     font-size: 17px;
     font-weight: 300;
+
 }
 
 .main_content04 .left>ul li {
