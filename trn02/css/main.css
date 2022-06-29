@@ -700,7 +700,7 @@ ex) 19px * -0.025
     white-space: nowrap;
     text-overflow: ellipsis;
     /* 넘치는 텍스트 ... 처리 */
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .serviceTab .right {
@@ -754,24 +754,24 @@ ex) 19px * -0.025
     z-index: 999;
 }
 
-#footer{
+#footer {
     background: #333;
     color: #fff;
     line-height: 80px;
     font-size: 15px;
 }
 
-#footer .top{
+#footer .top {
     border-bottom: 1px solid #666;
 }
 
-#footer .top dt, 
-#footer .top dd{
+#footer .top dt,
+#footer .top dd {
     display: inline-block;
 }
 
-#footer .top dd~dd::before, 
-#footer .top dt::before{
+#footer .top dd~dd::before,
+#footer .top dt::before {
     content: "";
     display: inline-block;
     margin: 0 15px;
@@ -780,18 +780,19 @@ ex) 19px * -0.025
     background: #ddd;
 }
 
-#footer .top i{
+#footer .top i {
     font-size: 25px;
 }
 
-#footer .container{
+#footer .container {
     justify-content: space-between;
 }
 
-#footer .bottom address{
+#footer .bottom address {
     font-style: normal;
 }
-#footer .bottom select{
+
+#footer .bottom select {
     font-size: 12px;
     text-transform: uppercase;
     background: transparent;
@@ -800,7 +801,7 @@ ex) 19px * -0.025
     border: 1px solid #666;
 }
 
-#footer .bottom option{
+#footer .bottom option {
     color: #fff;
     background: #333;
 }

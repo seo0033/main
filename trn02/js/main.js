@@ -83,7 +83,7 @@ $(function () {
 
     $('.toTop').on('click', function () {
         $('html,body').animate({ scrollTop: 0 }, 200)
-    })//{scrollTop : 위치},속도 : 함수X
+    });//{scrollTop : 위치},속도 : 함수X
 
     $(window).on('scroll', function () {
         var sct = $(window).scrollTop();

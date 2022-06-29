@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid #ddd
+    outline: 1px solid rgb(149, 196, 146)/
 }
 
 /* header */
@@ -128,7 +128,7 @@ header .container nav>ul {
     display: block;
     font-size: 50px;
     color: #fff;
-    animation: scroll 1s infinite;
+    animation: scroll 1.5s infinite;
 }
 
 
@@ -244,7 +244,7 @@ header .container nav>ul {
 .main_content01 strong {
     display: block;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.4;
     margin: 0 0 30px 0;
 }
@@ -379,6 +379,7 @@ header .container nav>ul {
 .main_content02 .container p {
     font-size: 15px;
     font-weight: 300;
+    line-height: 1.4;
 }
 
 /* main_content03 */
@@ -405,85 +406,93 @@ header .container nav>ul {
     margin: 0 auto;
 }
 
-.main_content03 .container .ct01 {
+.pin {
+    font-size: 21px;
+    color: #f00;
+    padding: 5px 0;
+}
+
+.main_content03 ul>li:nth-child(1) {
     position: absolute;
     top: 25%;
     left: 10%;
 }
 
-.main_content03 .container .ct02 {
+.main_content03 ul>li:nth-child(2) {
     position: absolute;
     top: 20%;
     left: 50%;
 }
 
-.main_content03 .container .ct03 {
+.main_content03 ul>li:nth-child(3) {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
 }
 
-.main_content03 .container .ct04 {
+.main_content03 ul>li:nth-child(4) {
     position: absolute;
     top: 30%;
-    left: 80%;
+    left: 75%;
 }
 
-.main_content03 .container .ct05 {
+.main_content03 ul>li:nth-child(5) {
     position: absolute;
     top: 75%;
     left: 90%;
 }
 
-.pin {
-    font-size: 21px;
-    color: #f00;
-}
-
-.ct>a {
-    font-size: 17px;
-    font-weight: 700;
-}
-.ct>a:hover ~ .content_h{
-    visibility: visible;
-}
-.main_content03 .container .content_h {
-    width: 250px;
-    background: #000;
-    opacity: 0.7;
-    color: #fff;
-    padding: 10px 0;
-    margin: 0 0 10px 0;
-    border-radius: 5px;
+.main_content03 ul>li ul>li {
     visibility: hidden;
 }
 
-.content_h h3 {
+.main_content03 ul>li:hover ul>li {
+    visibility: visible;
+}
+
+.main_content03 ul li .pin_content li {
+    position: absolute;
+    top: -115px;
+    left: 0;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.main_content03 ul>li>a {
+    width: 150px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.pin_content h3 {
     font-size: 17px;
     font-weight: 700;
     margin: 0 0 15px 0;
 }
 
-.content_h p {
+.pin_content p {
     font-size: 15px;
     font-weight: 400;
     margin: 0 0 10px 0;
 }
 
-.content_h strong {
+.pin_content strong {
     display: block;
     font-size: 13px;
     font-weight: 100;
     margin: 0 0 5px 0;
+    line-height: 1.4;
 }
 
-.content_h a {
+.pin_content a {
     display: block;
     text-align: right;
-    margin: 0 10px 0 0;
+    margin: 0 5px 0 0;
 }
-
-
 
 /* main_content04 */
 .main_content04 {
@@ -496,7 +505,7 @@ header .container nav>ul {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    gap: 30px;
+    gap: 40px;
 }
 
 .main_content04 .container>div {
@@ -507,19 +516,27 @@ header .container nav>ul {
     align-items: flex-end;
 }
 
-.main_content04 .left>div {
+.main_content04 .left .tm {
     display: flex;
     justify-content: space-between;
     margin: 0 0 10px 0;
 }
 
-.main_content04 .left>ul::before {
-    display: block;
+.main_content04 .left .tab_content::before {
     content: "";
+    display: block;
     width: 100%;
     height: 1px;
-    background: #222;
-    margin: 0 0 30px 0;
+    background: #333;
+    margin: 0 0 35px 0;
+}
+
+.main_content04 .left .tab_content div {
+    display: none;
+}
+
+.main_content04 .left .tab_content div.on {
+    display: block;
 }
 
 .main_content04 .left .tab_menu {
@@ -532,28 +549,45 @@ header .container nav>ul {
     font-weight: 700;
 }
 
+.main_content04 .left .tab_menu li.on a {
+    color: #369;
+}
+
 .main_content04 .left div>a {
     font-size: 17px;
     font-weight: 300;
-
 }
 
-.main_content04 .left>ul li {
+.main_content04 .left .tab_content .tc01 li {
     border-bottom: 1px solid #ddd;
+}
+
+
+.main_content04 .left .tab_content .tc01 li:not(:last-of-type) {
     margin: 0 0 30px 0;
 }
 
-.main_content04 .left>ul>li>a {
-    display: flex;
-    margin: 0 0 10px 0;
+.main_content04 .left .tc01 strong::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #000;
+    vertical-align: middle;
+    margin: 0 10px 3px 0;
 }
 
 .main_content04 .left strong {
-    width: 460px;
+    width: 480px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     margin: 0 auto 0 0;
+}
+
+.main_content04 .left .tc01 a {
+    display: flex;
+    margin: 0 0 10px 0;
 }
 
 .main_content04 .right .inner {
@@ -619,15 +653,13 @@ footer .right .family_site {
     margin: 0 0 15px 0;
 }
 
-/* 오른쪽으로 밀기 */
 footer .right .sns {
     display: block;
     text-align: right;
-
+    font-size: 30px;
 }
 
 footer .right .sns i {
-    font-size: 30px;
     margin: 0 0 0 10px;
 }
 
