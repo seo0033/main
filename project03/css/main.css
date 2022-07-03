@@ -1,0 +1,19 @@
+header .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav h1 {
+    /* width: 500px; */
+}
+
+.main_slider .content01_itm01 {
+    width: 600px;
+    background: #ddd;
+    padding: 100px 0;
+    border-radius: 0 200px 0 0;
+}
