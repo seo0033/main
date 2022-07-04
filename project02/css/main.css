@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid rgb(149, 196, 146)/
+    outline: 1px solid rgb(149, 196, 146)m
 }
 
 /* header */
@@ -37,10 +37,13 @@ header .container nav>ul {
     gap: 40px;
 }
 
+header nav ul>li>ul {
+    display: none;
+}
+
 /* main_visual */
 .main_visual {
     position: relative;
-    margin: 0 0 100px 0;
 }
 
 .main_visual .inner {
@@ -83,15 +86,14 @@ header .container nav>ul {
 }
 
 .main_visual .main_slider .inner p {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 21px;
     color: #fff;
     text-shadow: 0 0 1px #000;
     margin: 0 0 15px 0;
 }
 
 .main_visual .main_slider .inner strong {
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 100;
     color: #fff;
     text-shadow: 0 0 1px #000;
@@ -144,7 +146,7 @@ header .container nav>ul {
 
 /* main_content01 */
 .main_content01 {
-    margin: 0 0 100px 0;
+    padding: 100px 0;
 }
 
 .main_content01 .container {
@@ -183,11 +185,10 @@ header .container nav>ul {
     bottom: 60px;
     right: 0;
     width: 500px;
-    height: 270px;
+    height: 290px;
     background: #fff;
     border: 1px solid #f1f1f1;
     box-shadow: 0 0 1px #000;
-    opacity: 0.9;
 }
 
 .main_content01 .itm01 .box>div,
@@ -211,19 +212,19 @@ header .container nav>ul {
     font-weight: 900;
     color: #555;
     opacity: 0.7;
-    margin: -16px 10px 0 0;
+    margin: -16px 20px 0 0;
 }
 
 .main_content01 .itm01 .box .num::after,
 .main_content01 .itm03 .box .num::after {
     position: absolute;
-    left: 120px;
+    left: 130px;
     bottom: 6px;
     display: inline-block;
     content: "";
     display: block;
     width: 150px;
-    height: 3px;
+    height: 5px;
     background: #555;
     opacity: 0.7;
 }
@@ -232,21 +233,20 @@ header .container nav>ul {
 .main_content01 h3 {
     font-size: 27px;
     font-weight: 500;
-    margin: auto auto 15px 0;
+    margin: auto auto 20px 0;
 }
 
 .main_content01 p {
     font-size: 19px;
     font-weight: 500;
-    margin: 0 0 10px 0;
+    margin: 25px 0 20px 0;
 }
 
 .main_content01 strong {
     display: block;
     font-size: 15px;
-    font-weight: 300;
     line-height: 1.4;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 
 .box .view {
@@ -289,11 +289,10 @@ header .container nav>ul {
     bottom: 60px;
     left: 0;
     width: 500px;
-    height: 270px;
+    height: 290px;
     background: #fff;
     border: 1px solid #f1f1f1;
     box-shadow: 0 0 1px #000;
-    opacity: 0.9;
 }
 
 .main_content01 .itm02 .box>div,
@@ -317,19 +316,19 @@ header .container nav>ul {
     font-weight: 900;
     color: #555;
     opacity: 0.7;
-    margin: -16px 10px 0 0;
+    margin: -16px 20px 0 0;
 }
 
 .main_content01 .itm02 .box .num::after,
 .main_content01 .itm04 .box .num::after {
     position: absolute;
-    left: 120px;
+    left: 130px;
     bottom: 6px;
     display: inline-block;
     content: "";
     display: block;
     width: 150px;
-    height: 3px;
+    height: 5px;
     background: #555;
     opacity: 0.7;
 }
@@ -339,20 +338,19 @@ header .container nav>ul {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 50px 0;
-    margin: 0 0 100px 0;
+    padding: 100px 0;
 }
 
 .main_content02 h2 {
-    font-size: 35px;
+    font-size: 31px;
     font-weight: 700;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 
 .main_content02>p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
     line-height: 1.4;
 }
 
@@ -365,7 +363,7 @@ header .container nav>ul {
 }
 
 .main_content02 figure {
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
     line-height: 84px;
 }
 
@@ -378,25 +376,24 @@ header .container nav>ul {
 
 .main_content02 .container p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.4;
 }
 
 /* main_content03 */
 .main_content03 {
     text-align: center;
-    margin: 0 0 50px 0;
+    padding: 100px 0;
 }
 
 .main_content03 h2 {
-    font-size: 35px;
+    font-size: 31px;
     font-weight: 700;
     margin: 0 0 15px 0;
 }
 
 .main_content03>p {
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 15px;
     margin: 0 0 50px 0;
 }
 
@@ -476,7 +473,6 @@ header .container nav>ul {
 
 .pin_content p {
     font-size: 15px;
-    font-weight: 400;
     margin: 0 0 10px 0;
 }
 
@@ -497,7 +493,7 @@ header .container nav>ul {
 /* main_content04 */
 .main_content04 {
     background: #f9f9f9;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 
@@ -513,13 +509,13 @@ header .container nav>ul {
 }
 
 .main_content04 .left {
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .main_content04 .left .tm {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
 .main_content04 .left .tab_content::before {
@@ -528,7 +524,7 @@ header .container nav>ul {
     width: 100%;
     height: 1px;
     background: #333;
-    margin: 0 0 35px 0;
+    margin: 0 0 20px 0;
 }
 
 .main_content04 .left .tab_content div {
@@ -545,7 +541,7 @@ header .container nav>ul {
 }
 
 .main_content04 .left .tab_menu li a {
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 700;
 }
 
@@ -554,8 +550,7 @@ header .container nav>ul {
 }
 
 .main_content04 .left div>a {
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 13px;
 }
 
 .main_content04 .left .tab_content .tc01 li {
@@ -564,7 +559,7 @@ header .container nav>ul {
 
 
 .main_content04 .left .tab_content .tc01 li:not(:last-of-type) {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 
 .main_content04 .left .tc01 strong::before {
@@ -651,6 +646,7 @@ footer .address a~a::before {
 
 footer .right .family_site {
     margin: 0 0 15px 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 footer .right .sns {
