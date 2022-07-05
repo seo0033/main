@@ -1,48 +1,10 @@
 * {
-    outline: 1px solid rgb(150, 219, 150);
+    outline: 1px solid rgb(150, 219, 150)-;
 }
 
 .container{
     width: 1200px;
     margin: 0 auto;
-}
-/* top */
-.top{
-    border-bottom: 1px solid #ddd;
-}
-.top .container{
-    display: flex;
-    justify-content: end;
-    line-height: 30px;
-    gap: 60px;   
-}
-
-.top .container>ul{
-    display: flex;
-    font-size: 13px;
-    gap: 40px;
-    text-align: center;
-}
-
-.searchForm input[type="text"] {
-    outline: none;
-    border: none;
-}
-
-.searchForm input[type="text"]::placeholder {
-    font-size: 13px;
-    color: #333;
-}
-
-.searchForm input[type="text"]:focus::placeholder {
-    opacity: 0;
-}
-
-.searchForm button {
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 17px;
 }
 
 
@@ -316,4 +278,5 @@ font-size: 31px;
     transform: rotate(90deg);
 }
 
-/*  */
+/* brand */
+
