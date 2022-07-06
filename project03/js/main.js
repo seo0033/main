@@ -23,11 +23,11 @@ $(function () {
     centerMode: true,
   });
 
-  $('.bottom .slider_bottom_arrows i:nth-child(1)').on('click', function (e) {
+  $('.best_menu .bottom .left_arrows').on('click', function (e) {
     e.preventDefault();
     $('.slider_best_menu_bottom').slick('slickPrev')
   })
-  $('.bottom .slider_bottom_arrows i:nth-child(2)').on('click', function (e) {
+  $('.best_menu .bottom .right_arrows').on('click', function (e) {
     e.preventDefault();
     $('.slider_best_menu_bottom').slick('slickNext')
   });
