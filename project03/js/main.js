@@ -1,4 +1,5 @@
 $(function () {
+  //main_slider
   $('.main_slider').slick({
     arrows: false,
     dots: true,
@@ -23,6 +24,7 @@ $(function () {
     centerMode: true,
   });
 
+  //best_menu
   $('.best_menu .bottom .left_arrows').on('click', function (e) {
     e.preventDefault();
     $('.slider_best_menu_bottom').slick('slickPrev')
@@ -30,6 +32,17 @@ $(function () {
   $('.best_menu .bottom .right_arrows').on('click', function (e) {
     e.preventDefault();
     $('.slider_best_menu_bottom').slick('slickNext')
+  });
+
+  // follow
+  $('.slider_follow').slick({
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 5,
+    arrows: false,
+    autoplay: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
   });
 
 
