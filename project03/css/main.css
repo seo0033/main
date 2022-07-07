@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid rgb(150, 219, 150)-;
+    outline: 1px solid rgb(150, 219, 150);
 }
 
 .container {
@@ -212,7 +212,7 @@ header nav>ul>li>ul>li>a:hover::after {
 .brand .title p {
     font-size: 17px;
     line-height: 1.4;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
 }
 
 .brand .title h2::after {
@@ -382,12 +382,10 @@ header nav>ul>li>ul>li>a:hover::after {
     transform: translate(-50%, -50%) rotate(-129deg) skew(15deg);
     margin: 0 0 0 600px;
 }
+
 /* salad */
 .salad {
-   
-    padding: 100px 0 400px 0;
-
-    /* justify-content: center; */
+    padding: 100px 0;
 }
 
 .salad .container {
@@ -396,10 +394,12 @@ header nav>ul>li>ul>li>a:hover::after {
     margin: 0 auto;
     justify-content: space-between;
 }
-.salad .left{
+
+.salad .left {
     position: relative;
 }
-.salad .left_slider>li{
+
+.salad .left_slider>li {
     position: absolute;
     top: 0;
     left: 0;
@@ -409,48 +409,77 @@ header nav>ul>li>ul>li>a:hover::after {
     border-radius: 5%;
 }
 
-.salad .left .left_slider>li.on{
+.salad .left .left_slider>li.on {
     visibility: visible;
 }
 
-.salad .left_slider>li>figure{
+.salad .left_slider>li>figure {
     width: 400px;
     margin: -50px auto 0 auto;
 }
-.salad .left_slider>li>div{
+
+.salad .left_slider>li>div {
     width: 400px;
     margin: 0 auto;
 }
-.salad .left_slider .slider_igd figure{
+
+.salad .left_slider .slider_igd .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+    opacity: 0.3;
+}
+
+.salad .slider_igd .slick-prev {
+    margin: 0 0 0 -200px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.salad .slider_igd .slick-next {
+    margin: 0 0 0 200px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.salad .left_slider .slider_igd figure {
     margin: 0 10px;
 }
 
-.salad .left_slider .left_slider_txt>div{
+.salad .left_slider .left_slider_txt>div {
     display: flex;
     justify-content: space-between;
 }
-.salad .left_slider .left_slider_txt .txt_top{
+
+.salad .left_slider .left_slider_txt .txt_top {
     border-bottom: 3px solid #333;
     padding: 0 0 20px 0;
     margin-bottom: 20px;
 }
 
-.salad .left_slider .left_slider_txt h3{
+.salad .left_slider .left_slider_txt h3 {
     font-size: 27px;
     font-weight: 700;
 }
 
-.salad .left_slider .left_slider_txt i{
+.salad .left_slider .left_slider_txt i {
     font-size: 30px;
 }
 
-.salad .left_slider .left_slider_txt h4,.salad .left_slider .left_slider_txt strong{
+.salad .left_slider .left_slider_txt h4,
+.salad .left_slider .left_slider_txt strong {
     font-size: 19px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.salad .left_slider .left_slider_txt p{
+.salad .left_slider .left_slider_txt p {
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -462,52 +491,54 @@ header nav>ul>li>ul>li>a:hover::after {
     height: 715px;
 }
 
-.salad .right h2{
-font-size: 31px;
-font-weight: 900;
-letter-spacing: 1.2rem;
-margin: 20px 0 0 30px ;
+.salad .right h2 {
+    font-size: 31px;
+    font-weight: 900;
+    letter-spacing: 1.2rem;
+    margin: 20px 0 auto 30px;
 }
 
-.salad .right_slider{
+.salad .right_slider {
     display: flex;
 }
 
-.salad .right .right_slider>li{
+.salad .right .right_slider>li {
     padding: 30px 20px;
     margin: 0 0 0 30px;
     background: #f1f1f1;
     border-radius: 5%;
 }
 
-.salad .right_slider>li>figure{
+.salad .right_slider>li>figure {
     width: 280px;
     margin: 0 auto 0 auto;
 }
 
-.salad .right_slider>li>div{
+.salad .right_slider>li>div {
     width: 280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.salad .right_slider .txt_top{
+.salad .right_slider .txt_top {
     border-bottom: 2px solid #333;
     padding: 0 0 20px 0;
     margin-bottom: 20px;
 }
 
-.salad .right_slider h3, .salad .right_slider i{
+.salad .right_slider h3,
+.salad .right_slider i {
     font-size: 19px;
     font-weight: 500;
 }
 
-.salad .right_slider h4,strong{
+.salad .right_slider h4,
+strong {
     font-size: 15px;
 }
 
-.salad i:hover{
+.salad i:hover {
     color: #f00;
 }
 
