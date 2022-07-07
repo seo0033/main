@@ -3,7 +3,7 @@ $(function () {
   $('.main_slider').slick({
     arrows: false,
     dots: true,
-    // autoplay:true,
+    autoplay:true,
     pauseOnHover: false,
     pauseOnFocus: false,
   });
@@ -33,6 +33,19 @@ $(function () {
     e.preventDefault();
     $('.slider_best_menu_bottom').slick('slickNext')
   });
+
+  // salad
+  $('.slider_igd').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
+
+  $('.right_slider li').on('click', function (event) {
+    event.preventDefault();
+    var idx = $(this).index();
+    $('.left_slider>li').removeClass('on');
+    $('.left_slider>li').eq(idx).addClass('on');
+});
 
   // follow
   $('.slider_follow').slick({
