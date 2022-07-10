@@ -1,6 +1,6 @@
 $(function () {
   //main_slider
-  $('.main_slider').slick({
+  $('.visual_slider').slick({
     arrows: false,
     dots: true,
     autoplay:true,
@@ -8,6 +8,7 @@ $(function () {
     pauseOnFocus: false,
   });
 
+ //best_menu
   $('.slider_best_menu_top').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -24,7 +25,6 @@ $(function () {
     centerMode: true,
   });
 
-  //best_menu
   $('.best_menu .bottom .left_arrows').on('click', function (e) {
     e.preventDefault();
     $('.slider_best_menu_bottom').slick('slickPrev')
