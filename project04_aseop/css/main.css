@@ -1,29 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{ font-family: 'Hahmlet', serif;  outline: 1px solid rgb(196, 238, 222);}
+* {
+    font-family: 'Hahmlet', serif;
+    outline: 1px solid rgb(196, 238, 222)-;
+}
 
-header { background: #fefef2;}
+/* header */
+header {
+    background: #fefef2;
+}
 
-.container { width: 1200px; margin: 0 auto; }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+}
 
-header .top { border-bottom: 1px solid #ddd; }
+header .top {
+    display: flex;
+    justify-content: space-between;
+}
 
-header .top>ul { display: flex;  justify-content: space-between; gap: 30px; margin: 0 30px; line-height: 30px; font-size: 13px; font-weight: 500;}
+header .top figure {
+    width: 200px;
+}
 
-header .top>ul>li:nth-child(2) { margin: 0 0 0 auto;}
+header .top .right {
+    display: flex;
+    gap: 30px;
+}
 
-header nav { display: flex; justify-content: space-between;  line-height: 100px;}
+header .gnb {
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
 
-header nav figure { width: 200px; margin: 0 auto;}
+header .gnb>ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+}
 
-header nav>ul { display: flex; justify-content: space-between; gap: 60px; text-align: center;}
+header .gnb>ul::after {
+    position: absolute;
+    top: 51px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #fefef2;
+}
 
-header nav>ul>li { font-size: 17px; font-weight: 500;}
+header .gnb>ul:hover::after {
+    height: 150px;
+    transition: 0.5s;
+}
 
-header nav>ul>li>a::after { display: none; content: ""; width: 100%; height: 5px; background: #333;  }
+header .gnb>ul>li {
+    position: relative;
+    flex: 1;
+    border-left: 1px solid #ddd;
+    line-height: 50px;
+    text-align: center;
+}
 
-header nav>ul>li>a:hover::after { display: block; }
+header .gnb>ul>li:last-child {
+    border-right: 1px solid #ddd;
+}
 
-header nav>ul>li>ul { display: block; line-height: 50px; }
+header .gnb>ul>li>ul {
+    position: absolute;
+    top: 51px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: #fefef2;
+    line-height: 35px;
+    z-index: 999;
+}
 
-header nav:hover ul ul { display: block; }
+header .gnb:hover>ul>li>ul {
+    height: 150px;
+    transition: 0.5s;
+}
