@@ -83,7 +83,11 @@ header .gnb>ul>li>ul {
     z-index: 999;
 }
 
-header .gnb:hover>ul>li>ul {
+header .gnb>ul:hover>li>ul {
     height: 150px;
     transition: 0.5s;
+}
+
+header .gnb>ul>li a {
+    display: block;
 }
