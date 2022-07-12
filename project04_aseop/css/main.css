@@ -2,7 +2,12 @@
 
 * {
     font-family: 'Hahmlet', serif;
-    outline: 1px solid rgb(196, 238, 222)-;
+    outline: 1px solid rgb(196, 238, 222);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 /* header */
@@ -10,9 +15,7 @@ header {
     background: #fefef2;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
+header .container {
     line-height: 100px;
 }
 
@@ -51,6 +54,7 @@ header .gnb>ul::after {
     width: 100%;
     height: 0;
     background: #fefef2;
+    z-index: 998;
 }
 
 header .gnb>ul:hover::after {
@@ -64,6 +68,24 @@ header .gnb>ul>li {
     border-left: 1px solid #ddd;
     line-height: 50px;
     text-align: center;
+}
+
+header .gnb>ul>li::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 0;
+    height: 5px;
+    background: #333;
+    opacity: 0;
+}
+
+header .gnb>ul>li:hover::after {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 header .gnb>ul>li:last-child {
@@ -90,4 +112,201 @@ header .gnb>ul:hover>li>ul {
 
 header .gnb>ul>li a {
     display: block;
+}
+
+/* main_visual */
+.main_visual {
+    position: relative;
+}
+
+.main_slider .itm {
+    display: flex;
+}
+
+.main_visual .main_slider .itm .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 50px;
+    background: #222;
+    color: #fff;
+}
+
+.main_visual .main_slider .left figure {
+    width: 230px;
+    margin-bottom: 30px;
+}
+
+.main_visual .main_slider .left figure::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.main_visual .main_slider .left strong {
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main_visual .main_slider .left p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.main_visual .main_slider .right {
+    position: relative;
+    flex: 2;
+}
+
+.main_visual .main_dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    display: flex;
+    gap: 30px;
+    color: #fff;
+}
+
+/* best_seller */
+.best_seller {
+    padding: 100px 0;
+}
+
+.best_seller h2 {
+    text-align: center;
+    font-size: 31px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.best_seller .bs_slider {
+    position: relative;
+    background: #f1f1f1;
+}
+
+.best_seller .bs_slider .container {
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.best_seller .best_itm {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.best_seller .best_itm figure {
+    
+    margin-bottom: 20px;
+    border-radius: 30% 30% 0 0;
+    background: #fff;
+}
+
+
+
+.best_seller .best_itm h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.best_seller .best_itm p {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.best_seller .best_itm a {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.best_seller .best_itm a:hover {
+    font-size: 13px;
+    background: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.best_seller .bs_slider .bs_arrows>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 31px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    opacity: 0;
+}
+
+.best_seller .bs_slider:hover .bs_arrows>i{
+    opacity: 1;
+    transition: 0.8s;
+}
+
+.best_seller .bs_arrows i:nth-child(1){
+    margin: 0 0 0 -670px;
+}
+.best_seller .bs_arrows i:nth-child(2){
+    margin: 0 0 0 670px;
+}
+
+/* seasonal_gift */
+
+.seasonal_gift {
+    padding: 100px 0;
+    display: flex;
+}
+.seasonal_gift .sg_left{
+    flex: 3;
+}
+.seasonal_gift .sg_right{
+    flex: 1;
+}
+
+.seasonal_gift .sg_right p{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.seasonal_gift .sg_right p::after{
+    display: block;
+    content: "";
+    width: 100px;
+    height: 1px;
+    margin-top: 10px;
+    background: #333;
+}
+
+.seasonal_gift .sg_right h3{
+    font-size: 21px;
+    font-family: 600;
+    margin-bottom: 30px;
+}
+.seasonal_gift .sg_right span{
+    display: block;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.seasonal_gift .sg_right>ul>li{
+    font-size: 15px;
+}
+
+.seasonal_gift .sg_right>ul>li>ul::before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    background: #333;
 }
