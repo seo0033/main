@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료형 01</title>
+</head>
+
+<body>
+    <div id="box">I'm box.</div>
+
+    <script>
+        let a = 1; //number(숫자)
+        let b = '1'; //string(문자)
+        let c = 'true'; //string
+        let d = true; //boolean(참, 거짓)
+        let e; //undefined(객체)
+        let f = null; //object(객체)
+
+        console.log(
+            a, b, c, d, e, f
+        );
+        /*
+        각 변수들의 자료형을 찍어봄
+        숫자 : number / 문자 : string / 참,거짓 : boolean / 객체 : undefined, object
+        */
+        console.log(
+            typeof (a),
+            typeof (b),
+            typeof (c),
+            typeof (d),
+            typeof (e),
+            typeof (f), //null은 객체다.
+        );
+
+        let _this = this;
+        console.log(_this, typeof (_this), _this.document);
+
+        let TA = 0; //0: 거짓 / 1: 참
+        let TB = ' '; //' ': 공백도 true
+        let TC = false;
+        let TD = !false; //!: 아니다
+        let TE = null;
+        let TF = undefined;
+
+        // 참스러운  값과 거짓스러운 값
+        console.log(
+            Boolean(TA),
+            Boolean(TB),
+            Boolean(TC),
+            Boolean(TD),
+            Boolean(TE),
+            Boolean(TF),
+        )
+
+    </script>
+
+</body>
+
+</html>
