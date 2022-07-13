@@ -201,13 +201,11 @@ header .gnb>ul>li a {
 }
 
 .best_seller .best_itm figure {
-    
+    padding: 30px 0 0 0;
     margin-bottom: 20px;
     border-radius: 30% 30% 0 0;
     background: #fff;
 }
-
-
 
 .best_seller .best_itm h3 {
     margin-bottom: 10px;
@@ -230,83 +228,302 @@ header .gnb>ul>li a {
 }
 
 .best_seller .best_itm a:hover {
-    font-size: 13px;
     background: #333;
     color: #fff;
     transition: 0.5s;
 }
 
-.best_seller .bs_slider .bs_arrows>i{
+.best_seller .bs_slider .bs_arrows>i {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 15px;
     font-size: 31px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     opacity: 0;
 }
 
-.best_seller .bs_slider:hover .bs_arrows>i{
+.best_seller .bs_slider:hover .bs_arrows>i {
     opacity: 1;
     transition: 0.8s;
 }
 
-.best_seller .bs_arrows i:nth-child(1){
+.best_seller .bs_arrows i:nth-child(1) {
     margin: 0 0 0 -670px;
 }
-.best_seller .bs_arrows i:nth-child(2){
+
+.best_seller .bs_arrows i:nth-child(2) {
     margin: 0 0 0 670px;
 }
 
 /* seasonal_gift */
 
-.seasonal_gift {
+.seasonal_gift .sg_top,
+.seasonal_gift .sg_bottom {
     padding: 100px 0;
     display: flex;
+    gap: 50px;
 }
-.seasonal_gift .sg_left{
+
+.seasonal_gift .sg_top .sg_img,
+.seasonal_gift .sg_bottom .sg_img {
+    position: relative;
     flex: 3;
 }
-.seasonal_gift .sg_right{
-    flex: 1;
+
+.seasonal_gift .sg_top .sg_img .sg_img_bg {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(-120deg, transparent 300px, #f1f1f1 0);
 }
 
-.seasonal_gift .sg_right p{
+.seasonal_gift .sg_top .sg_img figure {
+    position: absolute;
+    top: 5%;
+    right: -10%;
+    width: 900px;
+}
+
+.seasonal_gift .sg_bottom .sg_img .sg_img_bg {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(120deg, transparent 300px, #f1f1f1 0);
+}
+
+.seasonal_gift .sg_bottom .sg_img figure {
+    position: absolute;
+    top: 12%;
+    left: -18%;
+    width: 900px;
+}
+
+.seasonal_gift .sg_top .sg_txt,
+.seasonal_gift .sg_bottom .sg_txt {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    padding: 0 200px;
+}
+
+.seasonal_gift .sg_top .sg_txt>span,
+.seasonal_gift .sg_bottom .sg_txt>span {
     font-size: 13px;
+    border-bottom: 1px solid #333;
     margin-bottom: 30px;
+    padding-bottom: 10px;
 }
 
-.seasonal_gift .sg_right p::after{
+.seasonal_gift .sg_top .title,
+.seasonal_gift .sg_bottom .title {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+
+.seasonal_gift .sg_top .sg_txt .title h3,
+.seasonal_gift .sg_bottom .sg_txt .title h3 {
+    margin-bottom: 60px;
+    font-size: 31px;
+    font-family: 900;
+}
+
+.seasonal_gift .sg_top .sg_txt>ul>li,
+.seasonal_gift .sg_bottom .sg_txt>ul>li {
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.seasonal_gift .sg_top .sg_txt .kit h4,
+.seasonal_gift .sg_bottom .sg_txt .kit h4 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.seasonal_gift .sg_top .sg_txt .kit p,
+.seasonal_gift .sg_bottom .sg_txt .kit p {
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+
+.seasonal_gift .sg_top .sg_txt .pd,
+.seasonal_gift .sg_bottom .sg_txt .pd {
+    margin-bottom: 50px;
+}
+
+.seasonal_gift .sg_top .sg_txt .pd>div,
+.seasonal_gift .sg_bottom .sg_txt .pd>div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.seasonal_gift .sg_top .sg_txt .pd>div>a,
+.seasonal_gift .sg_bottom .sg_txt .pd>div>a {
+    display: block;
+    font-size: 21px;
+    transition: 0.5s;
+}
+
+.seasonal_gift .sg_top .sg_txt .pd>div>a.on,
+.seasonal_gift .sg_bottom .sg_txt .pd>div>a.on {
+    transform: rotate(180deg);
+}
+
+.seasonal_gift .sg_top .sg_txt .pd>ul,
+.seasonal_gift .sg_bottom .sg_txt .pd>ul {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.seasonal_gift .sg_top .sg_txt .pd>ul.on,
+.seasonal_gift .sg_bottom .sg_txt .pd>ul.on {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.seasonal_gift .sg_top .sg_txt .pd ul>li,
+.seasonal_gift .sg_bottom .sg_txt .pd ul>li {
+    margin-bottom: 8px;
+}
+
+.seasonal_gift .sg_top .sg_txt .sg_button,
+.seasonal_gift .sg_bottom .sg_txt .sg_button {
+    display: flex;
+    gap: 50px;
+}
+
+.seasonal_gift .sg_top .sg_txt .sg_button>a,
+.seasonal_gift .sg_bottom .sg_txt .sg_button>a {
+    display: block;
+    padding: 10px 35px;
+    border: 1px solid #333;
+}
+
+.seasonal_gift .sg_top .sg_txt .sg_button>a:hover,
+.seasonal_gift .sg_bottom .sg_txt .sg_button>a:hover {
+    background: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* gift_guide */
+.gift_guide {
+    padding: 100px 0;
+}
+
+.gift_guide .gg_box {
+    padding: 100px 0;
+    overflow: hidden;
+    color: #fff;
+    background: url(../img/gift_guide.jpg)no-repeat fixed center center/cover;
+    filter: grayscale(0.5);
+}
+
+.gift_guide .gg_box h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    opacity: 0.5;
+    font-size: 200px;
+    font-weight: 800;
+}
+
+.gift_guide .gg_box>div {
+    text-align: end;
+    padding-right: 300px;
+}
+
+.gift_guide .gg_box>div h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.gift_guide .gg_box>div h3::after {
     display: block;
     content: "";
     width: 100px;
     height: 1px;
-    margin-top: 10px;
-    background: #333;
+    margin: 15px 0 0 auto;
+    background: #fff;
 }
 
-.seasonal_gift .sg_right h3{
-    font-size: 21px;
-    font-family: 600;
-    margin-bottom: 30px;
-}
-.seasonal_gift .sg_right span{
-    display: block;
-    font-size: 17px;
-    margin-bottom: 30px;
-}
-
-.seasonal_gift .sg_right>ul>li{
+.gift_guide .gg_box>div p {
+    line-height: 1.4;
+    margin-bottom: 40px;
     font-size: 15px;
+    font-weight: 200;
 }
 
-.seasonal_gift .sg_right>ul>li>ul::before{
+.gift_guide .gg_box>div a {
+    display: inlne-block;
+    padding: 5px 30px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    font-weight: 200;
+    transition: 0.5s;
+}
+
+.gift_guide .gg_box>div a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* footer */
+footer {
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    gap: 60px;
+}
+
+footer .container ul {
+    flex: 1;
+}
+
+footer .container>ul>li {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer .container>ul>li>ul::before {
     display: block;
     content: "";
     width: 100%;
     height: 1px;
-    margin-top: 10px;
     background: #333;
+    margin: 10px 0;
+}
+
+footer .container>ul>li>ul>li {
+    font-size: 13px;
+    padding: 8px 0;
+}
+
+footer .container figure {
+    flex: 2;
+}
+
+footer .container figure img {
+    padding: 20px 50px;
+}
+
+footer .container .sns i {
+    margin-right: 5px;
+    font-size: 17px;
 }

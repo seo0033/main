@@ -1,6 +1,7 @@
 $(function () {
     //main_visual
     $('.main_visual .main_slider').slick({
+        // autoplay: true,
         arrows: false,
     });
 
@@ -25,6 +26,18 @@ $(function () {
         e.preventDefault();
         $('.bs_slider .container').slick('slickNext');
     });
+
+    //seasonal_gift
+    $('.seasonal_gift .sg_top .sg_txt .pd>div>a').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('on');
+        $('.seasonal_gift .sg_top .sg_txt .pd>ul').toggleClass('on');
+    })
+    $('.seasonal_gift .sg_bottom .sg_txt .pd>div>a').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('on');
+        $('.seasonal_gift .sg_bottom .sg_txt .pd>ul').toggleClass('on');
+    })
 
 
 })//the end

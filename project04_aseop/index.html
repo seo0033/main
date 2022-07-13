@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aseop</title>
+    <title>Aesop</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
@@ -13,6 +13,7 @@
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/jquery.scrollme.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <div class="Wrap">
@@ -126,37 +127,37 @@
             <h2>Best Seller</h2>
             <div class="bs_slider">
                 <div class="container slider">
-                    <div class="best_itm S">
+                    <div class="best_itm">
                         <figure><img src="./img/best_seller01.png" alt=""></figure>
                         <h3>Parsley Seed<br />Facial Cleansing Oil</h3>
                         <p>200ml / $17.0</p>
                         <a href="">Add to Cart</a>
                     </div>
-                    <div class="best_itm M">
+                    <div class="best_itm">
                         <figure><img src="./img/best_seller02.png" alt=""></figure>
                         <h3>Parsley Seed<br />Facial Cleansing Oil</h3>
                         <p>200ml / $17.0</p>
                         <a href="">Add to Cart</a>
                     </div>
-                    <div class="best_itm L">
+                    <div class="best_itm">
                         <figure><img src="./img/best_seller03.png" alt=""></figure>
                         <h3>Parsley Seed<br />Facial Cleansing Oil</h3>
                         <p>200ml / $17.0</p>
                         <a href="">Add to Cart</a>
                     </div>
-                    <div class="best_itm S">
+                    <div class="best_itm">
                         <figure><img src="./img/best_seller04.png" alt=""></figure>
                         <h3>Parsley Seed<br />Facial Cleansing Oil</h3>
                         <p>200ml / $17.0</p>
                         <a href="">Add to Cart</a>
                     </div>
-                    <div class="best_itm M">
+                    <div class="best_itm">
                         <figure><img src="./img/best_seller05.png" alt=""></figure>
                         <h3>Parsley Seed<br />Facial Cleansing Oil</h3>
                         <p>200ml / $17.0</p>
                         <a href="">Add to Cart</a>
                     </div>
-                    <div class="best_itm L">
+                    <div class="best_itm">
                         <figure><img src="./img/best_seller06.png" alt=""></figure>
                         <h3>Parsley Seed<br />Facial Cleansing Oil</h3>
                         <p>200ml / $17.0</p>
@@ -169,46 +170,146 @@
                 </div>
             </div>
         </section>
+
         <!-- seasonal_gift -->
         <section class="seasonal_gift">
-            <div class="sg_left">
-                <div class="sg_left_bg"></div>
-                <figure><img src="./img/Aesop_Kits_Gift01.png" alt=""></figure>
-            </div>
-            <div class="sg_right">
-                <p>Seasonal Gift Set</p>
-                <h3>The Listener</h3>
-                <span>&#36; 17.0</span>
-                <ul>
-                    <li>키트구성
-                        <ul>
-                            <li>제라늄 리프 바디 케어 3종</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="pd">
-                    <li>제품구성
+            <div class="sg_top">
+                <div class="sg_img">
+                    <div class="sg_img_bg"></div>
+                    <figure class="animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0"
+                        data-translatex="-200" data-rotatez="90">
+                        <img src="./img/Aesop_Kits_Gift01.png" alt="">
+                    </figure>
+                </div>
+                <div class="sg_txt">
+                    <span>Seasonal Gift Set</span>
+                    <div class="title">
+                        <h3>The Listener</h3>
+                        <span>&#36; 17.0</span>
+                    </div>
+
+                    <div class="kit">
+                        <h4>키트구성</h4>
+                        <p>제라늄 리프 바디 케어 3종</p>
+                    </div>
+
+                    <div class="pd">
+                        <div>
+                            <h4>제품구성</h4>
+                            <a href=""><i class="xi-angle-down-thin"></i></a>
+                        </div>
                         <ul>
                             <li>제라늄 리프 바디 클렌저 100 mL</li>
                             <li>제라늄 리프 바디 밤 100 mL</li>
                             <li>제라늄 리프 바디 스크럽 180 mL</li>
                         </ul>
-                    </li>
-                </ul>
-                <div class="sg_button">
-                    <a href="">Add Cart</a>
-                    <a href="">Buy Now</a>
+                    </div>
+
+                    <div class="sg_button">
+                        <a href="">Add Cart</a>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sg_bottom">
+                <div class="sg_txt">
+                    <span>Seasonal Gift Set</span>
+                    <div class="title">
+                        <h3>Reverence Duet</h3>
+                        <p>&#36; 20.0</p>
+                    </div>
+
+                    <div class="kit">
+                        <h4>키트구성</h4>
+                        <p>개성적인 아로마와 피부 유연 효과가 돋보이는 핸드 케어 2종</p>
+                    </div>
+
+                    <div class="pd">
+                        <div>
+                            <h4>제품구성</h4>
+                            <a href=""><i class="xi-angle-down-thin"></i></a>
+                        </div>
+                        <ul>
+                            <li>제라늄 리프 바디 클렌저 100 mL</li>
+                            <li>제라늄 리프 바디 밤 100 mL</li>
+                            <li>제라늄 리프 바디 스크럽 180 mL</li>
+                        </ul>
+                    </div>
+                    <div class="sg_button">
+                        <a href="">Add Cart</a>
+                        <a href="">Buy Now</a>
+                    </div>
                 </div>
 
+                <div class="sg_img">
+                    <div class="sg_img_bg"></div>
+                    <figure><img src="./img/Aesop_Kits_Gift02.png" alt=""></figure>
+                </div>
             </div>
         </section>
 
-
-
+        <!-- gift_guide -->
+        <section class="gift_guide">
+            <div class="gg_box">
+                <h2>Aesop</h2>
+                <div>
+                    <h3>Gift Guide</h3>
+                    <p>중요한 순간을 기념하고 중요한 분에게</br>
+                        충만한 애정을 표현할 수 있는 셀렉션을 선물하세요.</p>
+                    <a href="">More View</a>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- footer -->
     <footer>
-
+        <div class="container">
+            <ul>
+                <li>Order / support
+                    <ul>
+                        <li><a href="">문의하기</a></li>
+                        <li><a href="">배송</a></li>
+                        <li><a href="">반품</a></li>
+                        <li><a href="">주문내역</a></li>
+                        <li><a href="">이용약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>Service
+                    <ul>
+                        <li><a href="">1:1 채팅상담</a></li>
+                        <li><a href="">기업체 구매</a></li>
+                        <li><a href="">페이셜 어포인트먼트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>Brand Story
+                    <ul>
+                        <li><a href="">브랜드스토리</a></li>
+                        <li><a href="">이솝재단</a></li>
+                        <li><a href="">채용</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sns">
+                <li>Follow <ul>
+                        <li><a href="http://www.instagram.com" target="_blank"><i class="xi-instagram"></i>Instagram</a>
+                        </li>
+                        <li><a href="https://twitter.com/aesopskincare" target="_blank"><i
+                                    class="xi-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/company/aesop" target="_blank"><i
+                                    class="xi-linkedin"></i>LinkedIn</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <figure><img src="./img/Aesop_logo.png" alt=""></figure>
+        </div>
     </footer>
+
 </div>
 
 <body>
