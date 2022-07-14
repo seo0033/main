@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy반복문 01 - for문 01</title>
+</head>
+
+<body>
+    <div id="num">0</div>
+
+    <ul id="list">
+        <li>sum01</li>
+        <li>sum02</li>
+        <li>sum03</li>
+        <li>sum04</li>
+    </ul>
+
+    <script>
+
+        const UL = document.querySelector('#list');
+        console.log(UL);
+
+        const LI = document.querySelectorAll('#list li');
+        console.log(LI);
+
+        for (let i = 0; i < LI.length; i++) {
+            LI[i].style.color = 'red';
+        }
+
+        LI.forEach(el => el.style.color = 'blue')//위 for문과 같음.
+
+        // UL.addEventListener('click', function () {
+        //     console.log(this)
+        // });
+
+        $('#list li').on('click', function () {
+            $('#list li').css({ color: 'blue' });
+            $(this).css({ color: 'yellow' })
+        });
+
+        // const NUM = document.querySelector('#num');
+
+        // LI.forEach((el, idx) => {
+        //     el.addEventListener('click', function () {
+        //         LI.forEach(el => el.style.color = 'blue');
+        //         el.style.color = 'yellow'
+        //         NUM.innerText = 자료[idx];
+        //     })
+        // });
+
+        const 자료 = ['하나', "둘", "셋", "넷"];
+        console.log(자료);
+
+        for (i = 0; i < 자료.length; i++) {
+            console.log(자료[i]);
+        }
+
+        for (i = 1; i < 10; i++) {
+            console.log(i)
+        }
+
+    </script>
+</body>
+
+</html>

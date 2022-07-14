@@ -1,9 +1,16 @@
 $(function () {
     //main_visual
     $('.main_visual .main_slider').slick({
-        // autoplay: true,
+        autoplay: true,
         arrows: false,
+        pauseOnHover: false,
     });
+
+    $('.main_visual .main_slider').on('afterChange', function (e, s, c) {
+        console.log(c);
+        $('.main_dots li').removeClass('on')
+        $('.main_dots li').eq(c).addClass('on');
+    })
 
     $('.main_dots li>a').on('click', function (e) {
         e.preventDefault();
@@ -28,6 +35,22 @@ $(function () {
     });
 
     //seasonal_gift
+    $(window).scroll(function () {
+        var scrollValue = $(document).scrollTop();
+
+        if (scrollValue >= 1200) {
+            $('.seasonal_gift .sg_top .sg_img').addClass('on');
+        } else {
+            $('.seasonal_gift .sg_top .sg_img').removeClass('on');
+        };
+
+        if (scrollValue >= 1700) {
+            $('.seasonal_gift .sg_bottom .sg_img').addClass('on');
+        } else {
+            $('.seasonal_gift .sg_bottom .sg_img').removeClass('on');
+        };
+    });
+
     $('.seasonal_gift .sg_top .sg_txt .pd>div>a').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('on');
