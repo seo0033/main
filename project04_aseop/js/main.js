@@ -44,7 +44,7 @@ $(function () {
             $('.seasonal_gift .sg_top .sg_img').removeClass('on');
         };
 
-        if (scrollValue >= 1700) {
+        if (scrollValue >= 1800) {
             $('.seasonal_gift .sg_bottom .sg_img').addClass('on');
         } else {
             $('.seasonal_gift .sg_bottom .sg_img').removeClass('on');

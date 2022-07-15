@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Hahmlet', serif;
-    outline: 1px solid rgb(196, 238, 222);
+    outline: 1px solid rgb(196, 238, 222)-;
 }
 
 .container {
@@ -542,6 +542,7 @@ header .gnb>ul>li a {
 .lesson_lab .container figure {
     position: relative;
     flex: 1;
+    overflow: hidden;
 }
 
 .lesson_lab .container .lesson_txt {
@@ -553,7 +554,7 @@ header .gnb>ul>li a {
     justify-content: center;
     height: 100%;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     transition: 0.7s;
     text-align: center;
     background: rgba(51, 51, 51, 0.7);
@@ -562,6 +563,11 @@ header .gnb>ul>li a {
 
 .lesson_lab .container figure:hover .lesson_txt {
     opacity: 1;
+}
+
+.lesson_lab .container figure:hover img {
+    transform: scale(1.3);
+    transition: 0.7s;
 }
 
 .lesson_lab .container .lesson_txt p {
