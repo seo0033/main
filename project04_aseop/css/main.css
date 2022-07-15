@@ -509,7 +509,7 @@ header .gnb>ul>li a {
 }
 
 .gift_guide .gg_box>div a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
 }
 
