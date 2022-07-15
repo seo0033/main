@@ -2,7 +2,11 @@
 
 * {
     font-family: 'Hahmlet', serif;
-    outline: 1px solid rgb(196, 238, 222)-;
+    outline: 1px solid rgb(196, 238, 222);
+}
+
+.Wrap {
+    overflow-x: hidden;
 }
 
 .container {
@@ -199,6 +203,7 @@ header .gnb>ul>li a {
 }
 
 .best_seller .bs_slider .container {
+    width: 1240px;
     padding: 50px 0;
     gap: 40px;
 }
@@ -429,7 +434,7 @@ header .gnb>ul>li a {
 .seasonal_gift .sg_top .sg_txt .sg_button,
 .seasonal_gift .sg_bottom .sg_txt .sg_button {
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 .seasonal_gift .sg_top .sg_txt .sg_button>a,
@@ -599,7 +604,7 @@ header .gnb>ul>li a {
 }
 
 .lesson_lab .container .lesson_txt a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 /* footer */
@@ -614,15 +619,15 @@ footer .container {
     gap: 60px;
 }
 
-footer .container ul {
+footer .container dl {
     flex: 1;
 }
 
-footer .container>ul>li {
+footer .container dt {
     font-size: 15px;
 }
 
-footer .container>ul>li>ul::before {
+footer .container dt::after {
     display: block;
     content: "";
     width: 100%;
@@ -631,7 +636,7 @@ footer .container>ul>li>ul::before {
     margin: 10px 0;
 }
 
-footer .container>ul>li>ul>li {
+footer .container dd {
     font-size: 13px;
     font-weight: 200;
     padding: 8px 0;
