@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 03</title>
+</head>
+
+<body>
+    <div id="App">
+        <span>나는 누구? 여긴 어디?</span>
+        <a href="#"> Change me!</a>
+    </div>
+
+    <ul id="UL">
+        <li>menu01</li>
+        <li>menu02</li>
+        <li>menu03</li>
+    </ul>
+
+    <script>
+
+        // 화살표 함수에서의 this 
+
+        const App = document.querySelector('#App');
+        const UL = document.querySelector('#UL');
+
+        // function 이름() {
+        //     console.log('seo0')
+        // }
+
+        // $('#App').on('click',function(){
+        //     $(this).addClass('on')
+        // })
+
+        //화살표 함수에서는 this 가 없다.
+        // event.target : 부모로부터 이벤트가 위임되어 발생하는 자식의 위치.
+        // currentTarget : 이벤트가 부착된 부모의 위치를 반환.
+        App.addEventListener('click', (event) => {
+            console.log(event.target, event.currentTarget);
+            // this.style.color = "#f99";
+            // this.style.fontWeight = "bold";
+        });
+
+        UL.addEventListener('click', e => {
+            //이벤트의 위임. UL이 이벤트를 받고 있음.
+            // console.log(e.target, e.currentTarget);
+            let TG = e.target;
+
+            //스프래드 연산자 => 어려운거😣 나중에 배울것들... ECMA6
+            const AllLI = [...UL.children];
+            console.log(AllLI);
+            AllLI.forEach(e=>e.style.color='')
+            TG.style.fontWeight = "bold"
+            TG.style.color = "#f99"
+        })
+
+
+    </script>
+
+</body>
+
+</html>
