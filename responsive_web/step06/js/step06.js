@@ -1,6 +1,6 @@
-$(function(){
-    $('.gnb>ul>li>a').on('click', function (e){
-        if($('.gnb').hasClass('on')){
+$(function () {
+    $('.gnb>ul>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on')) {
             e.preventDefault();
             $('.sub_menu').slideUp();
             $(this).next().stop().slideToggle();
@@ -9,24 +9,31 @@ $(function(){
 
     });
 
-    $('.mbtn').on('click', function(){
+    $('.mbtn').on('click', function () {
         $('.gnb').toggleClass('on')
     });
 
-    $(window).on('resize', function(){
+    $(window).on('resize', function () {
         $('.gnb').removeClass('on');
         $('.sub_menu').removeAttr('style')
     });
 
-    var siteMap = $('.gnb>ul').clone().addClass('container');
-    siteMap.appendTo($('body')).wrap('<div class="sitemap"></div>');
-    $('<i class="xi-close"></i>').appendTo(siteMap.parent());
+    var siteMap = $('.gnb>ul')
+        .clone()
+        .addClass('container')
+        .appendTo($('body'))
+        .wrap('<div class="sitemap"></div>'); //생성하고 나서 싸줘야 함
+    //var wrapper = $('<div class="sitemap"></div>');
+    //var siteMap = siteMapInner.wrap(wrapper);
+    //siteMap.appendTo($('body'));
+    $('<i class="xi-close"></i>').appendTo(siteMap.parent()); // appendTo(el) el의 마지막 자식으로 추가
 
-    $('.mclone').on('click', function(){
-        siteMap.show();
+
+    $('.mclone').on('click', function () {
+        $('.sitemap').show()
     });
 
-    $('.xi-close').on('click', function(){
-        console.log('click');
+    $('.sitemap .xi-close').on('click', function () {
+        $('.sitemap').hide()
     })
 })
