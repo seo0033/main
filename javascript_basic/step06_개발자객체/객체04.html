@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 04 - 객체생성자함수</title>
+</head>
+
+<body>
+    <script>
+        //객체를 찍어내는 기계를 만드는 옛날 방법. class로 바뀜.
+        function Jang(name) {
+            this.name = name;
+            this.showName = function () {
+                console.log(this.name)
+            }
+        }
+
+        const 장서영 = new Jang('짱서영');
+        장서영.showName();
+
+        const 조윤경 = new Jang('맹내니');
+        조윤경.showName();
+
+        Jang.prototype.group = '오래된 노래'
+
+        console.log(조윤경.group);
+        console.log(장서영.group);
+
+    </script>
+</body>
+
+</html>
