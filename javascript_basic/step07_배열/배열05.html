@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 05</title>
+</head>
+
+<body>
+    <ul id="UL"></ul>
+    <script>
+        const DATA = [
+            { id: 1, content: "나는 메로나다", date: "2022년 07월 21일" },
+            { id: 2, content: "나는 바밤바다", date: "2022년 07월 21일" },
+            { id: 3, content: "나는 엑설런트다", date: "2022년 07월 21일" },
+            { id: 4, content: "나는 더위사냥다", date: "2022년 07월 21일" },
+            { id: 5, content: "나는 호두마루다", date: "2022년 07월 21일" },
+        ]
+
+        const RESULT = DATA.map(el => `<li>${el.content}</li>`).slice(0, 2).join('');
+        //{ return '<li>' + data.content + '</li>' }
+        console.log(RESULT);
+        document.querySelector('#UL').innerHTML = RESULT;
+
+        // <ul ul id = "UL" >
+        // {
+        //     DATA.map(
+        //         <li>{data.content}</li>
+        //     )
+        // }
+        // </ul>
+    </script>
+
+
+</body>
+
+</html>
