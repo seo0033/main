@@ -93,7 +93,7 @@ header .top_banner a {
 .gnb .gnb_bottom>ul>li>ul {
     position: absolute;
     top: 116px;
-    left: 55%;
+    left: 60%;
     z-index: 999;
     height: 0;
     overflow: hidden;
@@ -132,12 +132,16 @@ header .top_banner a {
 /* main_visual */
 
 /* show_room */
-.show_room>div {
+
+.show_room .sr_slide {
+    width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.show_room .sr_slide .inner {
     display: flex;
     justify-content: space-between;
-    width: 1500px;
-    padding: 100px 0;
-    margin: 0 auto;
 }
 
 .show_room .sr_left strong {
@@ -179,6 +183,7 @@ header .top_banner a {
 .show_room .sr_right>div {
     position: relative;
     display: flex;
+    justify-content: space-between;
     background: #444;
 }
 
@@ -230,8 +235,8 @@ header .top_banner a {
     margin-bottom: 30px;
     font-size: 17px;
     font-weight: 500;
-    letter-spacing: 3px;
     line-height: 20px;
+    letter-spacing: 2px;
 }
 
 .show_room .sr_right .txt a {
@@ -260,8 +265,7 @@ header .top_banner a {
     text-shadow: 1px 1px 1px #333;
 }
 
-.promotion .pm_bg>div {
-    padding: 0 300px 0 0;
+.promotion .pm_bg .container {
     text-align: end;
 }
 
@@ -276,8 +280,8 @@ header .top_banner a {
 .promotion .pm_bg span:nth-child(1)::after {
     content: "";
     display: block;
-    width: 150px;
-    height: 1px;
+    width: 100px;
+    height: 2px;
     margin: 10px 0 0 auto;
     background: #333;
 }
@@ -305,7 +309,7 @@ header .top_banner a {
 /* new_collection */
 
 .new_collection {
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 }
 
 .new_collection .title {
@@ -354,7 +358,6 @@ header .top_banner a {
     position: relative;
     margin: 0 0 50px 0;
     overflow: hidden;
-
 }
 
 .new_collection .new_col_img figure:hover img {
@@ -392,12 +395,112 @@ header .top_banner a {
 .new_collection .new_col_img .txt a {
     display: block;
     border: 1px solid #fff;
-    padding: 5px 30px;
+    padding: 10px 30px;
     margin-bottom: 10px;
     font-size: 15px;
+    text-shadow: 1px 1px 1px #333;
     transition: 0.5s;
 }
 
 .new_collection .new_col_img .txt a:hover {
     background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px #777;
+}
+
+/* review */
+.review {
+    background: #f9f9f9;
+    padding: 100px 0;
+}
+
+.review .title {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.review .title span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.review .title h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 27px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.review .title h2::after {
+    position: absolute;
+    bottom: 2px;
+    right: -52px;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #000;
+}
+
+.review .container {
+    overflow: hidden;
+}
+
+.review .review_slide_top .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review .review_slide_bottom figure {
+    margin: 0 15px;
+}
+
+/* footer */
+footer {
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer .container figure {
+    width: 280px;
+    margin: auto 0;
+}
+
+footer .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .container div>dl>dd {
+    display: inline-block;
+    font-size: 13px;
+}
+
+footer .container div>dl>dd:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    width: 1px;
+    height: 11px;
+    background: #333;
+}
+
+footer .container>dl>dd,
+footer .container>dl>dt {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+footer .container>dl>dd>a {
+    font-size: 21px;
+    font-weight: 700;
 }

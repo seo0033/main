@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 내장객체 - 아날로그시계</title>
+
+    <style>
+        .clock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f4f4f4;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 10px solid #333;
+        }
+
+        .clock::after{
+            content: "";
+            position: absolute;
+            inset: 50% auto auto 50%;
+            transform: translate(-50%,-50%);
+            width: 20px;
+            height: 20px;
+            background: #555;
+            border-radius: 50%;
+        }
+
+        .clock>* {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+        }
+
+        .clock strong {
+            width: 10px;
+            height: 100px;
+            background: #369;
+            transform-origin: bottom center;
+        }
+
+        .clock em {
+            width: 10px;
+            height: 180px;
+            background: #333;
+            transform: translateX(-50%) rotate(30deg);
+            transform-origin: bottom center;
+        }
+
+        .clock span {
+            width: 5px;
+            height: 220px;
+            background: #f99;
+            transform: translateX(-50%) rotate(30deg);
+            transform-origin: bottom center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <strong></strong>
+        <em></em>
+        <span></span>
+    </div>
+
+    <script>
+        const hourElement = document.querySelector('.clock strong')
+        const minutesElement = document.querySelector('.clock em')
+        const secondsElement = document.querySelector('.clock span')
+
+        const 날짜함수 = () => {
+            const date = new Date();
+            const week = ['일', '월', '화', '수', '목', '금', '토']
+
+            const year = date.getFullYear();
+            const month = date.getMonth() + 1;
+            const day = date.getDate();
+            const days = date.getDay();
+            const hour = date.getHours(); //12시간/360deg
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+
+            hourElement.style.transform = `translateX(-50%) rotate(${hour * (360 / 12)}deg)`
+            minutesElement.style.transform = `translateX(-50%) rotate(${minutes * (360 / 60)}deg)`
+            secondsElement.style.transform = `translateX(-50%) rotate(${seconds * (360 / 60)}deg)`
+
+        }
+
+        setInterval(날짜함수, 1000)
+    </script>
+
+</body>
+
+</html>
