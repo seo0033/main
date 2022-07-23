@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(163, 206, 184);
+    outline: 1px solid rgb(163, 206, 184)-;
 }
 
 .container {
@@ -132,26 +132,29 @@ header .top_banner a {
 /* main_visual */
 
 /* show_room */
-
-.show_room .sr_slide {
-    width: 1500px;
-    margin: 0 auto;
+.show_room {
+    /* display: flex; */
     padding: 100px 0;
+    width: 1600px;
+    margin: 0 auto;
+    gap: 100px;
 }
 
-.show_room .sr_slide .inner {
-    display: flex;
-    justify-content: space-between;
+.show_room .left {
+    position: relative;
+    flex: 1.5;
 }
 
-.show_room .sr_left strong {
-    display: block;
+.show_room .right {
+    flex: 1;
+}
+
+.show_room .left_slide strong {
     font-size: 13px;
     font-weight: 500;
-    margin: 0 0 0 10px;
 }
 
-.show_room .sr_left strong::after {
+.show_room .left_slide strong::after {
     display: block;
     content: "";
     width: 70px;
@@ -160,49 +163,54 @@ header .top_banner a {
     margin: 10px 0 20px 0;
 }
 
-.show_room .sr_left h2 {
-    margin: 0 0 30px 10px;
+.show_room .left_slide h2 {
+    margin-bottom: 30px;
     font-size: 35px;
     font-weight: 800;
 }
 
-.show_room .sr_left .box {
+.show_room .left_slide .bg_box {
     position: relative;
     background: #444;
     width: 800px;
     height: 400px;
 }
 
-.show_room .sr_left .box figure {
+.show_room .left_slide .bg_box figure {
     position: absolute;
     top: 30px;
     left: 30px;
     width: 800px;
 }
 
-.show_room .sr_right>div {
+.show_room .left .sr_arrows>i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 31px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.show_room .left .sr_arrows i:nth-child(1) {
+    margin: 0 0 0 -300px;
+}
+
+.show_room .left .sr_arrows i:nth-child(2) {
+    margin: 0 0 0 300px;
+}
+
+.show_room .right_slide .box {
     position: relative;
     display: flex;
     justify-content: space-between;
     background: #444;
-}
-
-.show_room .sr_right>div:not(:last-child) {
-    margin-bottom: 30px;
-}
-
-.show_room .sr_right figure {
-    width: 369px;
-}
-
-.show_room .sr_right .txt {
-    padding: 0 30px;
-    margin: auto 0;
-    text-align: center;
     color: #fff;
 }
 
-.show_room .sr_right .txt::after {
+.show_room .right_slide .box::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -214,15 +222,30 @@ header .top_banner a {
     border-left: 30px solid #fff;
 }
 
-.show_room .sr_right .txt:hover::after {
+.show_room .right_slide .box:hover::after {
     display: block;
 }
 
-.show_room .sr_right .txt strong {
+.show_room .right_slide .box:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.show_room .right_slide .box figure {
+    width: 369px;
+}
+
+.show_room .right_slide .box .txt {
+    display: block;
+    padding: 0 30px;
+    margin: auto auto;
+    text-align: center;
+}
+
+.show_room .right_slide .box .txt strong {
     font-size: 13px;
 }
 
-.show_room .sr_right .txt strong::after {
+.show_room .right_slide .box .txt strong::after {
     display: block;
     content: "";
     width: 30px;
@@ -231,7 +254,7 @@ header .top_banner a {
     margin: 5px auto 10px auto;
 }
 
-.show_room .sr_right .txt h3 {
+.show_room .right_slide .box .txt h3 {
     margin-bottom: 30px;
     font-size: 17px;
     font-weight: 500;
@@ -239,7 +262,7 @@ header .top_banner a {
     letter-spacing: 2px;
 }
 
-.show_room .sr_right .txt a {
+.show_room .right_slide .box .txt a {
     display: block;
     border: 1px solid #fff;
     padding: 5px 30px;
@@ -248,7 +271,7 @@ header .top_banner a {
     transition: 0.5s;
 }
 
-.show_room .sr_right .txt a:hover {
+.show_room .right_slide .box .txt a:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -448,14 +471,47 @@ header .top_banner a {
     overflow: hidden;
 }
 
+.review .review_slide_top {
+    margin-bottom: 30px;
+}
+
 .review .review_slide_top .box {
     display: flex;
     justify-content: space-between;
 }
 
-.review .review_slide_bottom figure {
+.review .review_slide_bt .box {
+    padding: 15px 0;
     margin: 0 15px;
+    text-align: center;
 }
+
+.review .review_slide_bt .box figure {
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+}
+
+.review .review_slide_bt .box h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.review .review_slide_bt .box h3::after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background: #333;
+    margin: 10px auto;
+}
+
+.review .review_slide_bt .box p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
 
 /* footer */
 footer {
