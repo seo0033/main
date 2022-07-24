@@ -44,4 +44,9 @@ $(function () {
         // centerMode: true,
         focusOnSelect: true
     });
+
+    $(function () {
+        $('.gnb .mbtn').on('click', function () {
+            $('.gnb').toggleClass('on');
+        });
 })//the end
