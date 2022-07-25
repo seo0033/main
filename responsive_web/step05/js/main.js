@@ -20,7 +20,6 @@ $(function () {
             $('.smenu').stop().slideUp();
             $(this).next().stop().slideToggle();
         }
-
     });
 
     $(window).on('resize', function () {
