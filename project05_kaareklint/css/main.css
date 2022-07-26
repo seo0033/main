@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(163, 206, 184);
+    outline: 1px solid rgb(163, 206, 184)-;
 }
 
 .container {
@@ -13,7 +13,6 @@
 /* top_banner */
 header .top_banner {
     position: sticky;
-    inset: 0 auto auto 0;
     z-index: 999;
     display: flex;
     background: #ddd;
@@ -345,7 +344,6 @@ header .top_banner a {
 }
 
 /* new_collection */
-
 .new_collection {
     padding: 100px 0 50px 0;
 }
@@ -577,7 +575,7 @@ footer .container figure {
     margin: auto 0;
 }
 
-footer .container>div {
+footer .container .center {
     margin: auto 0;
 }
 
@@ -585,7 +583,7 @@ footer .container .top {
     margin-bottom: 20px;
 }
 
-footer .container .top dd {
+footer .container .top dd a {
     font-size: 17px;
     font-weight: 700;
 }
@@ -594,12 +592,12 @@ footer .container .bottom dl {
     margin-bottom: 10px;
 }
 
-footer .container div>dl>dd {
+footer .container .center dl>dd {
     display: inline-block;
     font-size: 13px;
 }
 
-footer .container div>dl>dd:not(:last-child)::after {
+footer .container .center dl>dd:not(:last-child)::after {
     content: "";
     display: inline-block;
     margin: 0 15px;
@@ -608,14 +606,14 @@ footer .container div>dl>dd:not(:last-child)::after {
     background: #333;
 }
 
-footer .container>dl>dd,
-footer .container>dl>dt {
+footer .container .cs dl>dd,
+footer .container.cs dl>dt {
     margin: 10px 0;
     font-size: 13px;
     font-weight: 500;
 }
 
-footer .container>dl>dd>a {
+footer .container .cs dl a {
     font-size: 19px;
     font-weight: 700;
 }
@@ -623,7 +621,7 @@ footer .container>dl>dd>a {
 @media(max-width:768px) {
     .container {
         width: auto;
-        margin: 0 auto;
+        margin: 0 20px;
     }
 
     /* nav */
@@ -732,7 +730,6 @@ footer .container>dl>dd>a {
     }
 
     /* show_room */
-
     .show_room {
         display: flex;
         flex-direction: column;
@@ -744,27 +741,8 @@ footer .container>dl>dd>a {
     .show_room .left {
         position: relative;
         width: auto;
-        /* padding: 0 50px 0 0; */
-        margin: auto 0;
-    }
-
-    .show_room .right {
-        width: 50%;
-        padding: 0 0 0 100px;
-    }
-
-    .show_room .left_slide strong {
-        font-size: 13px;
-        font-weight: 500;
-    }
-
-    .show_room .left_slide strong::after {
-        display: block;
-        content: "";
-        width: 70px;
-        height: 2px;
-        background: #333;
-        margin: 10px 0 20px 0;
+        padding: 0;
+        margin: 0 50px 20px 50px;
     }
 
     .show_room .left_slide h2 {
@@ -774,20 +752,20 @@ footer .container>dl>dd>a {
     }
 
     .show_room .left_slide>div {
-        height: 500px;
+        height: 400px;
     }
 
     .show_room .left_slide .bg_box {
         position: relative;
         background: #444;
-        width: calc(100% - 30px);
-        height: 350px;
+        width: 100%;
+        height: 0;
     }
 
     .show_room .left_slide .bg_box figure {
-        position: absolute;
-        top: 30px;
-        left: 30px;
+        position: static;
+        top: 0;
+        left: 0;
         width: 100%;
     }
 
@@ -803,11 +781,179 @@ footer .container>dl>dd>a {
     }
 
     .show_room .left .sr_arrows i:nth-child(1) {
-        margin: 0 0 0 -430px;
+        margin: 0 0 0 -300px;
     }
 
     .show_room .left .sr_arrows i:nth-child(2) {
-        margin: 0 0 0 380px;
+        margin: 0 0 0 300px;
+    }
+
+    .show_room .right {
+        width: auto;
+        padding: 0;
+        margin: 0 50px;
+    }
+
+    /* promotion */
+    .promotion .pm_bg {
+        background: url(../img/promotion_bg02.jpg)no-repeat center center/cover;
+        filter: grayscale(1);
+        padding: 60px 0;
+        overflow: hidden;
+        text-shadow: 1px 1px 1px #333;
+    }
+
+    .promotion .pm_bg .container {
+        width: calc(100% - 60px);
+        text-align: end;
+    }
+
+    .promotion .pm_bg span {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+
+    .promotion .pm_bg span:nth-child(1)::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        margin: 10px 0 0 auto;
+        background: #333;
+    }
+
+    .promotion .pm_bg h2 {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+
+    .promotion .pm_bg span:nth-child(3) {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .promotion .pm_bg p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    /* new_collection */
+    .new_collection .title {
+        margin: 0 20px;
+    }
+
+    .new_collection .new_col_img {
+        display: flex;
+        gap: 30px;
+    }
+
+    .new_collection .new_col_img figure {
+        position: relative;
+        margin: 0 0 30px 0;
+        overflow: hidden;
+    }
+
+    /* review */
+    .review {
+        padding: 100px 0;
+        background: #f9f9f9;
+    }
+
+    .review .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .review .container .title {
+        margin: 0 0 30px 10px;
+        padding: 0;
+    }
+
+    .review .container .title p {
+        margin-bottom: 20px;
+    }
+
+    .review .container .title a {
+        display: inline-block;
+        padding: 5px 30px;
+        border: 1px solid #333;
+        background: #fff;
+        transition: 0.5s;
+    }
+
+    .review .container .line {
+        display: none;
+    }
+
+    .review .container>div>figure {
+        position: relative;
+        display: flex;
+        margin: 15px 0;
+    }
+
+    .review .container>div figure img {
+        width: 0;
+        flex: 1;
+        border-radius: 40px;
+        background: #444;
+        padding: 8px;
+        margin-right: 0;
+    }
+
+    .review .container>div figure::before {
+        display: none;
+    }
+
+    .review .container figure .txt {
+        flex: 1.5;
+        margin: auto 0;
+        padding: 30px 0 30px 30px;
+        font-size: 15px;
+    }
+
+    /* footer */
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer .container figure {
+        width: 230px;
+        margin: 0 auto 15px auto;
+    }
+
+    footer .container .center {
+        padding: 10px auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    footer .container .top {
+        margin-bottom: 20px;
+    }
+
+    footer .container .bottom dl {
+        margin-bottom: 15px;
+    }
+
+    footer .container .cs {
+        display: flex;
+        margin: 10px auto;
+        gap: 100px;
+    }
+
+    footer .container .cs dl {
+        margin: auto 0;
     }
 
 }
