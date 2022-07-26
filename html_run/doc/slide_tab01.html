@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slide_tab01</title>
-    <link rel="stylesheet" href="../css/reset.css">
+    <title>slide - tab</title>
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/slick.css">
     <style>
         .tabCon {
@@ -14,40 +14,52 @@
         }
 
         .tabCon>div {
-            height: 0;
-            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             visibility: hidden;
         }
 
         .tabCon>div.on {
-            height: auto;
             visibility: visible;
         }
+
+        /* visibility 사용 */
     </style>
 </head>
 
 <body>
-
+    <!-- click 이벤트 맨 하단에 
+    $(`.tab_cont > div:eq(${idx}) > div`).slick('setPosition');
+    추가해주시면 될 것 같네요 
+https://okky.kr/article/942001
+-->
     <section>
         <ul class="tabMenu">
             <li>menu01</li>
             <li>menu02</li>
         </ul>
         <div class="tabCon">
-            <div class="left">
-                <figure>슬라이드라고 치자 01</figure>
-                <figure>슬라이드라고 치자 02</figure>
-                <figure>슬라이드라고 치자 03</figure>
-                <figure>슬라이드라고 치자 04</figure>
+            <div class="on">
+                <div class="left">
+                    <figure>슬라이드 01</figure>
+                    <figure>슬라이드 02</figure>
+                    <figure>슬라이드 03</figure>
+                    <figure>슬라이드 04</figure>
+                </div>
+            </div>
+            <div>
+                <div class="right">
+                    <figure>두번째 슬라이드 01</figure>
+                    <figure>두번째 슬라이드 02</figure>
+                    <figure>두번째 슬라이드 03</figure>
+                    <figure>두번째 슬라이드 04</figure>
+                </div>
             </div>
         </div>
-        <div class="right">
-            <figure>두번째 슬라이드라고 치자 01</figure>
-            <figure>두번째 슬라이드라고 치자 02</figure>
-            <figure>두번째 슬라이드라고 치자 03</figure>
-            <figure>두번째 슬라이드라고 치자 04</figure>
-        </div>
     </section>
+
 
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
@@ -56,13 +68,13 @@
             $('.tabMenu>li').on('click', function () {
                 var idx = $(this).index();
                 $('.tabCon>div').removeClass('on')
-                $('.tabCon>div').eq(idx).addClass('on')
+                $('.tabCon>div').eq(idx).addClass('on');
             });
 
             $('.left').slick();
             $('.right').slick();
+        });//the end
 
-        })//the end
     </script>
 </body>
 

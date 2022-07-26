@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(163, 206, 184)-;
+    outline: 1px solid rgb(163, 206, 184);
 }
 
 .container {
@@ -155,7 +155,7 @@ header .top_banner a {
 
 .show_room .right {
     width: 50%;
-    padding: 0 0 0 100px;
+    padding: 0 0 0 150px;
 }
 
 .show_room .left_slide strong {
@@ -277,7 +277,7 @@ header .top_banner a {
 }
 
 .show_room .right_slide .box .txt a {
-    display: block;
+    display: inline-block;
     border: 1px solid #fff;
     padding: 5px 30px;
     font-size: 13px;
@@ -949,11 +949,15 @@ footer .container .cs dl a {
     footer .container .cs {
         display: flex;
         margin: 10px auto;
-        gap: 100px;
+        gap: 50px;
     }
 
     footer .container .cs dl {
         margin: auto 0;
+    }
+
+    footer .container .cs dl dt {
+        margin-bottom: 15px;
     }
 
 }

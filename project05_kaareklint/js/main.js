@@ -27,25 +27,7 @@ $(function () {
         $('.show_room .right_slide').slick('slickNext')
     })
 
-
-    //review
-    $('.review_slide_top').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.review_slide_bt'
-    });
-    $('.review_slide_bt').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        // arrows: false,
-        asNavFor: '.review_slide_top',
-        // centerMode: true,
-        focusOnSelect: true
-    });
-
-    //반응형
+    //@media(max-width:768px)
     $('.gnb .mbtn').on('click', function () {
         $('.gnb_bottom').toggleClass('on');
         $('.gnb_bottom>ul>li>a').next().stop().slideUp();
@@ -63,7 +45,7 @@ $(function () {
     $('.gnb>ul>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {
             e.preventDefault();
-            // $('.gnb>ul>li>a').next().hide();
+            $('.gnb>ul>li>a').next().hide();
             $(this).next().stop().slideToggle();
             $(this).parent().siblings().find('ul').stop().slideUp();
         }
