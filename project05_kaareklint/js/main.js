@@ -33,6 +33,10 @@ $(function () {
         $('.gnb_bottom>ul>li>a').next().stop().slideUp();
     });
 
+    $('.hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+    });
+
     //nav
     $('.gnb .gnb_bottom>ul>li>a').on('click', function (e) {
         if ($('.gnb .gnb_bottom').hasClass('on')) {

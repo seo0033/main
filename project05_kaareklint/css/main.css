@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(163, 206, 184);
+    outline: 1px solid rgb(163, 206, 184)-;
 }
 
 .container {
@@ -548,9 +548,20 @@ header .top_banner a {
 }
 
 .review .container .txt p {
-    padding: 0 5px 8px 5px;
+    /* padding: 0 5px 8px 5px; */
     margin-bottom: 10px;
-    border-bottom: 1px solid #333;
+    /* text-decoration: underline; */
+    /* text-underline-position: under; */
+    /* border-bottom: 1px solid #333; */
+}
+
+.review .container .txt p::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #333;
+    margin: 5px 0 0 0;
 }
 
 .review .container .txt span {
@@ -622,6 +633,12 @@ footer .container .cs dl a {
     .container {
         width: auto;
         margin: 0 20px;
+        overflow: hidden;
+    }
+
+    /* top_banner */
+    header .top_banner {
+        justify-content: center;
     }
 
     /* nav */
@@ -781,11 +798,11 @@ footer .container .cs dl a {
     }
 
     .show_room .left .sr_arrows i:nth-child(1) {
-        margin: 0 0 0 -300px;
+        margin: 0 0 0 -50%;
     }
 
     .show_room .left .sr_arrows i:nth-child(2) {
-        margin: 0 0 0 300px;
+        margin: 0 0 0 50%;
     }
 
     .show_room .right {
@@ -859,6 +876,45 @@ footer .container .cs dl a {
         position: relative;
         margin: 0 0 30px 0;
         overflow: hidden;
+    }
+
+    .new_collection .new_col_img .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: #fff;
+        text-align: center;
+        line-height: 1.2;
+        transition: 0.5s;
+    }
+
+    .new_collection .new_col_img figure:hover .txt {
+        opacity: 1;
+    }
+
+    .new_collection .new_col_img .txt h3 {
+        margin-bottom: 15px;
+        font-size: 19px;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px #333;
+        letter-spacing: 3px;
+    }
+
+    .new_collection .new_col_img .txt a {
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px #333;
+        transition: 0.5s;
+    }
+
+    .new_collection .new_col_img .txt a:hover {
+        background: rgba(0, 0, 0, 0.5);
+        text-shadow: 1px 1px 1px #777;
     }
 
     /* review */
