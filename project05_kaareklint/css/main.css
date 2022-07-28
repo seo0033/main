@@ -88,7 +88,6 @@ header .top_banner a {
     text-decoration: overline;
 }
 
-
 .gnb .gnb_bottom>ul>li>ul {
     position: absolute;
     top: 116px;
@@ -548,14 +547,10 @@ header .top_banner a {
 }
 
 .review .container .txt p {
-    /* padding: 0 5px 8px 5px; */
     margin-bottom: 10px;
-    /* text-decoration: underline; */
-    /* text-underline-position: under; */
-    /* border-bottom: 1px solid #333; */
 }
 
-.review .container .txt p::after{
+.review .container .txt p::after {
     display: block;
     content: "";
     width: 100%;
@@ -599,6 +594,11 @@ footer .container .top dd a {
     font-weight: 700;
 }
 
+footer .container .top dd a:hover {
+    color: #666;
+    text-decoration: overline;
+}
+
 footer .container .bottom dl {
     margin-bottom: 10px;
 }
@@ -608,7 +608,7 @@ footer .container .center dl>dd {
     font-size: 13px;
 }
 
-footer .container .center dl>dd:not(:last-child)::after {
+footer .container .center dl>dd~dd::before {
     content: "";
     display: inline-block;
     margin: 0 15px;
@@ -641,10 +641,35 @@ footer .container .cs dl a {
         justify-content: center;
     }
 
+    .gnb .gnb_top {
+        display: flex;
+        justify-content: start;
+        border-bottom: 1px solid #ddd;
+        margin: 0 15px;
+        line-height: 35px;
+    }
+
+    .gnb .gnb_top input[type="text"] {
+        outline: none;
+        border: none;
+        width: 150px;
+        padding: 3px 0;
+        margin-left: auto;
+    }
+
+    .gnb .gnb_top button {
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 19px;
+        margin-right: 0px;
+    }
+
+
     /* nav */
     .gnb .mbtn {
         position: fixed;
-        top: 50px;
+        top: 65px;
         right: 30px;
         display: block;
         background: #444;
@@ -869,12 +894,18 @@ footer .container .cs dl a {
 
     .new_collection .new_col_img {
         display: flex;
-        gap: 30px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .new_collection .new_col_img .new_col_right {
+        margin-top: 0px;
     }
 
     .new_collection .new_col_img figure {
         position: relative;
-        margin: 0 0 30px 0;
+        width: 80%;
+        margin: 0 auto 30px auto;
         overflow: hidden;
     }
 
@@ -896,10 +927,14 @@ footer .container .cs dl a {
 
     .new_collection .new_col_img .txt h3 {
         margin-bottom: 15px;
-        font-size: 19px;
+        font-size: 25px;
         font-weight: 700;
         text-shadow: 1px 1px 1px #333;
         letter-spacing: 3px;
+    }
+
+    .new_collection p {
+        margin-bottom: 30px;
     }
 
     .new_collection .new_col_img .txt a {
@@ -977,6 +1012,10 @@ footer .container .cs dl a {
     }
 
     /* footer */
+    footer {
+        padding: 50px 0 30px 0;
+    }
+
     footer .container {
         display: flex;
         flex-direction: column;
@@ -990,7 +1029,7 @@ footer .container .cs dl a {
     }
 
     footer .container .center {
-        padding: 10px auto;
+        margin: auto 0;
         border-bottom: 1px solid #ddd;
     }
 
@@ -998,8 +1037,27 @@ footer .container .cs dl a {
         margin-bottom: 20px;
     }
 
+    footer .container .top dd a {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    footer .container .bottom {
+        margin: 0 0 20px 0;
+    }
+
     footer .container .bottom dl {
-        margin-bottom: 15px;
+        margin-bottom: 7px;
+    }
+
+    footer .container .bottom dl>dd {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 13px;
+    }
+
+    footer .container .bottom dl>dd~dd::before {
+        display: none;
     }
 
     footer .container .cs {

@@ -9,7 +9,7 @@
     <meta name="description" content="rem사용, jquery사용" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/main.css?ver=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
@@ -34,11 +34,38 @@
             </div>
         </div>
 
-        <div class="pop pop1">pop01<button>close</button></div>
-        <div class="pop pop2">pop02<button>close</button></div>
-        <div class="pop pop3">pop03<button>close</button></div>
-        <div class="pop pop4">pop04<button>close</button></div>
-        <div class="pop pop5">pop05<button>close</button></div>
+        <header class="header">
+            <div class="container">
+                <h1>
+                    <a href="">
+                        <img src="./img/grafflogo.png" alt="">
+                    </a>
+                </h1>
+
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="">하이주얼리</a></li>
+                        <li><a href="">주얼리 컬렉션</a></li>
+                        <li><a href="">컬렉션 &amp; 브라이덜</a></li>
+                        <li><a href="">웨딩주얼리</a></li>
+                        <li><a href="">특별한 솔리테어</a></li>
+                    </ul>
+                </nav>
+
+                <form id="searchform" action="">
+                    <input type="text" name="search" placeholder="검색어를 입력하세요" required>
+                    <!-- required : 아무것도 입력안하면 메세지 뜸 -->
+                    <button>
+                        <i class="xi-search"></i>
+                    </button>
+                </form>
+                <script>
+                    function search() {
+                        console.log('search')
+                    }
+                </script>
+            </div>
+        </header>
     </div>
 </body>
 

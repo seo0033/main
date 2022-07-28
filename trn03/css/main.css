@@ -52,40 +52,64 @@ body {
     right: 0;
 }
 
-.pop {
+.header {
+    display: flex;
+    line-height: 10rem;
+    /* background: #99f; */
+}
+
+.header h1 {
+    font-size: 0;
+}
+
+.gnb {
+    margin: 0 0 0 auto;
+}
+
+.gnb>ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.gnb>ul>li {
+    position: relative;
+}
+
+.gnb>ul>li::first-letter{
+    color: #f00;
+}
+
+.gnb>ul>li~li::before {
+    content: '';
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40rem;
-    height: 50rem;
-    background: #fff;
+    left: -1.5rem;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 1.2rem;
+    background: #333;
 }
 
-.pop button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+#searchform {
+    margin: 0 0 0 2rem;
 }
 
-.pop:nth-of-type(3) {
-    top: 55%;
-    left: 55%;
+#searchform input[name='search'] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: #f99;
 }
 
-.pop:nth-of-type(4) {
-    top: 60%;
-    left: 60%;
+#searchform input[name='search']:focus::placeholder {
+    color: transparent;
 }
 
-.pop:nth-of-type(5) {
-    top: 65%;
-    left: 65%;
-}
-
-.pop:nth-of-type(6) {
-    top: 70%;
-    left: 70%;
+#searchform button {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
 }
 
 
