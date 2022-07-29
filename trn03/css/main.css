@@ -148,6 +148,89 @@ h6::after {
     margin: 0 0 0 20px;
 }
 
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_slider figure {
+    font-size: 50px;
+    height: 60rem;
+}
+
+.main_slider .itm01 {
+    background: url(../img/mainvisual01.jpg)no-repeat center center/cover;
+}
+
+.main_slider .itm02 {
+    background: url(../img/mainvisual02.jpg)no-repeat center center/cover;
+}
+
+.main_slider .itm03 {
+    background: url(../img/mainvisual03.jpg)no-repeat center center/cover;
+}
+
+.main_slider .itm04 {
+    background: url(../img/mainvisual02.jpg)no-repeat center center/cover;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.main_visual .slogan h2 {
+    margin: 0 0 1.2rem;
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: 0 0 3px #000;
+}
+
+.main_visual .slogan p {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #000;
+}
+
+.main_slider .slick-dots {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main_slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 0.4rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    margin: 0 0.2rem;
+}
+
+.main_slider .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #888;
+    border-radius: 0.2rem;
+}
+
+.main_slider .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 1.5s;
+}
+
+.main_slider .slick-dots button {
+    display: none;
+}
 
 @media (max-width: 600px) {
     .container {

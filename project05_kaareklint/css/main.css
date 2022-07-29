@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&family=Noto+Serif+KR:wght@200;300;400&display=swap');
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(163, 206, 184)-;
+    outline: 1px solid rgb(163, 206, 184);
 }
 
 .container {
@@ -83,6 +83,7 @@ header .top_banner a {
 
 .gnb .gnb_bottom h1 {
     width: 330px;
+    font-size: 0;
 }
 
 .gnb .gnb_bottom>ul {
@@ -118,6 +119,10 @@ header .top_banner a {
 .gnb .gnb_bottom>ul>li>ul>li:hover {
     color: #666;
     text-decoration: overline;
+}
+
+.gnb_bottom>ul li a {
+    display: block;
 }
 
 .gnb .gnb_bottom>ul::after {
@@ -404,10 +409,13 @@ header .top_banner a {
     overflow: hidden;
 }
 
+.new_collection .new_col_img figure img {
+    transition: 1s;
+}
+
 .new_collection .new_col_img figure:hover img {
     transform: scale(1.3);
     filter: grayscale(1);
-    transition: 1s;
 }
 
 .new_collection .new_col_img .new_col_right {
@@ -582,7 +590,6 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
-    text-align: center;
 }
 
 footer .container figure {
