@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(163, 206, 184)-;
+    outline: 1px solid rgb(163, 206, 184);
 }
 
 .container {
@@ -54,6 +54,14 @@ header .top_banner a {
     width: 250px;
     padding: 3px 0;
     margin-left: 62px;
+}
+
+.gnb input[type="text"]::placeholder {
+    letter-spacing: 5px;
+}
+
+.gnb input[type="text"]:focus::placeholder {
+    color: transparent;
 }
 
 .gnb .gnb_top button {
@@ -1025,7 +1033,7 @@ footer .container .cs dl a {
 
     footer .container figure {
         width: 230px;
-        margin: 0 auto 15px auto;
+        margin: 0 auto 25px auto;
     }
 
     footer .container .center {

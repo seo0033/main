@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid rgb(128, 197, 206);
+    outline: 1px solid rgb(128, 197, 206)-;
 }
 
 html {
@@ -55,7 +55,6 @@ body {
 .header {
     display: flex;
     line-height: 10rem;
-    /* background: #99f; */
 }
 
 .header h1 {
@@ -75,7 +74,7 @@ body {
     position: relative;
 }
 
-.gnb>ul>li::first-letter{
+.gnb>ul>li::first-letter {
     color: #f00;
 }
 
@@ -87,7 +86,7 @@ body {
     transform: translateY(-50%);
     width: 1px;
     height: 1.2rem;
-    background: #333;
+    background: #ddd;
 }
 
 #searchform {
@@ -110,6 +109,43 @@ body {
     border: none;
     background: transparent;
     font-size: 2rem;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+}
+
+h5::after {
+    content: "";
+    display: block;
+    flex: 1;
+    height: 1px;
+    background-color: #369;
+    margin: 0 0 0 20px;
+}
+
+h6 {
+    display: flex;
+    align-items: center;
+}
+
+h6::before {
+    content: "";
+    display: block;
+    flex: 1;
+    height: 1px;
+    background-color: #369;
+    margin: 0 20px 0 0;
+}
+
+h6::after {
+    content: "";
+    display: block;
+    flex: 1;
+    height: 1px;
+    background-color: #369;
+    margin: 0 0 0 20px;
 }
 
 
