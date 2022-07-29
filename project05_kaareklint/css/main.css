@@ -57,6 +57,7 @@ header .top_banner a {
 }
 
 .gnb input[type="text"]::placeholder {
+    font-size: 13px;
     letter-spacing: 5px;
 }
 
