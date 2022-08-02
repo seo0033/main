@@ -58,6 +58,8 @@ $(function () {
     $(window).on('resize', function () {
         $('.gnb .gnb_bottom.on').removeClass('on');
         $('.gnb .gnb_bottom>ul').removeAttr('style')
-    })
+    });
+
+    AOS.init();
 
 })//the end
