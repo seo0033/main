@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basic 01 - 상세페이지 02</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
     <style>
+        * {
+            outline: 1px solid #ddd;
+        }
+
         .container {
             display: flex;
             width: 1170px;
@@ -16,6 +20,24 @@
 
         .t_b {
             color: #0d6efd;
+        }
+
+        .dotList li {
+            position: relative;
+            padding: 0 0 0 20px;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .dotList li::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background: #0d6efd;
         }
 
         .business {
@@ -51,10 +73,14 @@
         }
 
         .business figure {
-            /* flex: 1; */
-            width: 25%;
+            flex: 1;
+            /* width: 25%; */
             position: relative;
             overflow: hidden;
+        }
+
+        .business figure~figure {
+            border-left: 1px solid transparent;
         }
 
         .business .cover {
@@ -98,6 +124,52 @@
             margin-top: auto;
         }
 
+        .business .inner {
+            width: 1200px;
+            margin: 0 auto;
+            /* overflow: hidden; */
+        }
+
+        .business .inner::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .business .inner>div {
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        .business .container {
+            margin: 0 auto 100px auto;
+        }
+
+        .business .tit strong {
+            position: relative;
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            padding: 0 0 0 20px;
+        }
+
+        .business .tit p {
+            font-size: 15px;
+            font-weight: 300;
+            padding: 0 0 0 20px;
+        }
+
+        .business .tit strong::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 80px;
+            background: #0d6efd;
+        }
 
         /* .business figure:hover .cover {
             left: -120px;
@@ -115,7 +187,7 @@
 
 <body>
     <section class="business">
-        <h2><span class="t_b">our</span>business</h2>
+        <h2><span class="t_b">our</span> business</h2>
         <p>새로운 미래를 열어가는 우tothe영tothe우</p>
         <div class="container">
             <figure>
@@ -163,18 +235,21 @@
                 </div>
             </figure>
         </div>
-        <div class="container">
+        <div class="inner">
             <div class="tit">
-                <h3>심플하지만 다 갖춘 우tothe영tothe우</h3>
+                <strong>심플하지만 다 갖춘 우tothe영tothe우</strong>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia sunt nesciunt reiciendis
                     consequatur deleniti!</p>
             </div>
-            <ul class="dotList">
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
+            <div class="list">
+                <ul class="dotList">
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis, autem?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
