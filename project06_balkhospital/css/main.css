@@ -173,21 +173,19 @@ nav .gnb>ul:hover:after {
 
 .box_menu .search {
     display: flex;
+    justify-content: space-between;
     border: 1px solid #fff;
-    border-radius: 15px;
-    padding: 5px 0;
+    background: #fff;
+    padding: 3px 0;
     margin: 0 30px;
-    text-align: end;
 }
 
 .box_menu .search input {
-    width: 100%;
     margin: 0 15px;
-    background-color: transparent;
+    background-color: #fff;
     border: none;
     outline: none;
     font-size: 15px;
-    text-align: center;
 }
 
 .search input:focus::placeholder {
@@ -196,8 +194,10 @@ nav .gnb>ul:hover:after {
 
 .box_menu .search a {
     display: block;
-    margin: auto 10px auto 0;
-    font-size: 21px;
+    background: #01b9b7;
+    padding: 8px 10px;
+    margin: 0 3px 0 0;
+    font-size: 15px;
 }
 
 .box_menu .bm01 {
@@ -219,7 +219,12 @@ nav .gnb>ul:hover:after {
 
 .special_center .container {
     display: flex;
-    gap: 30px;
+    gap: 50px;
+}
+
+.special_center .left {
+    flex: 1;
+    margin: 10px 0 0 0;
 }
 
 .special_center .left h2 {
@@ -236,4 +241,65 @@ nav .gnb>ul:hover:after {
     font-size: 17px;
 }
 
-.special_center .right
+.special_center .right {
+    flex: 3;
+}
+
+.special_center .right .tap_slider>div {
+    position: relative;
+    background: #2162ad;
+}
+
+.special_center .right .tap_slider .des {
+    padding: 30px 30px 30px 50px;
+    color: #fff;
+}
+
+.special_center .tap_content .des h3 {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.special_center .tap_content .des h3::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background: #f9f9f9;
+    margin: 0 10px 0 20px;
+}
+
+.special_center .tap_content .des span {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.special_center .tap_content .des h4 {
+    margin: 30px 0 15px 0;
+    font-size: 19px;
+}
+
+.special_center .tap_content .des p {
+    margin: 0 0 15px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.special_center .tap_content .des a {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    margin: 20px 15px 0 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.special_center .tap_content figure {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+}
