@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic 01 - 상세페이지 01</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        * {
+            color: #333;
+        }
+
+        .t_b {
+            color: #0d6efd;
+        }
+
+        .container {
+            display: flex;
+            width: 1170px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .inner {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .about {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+            font-size: 15px;
+        }
+
+        .about img {
+            width: 100%;
+        }
+
+        .about h2 {
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .about h2::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: #0d6efd;
+            margin: 15px auto;
+        }
+
+        .about>p {
+            margin: 0 0 50px 0;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .about .container {
+            margin: 0 auto 100px auto;
+            justify-content: space-between;
+        }
+
+        .about .tit {
+            margin: 0 0 50px 0;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 1.45;
+        }
+
+        .about .container p {
+            margin: 0 0 30px 0;
+            line-height: 1.45;
+        }
+
+        .about figure {
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .about h3 {
+            position: relative;
+            font-size: 23px;
+            font-weight: 500;
+            padding: 0 0 0 10px;
+            margin: 0 0 30px 0;
+        }
+
+        .about h3::before {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            content: "";
+            display: block;
+            width: 3px;
+            height: 20px;
+            background: #0d6efd;
+        }
+
+        .table {
+            width: 100%;
+            border-top: 3px solid #0d6efd;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 15px;
+            border-left: 1px solid #ddd;
+        }
+
+        table th {
+            padding: 15px 0;
+            text-align: center;
+            background: #f7f7f7;
+            font-weight: 400;
+        }
+
+        table tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .responsive-table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="about">
+        <h2><span class="t_b">CEO's</span> GREETINGS</h2>
+        <p>새로운 미래를 열어가는 우tothe영tothe우</p>
+        <div class="container">
+            <div class="des">
+                <p class="tit">
+                    웹서비스의 <span class="t_b">새로운 미래를</span><br />
+                    <span class="t_b">우tothe영tothe우</span>가 만들어 가겠습니다.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br />
+                    Quae hic saepe ullam dolores dolor ea et suscipit eos accusantium repudiandae.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,<br /> perspiciatis voluptatum
+                    explicabo<br />
+                    dignissimos ipsum blanditiis ex molestiae totam aspernatur iste, vitae repellat soluta dolor.<br />
+                    Doloribus!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                    Corrupti, nam?
+                </p>
+                <p>우tothe영tothe우 임직원 일동</p>
+            </div>
+            <figure>
+                <img src="./img/s01.jpg" alt="">
+            </figure>
+        </div>
+        <div class="inner">
+            <h3>주요현황</h3>
+            <div class="responsive-table">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>설립일</th>
+                            <td>1995년 11월 30일</td>
+                        </tr>
+                        <tr>
+                            <th>본사주소</th>
+                            <td>서울시 종로구 광화문</td>
+                        </tr>
+                        <tr>
+                            <th>임직원수</th>
+                            <td>205명</td>
+                        </tr>
+                        <tr>
+                            <th>법인 및 지사</th>
+                            <td>84개</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
