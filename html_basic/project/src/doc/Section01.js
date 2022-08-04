@@ -1,4 +1,4 @@
-import '../css/section01.css'
+import '../css/main.css'
 
 const Section01 = () => {
     return (
@@ -29,7 +29,7 @@ const Section01 = () => {
                     <p>우tothe영tothe우 임직원 일동</p>
                 </div>
                 <figure>
-                    <img src="./img/s01.jpg" alt="" />
+                    <img src="./img/project03.jpg" alt="" />
                 </figure>
             </div>
             <div className="inner">
