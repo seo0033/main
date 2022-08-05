@@ -41,6 +41,13 @@
     text-align: center;
 }
 
+.basicSection .tit {
+    margin: 0 0 50px 0;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
 .container {
     display: flex;
     width: 1170px;

@@ -1,3 +1,4 @@
+/* Nav --------------------------------------------*/
 .Nav {
     margin: 100px 0;
     line-height: 50px;
@@ -18,12 +19,10 @@
     border-left: 1px solid var(--gc);
 }
 
+/* Section01 ----------------------------------------*/
+
 * {
     color: #333;
-}
-
-.t_b {
-    color: #0d6efd;
 }
 
 .container {
@@ -72,13 +71,6 @@
 .about .container {
     margin: 0 auto 100px auto;
     justify-content: space-between;
-}
-
-.about .tit {
-    margin: 0 0 50px 0;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1.45;
 }
 
 .about .container p {
@@ -137,10 +129,7 @@ table tr {
     width: 100%;
 }
 
-/* * {
-    outline: 1px solid var(--gc);
-} */
-
+/* Section02-------------------------------------- */
 .Business .container img {
     width: 100%;
     height: 350px;
@@ -239,6 +228,8 @@ table tr {
     background: var(--mc);
 }
 
+/* Section03---------------------------------------- */
+
 .Business02 .container {
     gap: 50px;
     margin-bottom: 50px;
@@ -320,4 +311,41 @@ table tr {
     border-radius: 13px;
     margin: 0 15px 0 0;
     font-style: italic;
+}
+
+/* Section04 ----------------------------------------*/
+
+.About02 .inner>div {
+    padding: 0 15px;
+}
+
+.About02 .top {
+    float: left;
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+
+.About02 .left {
+    float: left;
+    width: 35%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.About02 .left::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 150px;
+    background: var(--mc);
+}
+
+.About02 .right {
+    float: left;
+    width: 50%;
+}
+
+.About02 .right p {
+    line-height: 1.45;
+    margin: 0 0 30px 0;
 }
