@@ -461,6 +461,7 @@ nav .gnb>ul:hover:after {
     padding: 200px 0;
     overflow: hidden;
     text-shadow: 1px 1px 1px #333;
+    filter: brightness(1.2);
 }
 
 .health_c .bg .inner {

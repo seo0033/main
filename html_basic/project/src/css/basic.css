@@ -18,7 +18,7 @@
 
 .basicSection h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -26,26 +26,19 @@
     content: "";
     display: block;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background: var(--mc);
     margin: 15px auto;
 }
 
 .basicSection h2 span {
-    color: var(--mc);
+    color: var(--mc)
 }
 
 .basicSection>p {
     margin: 0 0 50px 0;
     font-weight: 300;
     text-align: center;
-}
-
-.basicSection .tit {
-    margin: 0 0 50px 0;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1.45;
 }
 
 .container {
@@ -55,12 +48,48 @@
     gap: 30px;
 }
 
-.container>* {
-    flex: 1;
+.basicSection .tit {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+    line-height: 1.45;
 }
 
+.basicSection .container p {
+    line-height: 1.45;
+    margin: 0 0 30px 0;
+}
+
+.basicSection .inner p {
+    line-height: 1.45;
+    margin: 0 0 30px 0;
+}
+
+.basicSection h3 {
+    position: relative;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0 0 0 10px;
+    margin: 0 0 30px 0;
+}
+
+/* .basicSection h3::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 3px;
+    height: 20px;
+    background: var(--mc);
+} */
+
+.basicSection .pd15 {
+    padding: 0 15px;
+}
+
+
 .inner {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -70,11 +99,12 @@
     clear: both;
 }
 
+
 .dotList li {
     position: relative;
     padding: 0 0 0 20px;
-    margin: 0 0 5px 0;
     line-height: 1.2;
+    margin: 0 0 5px 0;
 }
 
 .dotList li::before {
@@ -82,9 +112,8 @@
     position: absolute;
     top: 10px;
     left: 0;
-    display: inline-block;
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
     background: var(--sc);
 }
 
@@ -96,13 +125,13 @@
 }
 
 .table td {
-    padding: 15px;
+    padding: 15px 15px;
     border-left: 1px solid var(--gc);
 }
 
 .table th {
-    padding: 15px 0;
-    text-align: center;
+    padding: 15px 15px;
+    text-align: left;
     background: var(--lc);
     font-weight: 400;
 }
@@ -115,4 +144,8 @@
     text-align: right;
     caption-side: bottom;
     margin: 10px 0 0 0;
+}
+
+.responsive-table {
+    width: 100%;
 }

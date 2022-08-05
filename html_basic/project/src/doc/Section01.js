@@ -1,8 +1,6 @@
-import '../css/main.css'
-
 const Section01 = () => {
     return (
-        <section className="about">
+        <section className="about basicSection">
             <h2><span className="mainColor">CEO's</span> GREETINGS</h2>
             <p>새로운 미래를 열어가는 우tothe영tothe우</p>
             <div className="container">

@@ -1,6 +1,5 @@
-/* Nav --------------------------------------------*/
+/* Nav-------------------------------------------------- */
 .Nav {
-    margin: 100px 0;
     line-height: 50px;
     border-top: 1px solid var(--gc);
     border-bottom: 1px solid var(--gc);
@@ -15,57 +14,20 @@
     padding: 0 20px;
 }
 
+.Nav ul>li a.active {
+    color: var(--mc)
+}
+
 .Nav ul>li~li {
     border-left: 1px solid var(--gc);
 }
 
-/* Section01 ----------------------------------------*/
-
-* {
-    color: #333;
-}
-
-.container {
-    display: flex;
-    width: 1170px;
-    margin: 0 auto;
-    gap: 30px;
-}
-
-.inner {
-    width: 1170px;
-    margin: 0 auto;
-}
-
-.about {
-    padding: 100px 0;
-    letter-spacing: -0.025em;
-    font-size: 15px;
-}
+/* Section01--------------------------------------------- */
 
 .about img {
     width: 100%;
-}
-
-.about h2 {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.about h2::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: #0d6efd;
-    margin: 15px auto;
-}
-
-.about>p {
-    margin: 0 0 50px 0;
-    font-weight: 300;
-    text-align: center;
+    height: 400px;
+    object-fit: fill;
 }
 
 .about .container {
@@ -73,63 +35,42 @@
     justify-content: space-between;
 }
 
-.about .container p {
-    margin: 0 0 30px 0;
-    line-height: 1.45;
-}
-
 .about figure {
+    width: 30%;
     height: 400px;
     overflow: hidden;
 }
 
-.about h3 {
-    position: relative;
-    font-size: 23px;
-    font-weight: 500;
-    padding: 0 0 0 10px;
-    margin: 0 0 30px 0;
-}
-
-.about h3::before {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    content: "";
-    display: block;
-    width: 3px;
-    height: 20px;
-    background: #0d6efd;
-}
-
-.table {
+/* Section04---------------------------------------------- */
+.About02 .top {
+    float: left;
     width: 100%;
-    border-top: 3px solid #0d6efd;
-    border-spacing: 0;
-    border-collapse: collapse;
+    margin: 0 0 50px 0;
 }
 
-table td {
-    padding: 15px;
-    border-left: 1px solid #ddd;
-}
-
-table th {
-    padding: 15px 0;
+.About02 .left {
+    float: left;
+    width: 50%;
     text-align: center;
-    background: #f7f7f7;
-    font-weight: 400;
+    font-size: 25px;
 }
 
-table tr {
-    border-bottom: 1px solid #ddd;
+
+.About02 .left::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 150px;
+    background: var(--mc);
 }
 
-.responsive-table {
-    width: 100%;
+.About02 .right {
+    float: left;
+    width: 50%;
 }
 
-/* Section02-------------------------------------- */
+/* Section02---------------------------------------------- */
+
 .Business .container img {
     width: 100%;
     height: 350px;
@@ -138,7 +79,6 @@ table tr {
 
 .Business figure {
     flex: 1;
-    /* width: 25%; */
     position: relative;
     overflow: hidden;
 }
@@ -147,7 +87,7 @@ table tr {
     border-left: 1px solid transparent;
 }
 
-.Business .cover {
+.Business figure .cover {
     position: absolute;
     top: 0;
     left: -100%;
@@ -155,8 +95,9 @@ table tr {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    /* align-items: flex-start; */
+    background: rgba(0, 0, 0, 0.75);
+    color: var(--lc);
     transition: left 0.5s;
     padding: 40px 10px;
 }
@@ -166,7 +107,6 @@ table tr {
 }
 
 .Business figure h3 {
-    /* width: 100%; */
     font-size: 21px;
     font-weight: 500;
     padding: 0 0 20px 0;
@@ -181,16 +121,11 @@ table tr {
 }
 
 .Business figure .cover a {
+    /* display: inline-block; */
     align-self: flex-start;
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px 15px;
     margin-top: auto;
-}
-
-.Business .inner::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 .Business .inner>div {
@@ -228,7 +163,7 @@ table tr {
     background: var(--mc);
 }
 
-/* Section03---------------------------------------- */
+/* Section03---------------------------------------------- */
 
 .Business02 .container {
     gap: 50px;
@@ -263,8 +198,8 @@ table tr {
 }
 
 .Business02 .right .bottom {
-    padding: 20px 20px 40px 20px;
     margin: auto 0 0 0;
+    padding: 20px 20px 40px 20px;
     background: var(--lc);
     border-top: 1px solid var(--gc);
     line-height: 1.2;
@@ -275,7 +210,7 @@ table tr {
 }
 
 .Business02 .inner h3 {
-    font-size: 27px;
+    font-size: 21px;
     font-weight: 500;
     margin: 0 0 30px 0;
 }
@@ -311,41 +246,4 @@ table tr {
     border-radius: 13px;
     margin: 0 15px 0 0;
     font-style: italic;
-}
-
-/* Section04 ----------------------------------------*/
-
-.About02 .inner>div {
-    padding: 0 15px;
-}
-
-.About02 .top {
-    float: left;
-    width: 100%;
-    margin: 0 0 50px 0;
-}
-
-.About02 .left {
-    float: left;
-    width: 35%;
-    text-align: center;
-    font-size: 25px;
-}
-
-.About02 .left::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 150px;
-    background: var(--mc);
-}
-
-.About02 .right {
-    float: left;
-    width: 50%;
-}
-
-.About02 .right p {
-    line-height: 1.45;
-    margin: 0 0 30px 0;
 }
