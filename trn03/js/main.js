@@ -41,5 +41,12 @@ $(function () {
     $('.Footer .pop li').on('click', toggleClass);
     $('.popup i').on('click', toggleClass);
 
+    function mopen() {
+        $(this).toggleClass('on');
+        $('.Gnb').toggleClass('on');
+    }
+`
+    $('.mopen').on('click', mopen);
+
 
 })//the end
