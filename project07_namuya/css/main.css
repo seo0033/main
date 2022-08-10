@@ -3,7 +3,7 @@
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(180, 190, 204)-;
+    outline: 1px solid rgb(180, 190, 204);
 }
 
 html {
@@ -19,8 +19,13 @@ html {
 
 /* header */
 header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     line-height: 13rem;
     text-align: center;
+    z-index: 990;
 }
 
 header .container {
@@ -30,33 +35,111 @@ header .container {
 
 header h1 img {
     width: 20rem;
+    margin: 0 0 0 7.5rem;
 }
 
 header .gnb>ul {
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 header .gnb>ul>li {
     position: relative;
-    /* flex: 1; */
+    line-height: 5rem;
     font-size: 1.7rem;
     font-weight: 500;
+    margin: 6rem 0 0 0;
+}
+
+header .gnb>ul>li a {
+    display: block;
+    padding: 0 1.5rem;
 }
 
 header .gnb>ul>li>ul {
     position: absolute;
-    top: 130;
-    left: 0;
-    line-height: 4rem;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    line-height: 5rem;
+    font-size: 1.5rem;
+}
+
+header .gnb>ul>li:hover ul {
+    display: block;
+}
+
+header .gnb>ul>li>ul::before {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    content: "";
+    width: 3px;
+    height: 15px;
+    background: #333;
+}
+
+header .gnb>ul>li>ul>li~li {
+    border-top: 1px solid #ddd;
 }
 
 /* main_visual */
 .main_visual {
+    background: url(../img/main_visual_bg.png);
+}
+
+.main_visual .bg_box {
+    width: 35rem;
+    height: 90rem;
+    background: #333;
+}
+
+.main_visual .container {
+    position: relative;
+}
+
+.main_visual .main_slider {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background: url(/img/main_visual_bg.png);
-    z-index: 990;
+    top: 55%;
+    left: -5rem;
+    transform: translateY(-50%);
+    width: 125rem;
+}
+
+.main_visual .main_slider>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_visual .main_slider .left img {
+    width: 45rem;
+}
+
+.main_visual .main_slider .right {
+    text-align: center;
+    margin: 10rem auto;
+}
+
+.main_visual .main_slider .right h2 {
+    margin: 0 0 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.main_visual .main_slider .right p {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+}
+
+.main_visual .main_slider .right a {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
 }
