@@ -2,56 +2,51 @@
 
 <main>
     <section class="MainVisual">
-        <div class="mainSlider">
+        <div class="MainSlider">
             <figure class="itm01"></figure>
             <figure class="itm02"></figure>
+            <figure class="itm03"></figure>
         </div>
         <div class="slogan">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, a?</p>
+            <h2><?= $c_slogan ?></h2>
+            <p><?= $e_slogan ?></p>
         </div>
     </section>
     <div class="Customer">
         <ul class="container">
             <li>
-                <h3>news &amp; notice<small><i class="xi-angle-right"></i></small></h3>
-                <ul>
-                    <li>
-                        <a href="">Lorem ipsum dolor sit amet.<span>2022.12.25</span></a>
-                    </li>
-                    <li>
-                        <a href="">Lorem ipsum dolor sit amet.<span>2022.12.25</span></a>
-                    </li>
-                    <li>
-                        <a href="">Lorem ipsum dolor sit amet.<span>2022.12.25</span></a>
-                    </li>
-                    <li>
-                        <a href="">Lorem ipsum dolor sit amet.<span>2022.12.25</span></a>
-                    </li>
-                    <li>
-                        <a href="">Lorem ipsum dolor sit amet.<span>2022.12.25</span></a>
-                    </li>
-                </ul>
+                <div class="list">
+                    <h3>news &amp; notice<small><a href=""><i class="xi-arrow-right"></i></a></small></h3>
+                    <ul>
+                        <li><a href="">어쩌구 저쩌구 배고프다구<span>2022.08.11</span></a></li>
+                        <li><a href="">어쩌구 저쩌구 배고프다구<span>2022.08.11</span></a></li>
+                        <li><a href="">어쩌구 저쩌구 배고프다구<span>2022.08.11</span></a></li>
+                        <li><a href="">어쩌구 저쩌구 배고프다구<span>2022.08.11</span></a></li>
+                    </ul>
+                </div>
+
             </li>
             <li>
-                <div class="CusSlider">
-                    <figure>
-                        <img src="./img/product01.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/product02.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/product03.jpg" alt="">
-                    </figure>
+                <div class="slider">
+                    <div class="ProductSlider">
+                        <figure>
+                            <img src="./img/product01.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/product02.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/product03.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="ProductArrows">
+                        <i class="xi-arrow-left"></i>
+                        <i class="xi-arrow-right"></i>
+                    </div>
                 </div>
             </li>
             <li>
-                <h3>contact us</h3>
-                <div class="contact">
-                    <a href="">051-333-3333</a>
-                    <a href="">apple@naver.com</a>
-                </div>
+                <? include 'customer.php'; ?>
             </li>
         </ul>
     </div>

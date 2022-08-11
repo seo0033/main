@@ -1,10 +1,23 @@
 <footer class="Footer">
     <div class="container">
         <div class="logo">
-            <img src="./img/logo01.png" alt="">
+            <img src="./img/logo02.png" alt="">
         </div>
         <address>
-            주소 : 충청북도 충주시 충주산단1로 128 현대엘리베이터
+            <ul>
+                <li>주소 : <?= $c_address ?> </li>
+                <li>대표 : <?= $c_ceo ?> </li>
+                <li>사업자등록번호 : <?= $c_num ?></li>
+                <li>전화 :
+                    <a href="tel:<?= $tel ?>"><?= $tel ?></a>
+                </li>
+                <li>이메일 :
+                    <a href="mailto:<?= $email ?>"><?= $email ?></a>
+                </li>
+            </ul>
+            <div class="copyright">
+                &copy; <?= $company ?> all right reserved.
+            </div>
         </address>
     </div>
 </footer>
