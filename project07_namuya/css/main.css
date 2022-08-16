@@ -30,6 +30,10 @@ header .container {
     justify-content: space-between;
 }
 
+header h1 {
+    font-size: 0;
+}
+
 header h1 img {
     width: 20rem;
     margin: 0 0 0 7.5rem;
@@ -299,31 +303,59 @@ header .gnb>ul>li>ul>li~li {
 /* menu */
 .menu {
     padding: 12rem 0 10rem 0;
-    background: #f9f9f9;
 }
 
-.menu .container {
+.menu h2 {
+    margin: 0 0 3rem 0;
+    text-align: center;
+    font-size: 3.1rem;
+    font-weight: 700;
+
+}
+
+.menu .tab_menu {
     display: flex;
-}
-
-.menu .tab_menu li {
-    border-radius: 10px 0 0 10px;
-    padding: 3rem 1rem;
-    writing-mode: tb-rl;
+    justify-content: center;
+    margin: 0 0 5rem 0;
     font-size: 1.7rem;
-    font-weight: 600;
 }
 
-.menu .tab_menu li:nth-child(1) {
-    background: #fff;
+.menu .tab_menu>li>a {
+    display: block;
+    padding: 1rem 5rem;
 }
 
-.menu .tab_menu li:nth-child(2) {
-    background: #ddd;
+.menu .tab_content li {
+    display: none;
 }
 
-.menu .tab_menu li:nth-child(3) {
-    background: #777;
+.menu .tab_content li.on {
+    display: block;
+}
+
+.menu .tab_content li .inner {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+}
+
+.menu .tab_content .m_box {
+    flex: 1;
+    text-align: center;
+}
+
+.menu .tab_content .m_box figure {
+    width: 25rem;
+    margin: 0 auto 2rem auto;
+}
+
+.menu .tab_content .m_box:nth-child(2) figure {
+    width: 35rem;
+}
+
+.menu .tab_content .m_box h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.7rem;
 }
 
 /* season */
@@ -334,7 +366,7 @@ header .gnb>ul>li>ul>li~li {
 
 .season .box {
     position: relative;
-    padding: 5rem 0;
+    padding: 12rem 0;
     background: #555;
     color: #fff;
 }
@@ -365,36 +397,33 @@ header .gnb>ul>li>ul>li~li {
 }
 
 .season .sm01 figure {
-    left: 10rem;
+    left: 15%;
 }
 
 .season .sm02 figure {
-    right: 10rem;
+    right: 15%;
 }
 
 .season .box h2 {
     position: absolute;
-    top: -3.1rem;
-    right: 3rem;
-    font-size: 3.5rem;
+    top: -3.3rem;
+    right: 10%;
+    font-size: 3.9rem;
     font-weight: 900;
     color: #555;
 }
 
-.season .sm01 .des {
-    display: inline-block;
-    margin: 0 0 0 50rem;
-}
-
-.season .sm02 .des {
-    display: inline-block;
-    margin: 0 0 0 30rem;
+.season .box .des {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .season .box .des span {
     display: block;
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 .season .box .des span::after {
@@ -415,7 +444,7 @@ header .gnb>ul>li>ul>li~li {
 .season .box .des p {
     margin: 0 0 2rem 0;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 .season .box .des a {
@@ -424,7 +453,7 @@ header .gnb>ul>li>ul>li~li {
     border: 1px solid #fff;
     padding: 1rem 3rem;
     font-size: 1.3rem;
-    font-weight: 200;
+    font-weight: 100;
     overflow: hidden;
 }
 
@@ -458,15 +487,16 @@ header .gnb>ul>li>ul>li~li {
 
 .notice .left {
     width: 50%;
-    margin: 0 3rem 0 0;
-    padding: 3rem;
+    margin: 0 4rem 0 0;
     background: #555;
     color: #fff;
     text-align: center;
 }
 
+/* 여기패딩!!!!!!!!!!!!!!!!! */
 .notice .left .inner {
-    padding: 5rem 2rem;
+    padding: 8.5rem 0;
+    margin: 3rem;
     border: 3px solid #fff;
 }
 
@@ -510,6 +540,8 @@ header .gnb>ul>li>ul>li~li {
 .notice .left label {
     display: block;
     margin: 0 0 3rem 0;
+    font-size: 1.2rem;
+    font-weight: 100;
 }
 
 .notice .left label input {
@@ -518,7 +550,7 @@ header .gnb>ul>li>ul>li~li {
 
 .notice .left a {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     border: 1px solid #fff;
     font-size: 1.5rem;
 }
@@ -542,7 +574,7 @@ header .gnb>ul>li>ul>li~li {
 .notice .right {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .notice .right figure {
@@ -556,7 +588,7 @@ header .gnb>ul>li>ul>li~li {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     font-size: 2.1rem;
 }
@@ -579,7 +611,8 @@ header .gnb>ul>li>ul>li~li {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    margin: auto 0;
+    /* opacity: 0; */
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
@@ -588,4 +621,117 @@ header .gnb>ul>li>ul>li~li {
 
 .notice .right figure:hover .txt {
     opacity: 1;
+}
+
+.notice .right .txt h3 {
+    margin: 0 0 1rem 0;
+    font-size: 2.1rem;
+}
+
+.notice .right .txt p {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.notice .right .txt a {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.notice .right .txt h3::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 2rem;
+    margin: 1rem auto;
+    background: #fff;
+}
+
+/* banner */
+
+.banner {
+    padding: 1.5rem 0;
+}
+
+.banner ul {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    animation: banner linear infinite 20s;
+}
+
+.banner ul li img {
+    margin: 0 1.2rem 0 0;
+}
+
+@keyframes banner {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* footer */
+footer {
+    padding: 5rem 0;
+    background: #333;
+    color: #ddd;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2 img {
+    width: 24rem;
+}
+
+footer .center {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: auto 0;
+}
+
+footer .center ul {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+footer .center ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1rem;
+    background: #999;
+    margin: 0 1rem;
+}
+
+
+footer .right p {
+    margin: 0 0 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+footer .right strong {
+    display: block;
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+footer .right .sns {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2.1rem;
 }

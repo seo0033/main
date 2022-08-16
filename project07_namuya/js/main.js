@@ -11,7 +11,7 @@ $(function () {
         $('.main_slider figure.slick-current ').addClass('on').siblings().removeClass('on');
     });//main_visual
 
-    $('.menu .menu_slider').slick()
+    // $('.menu .menu_slider').slick()
 
     $('.tab_menu>li>a').on('click', function (e) {
         e.preventDefault();

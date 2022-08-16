@@ -1,0 +1,18 @@
+.ddd {
+    position: relative;
+    height: 500px;
+}
+
+figure {
+    height: 200px;
+    background: #ddd;
+}
+
+figure.on {
+    height: 100px;
+    transition: 0.5s;
+}
+
+.itm01 {
+    background: #ff9;
+}
