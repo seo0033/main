@@ -1,56 +1,63 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const H1 = document.querySelector('h1');
-    //= $('h1')
 
-    // H1.innerText = `나는 
-    // 놀러갈끄야~~`
-    // innerText : 줄바꿈 자동완성
+    window.addEventListener('scroll', () => {
+        let sct = window.scrollY;
+        console.log(sct);
+        sct > 0
+            ? document.querySelector('#Header').classList.add('on')
+            : document.querySelector('#Header').classList.remove('on');
 
-    const TOGGLE = function () {
-        this.classList.toggle('on')
-    }
-    H1.addEventListener('click', TOGGLE)
-    // 변수 : 대문자 (통상적)
-    // 화살표함수 : this 호환 X
+        sct > 500
+            ? document.querySelector('.to_top').classList.add('on')
+            : document.querySelector('.to_top').classList.remove('on');
+    });
 
-    // H1.addEventListener('click', e => {
-    //     e.currentTarget.style.color = `blue`
-    // })
-
-    // H1.addEventListener('click', () => {
-    //     H1.style.color = `blue`
-    // })
-
-    const ddd = new Swiper('.ddd', {
+    const MainSlider = new Swiper('.MainSlider', {
         loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
         },
-
-        on: {
-            //     init: function () {
-            //         console.log('swiper initialized');
-            //     },
-            slideChangeTransitionEnd: function () {
-                console.log(this.slides.length, this.realIndex);
-                // console.log(document.querySelectorAll('.swiper-slide'),document.querySelector('.swiper-slide-active'));
-                document.querySelectorAll('.swiper-slide').forEach(
-                    e => e.classList.remove('on')
-                );
-                document.querySelector('.swiper-slide-active').classclassList.add('on');
-                document.querySelector('h1 strong').innerText = `${this.realIndex + 1} / ${this.slides.length - 2}`;
-            }
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
+    })
 
-
-
+    const SCE_ELE = document.querySelectorAll('.active-event');
+    window.addEventListener('scroll', () => {
+        let sct = window.scrollY;
+        SCE_ELE.forEach(el => {
+            sct > el.offsetTop - 300
+                ? el.classList.add('on')
+                : el.classList.remove('on')
+        })
     });
-    //const ddd = $('.ddd').slick();
+
+
+    document.querySelector('.to_top').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    });
+
+
+    document.querySelector('.mopen').addEventListener('click', (e) => {
+        const TG = e.currentTarget;
+        TG.classList.toggle('on');
+        document.querySelector('#Header').classList.toggle('ox')
+    });
+
+    document.querySelector('#Header').addEventListener('wheel', (e) => {
+        e.preventDefault() //이벤트 자체를 막음...
+    })
+
+
+
+
+
+
+
+
+
+
+
 })
-
-

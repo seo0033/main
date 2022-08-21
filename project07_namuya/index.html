@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/main.css?ver=1.0">
+    <link rel="stylesheet" href="./css/mobile.css?ver=1.0">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/aos.js"></script>
@@ -69,6 +70,9 @@
                 </li>
             </ul>
         </nav>
+        <div class="mbtn">
+            <button></button>
+        </div>
     </div>
 </header>
 <main>
@@ -139,20 +143,20 @@
     <!-- side_menu -->
     <section class="side_menu">
         <div>
-            <span>가맹문의</span>
             <a href="" class="icon"><i class="xi-users-o"></i></a>
+            <span>가맹문의</span>
         </div>
         <div>
-            <span>고객센터</span>
             <a href="" class="icon"><i class="xi-call"></i></a>
+            <span>고객센터</span>
         </div>
         <div>
-            <span>매장찾기</span>
             <a href="" class="icon"><i class="xi-shop"></i></a>
+            <span>매장찾기</span>
         </div>
         <div>
-            <span>주문하기</span>
             <a href="" class="icon"><i class="xi-cart-o"></i></a>
+            <span>주문하기</span>
         </div>
     </section>
     <!-- menu -->
@@ -167,41 +171,36 @@
             <ul class="tab_content">
                 <li class="on">
                     <div class="inner">
-                        <div class="m_box">
+                        <div class="m_box" data-num="2">
                             <figure>
                                 <img src="./img/menu01_01.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
-                                <h3>상하이 진한 짬뽕밥</h3>
+                                <h3>상하이 진한 짬뽕</h3>
                                 <p>다양한 해산물과 돼지고기와<br />
                                     야채가 푸짐하세 더해진 짬뽕밥
                                 </p>
                                 <a href="">주문하기</a>
                             </div>
                         </div>
-                        <div class="m_box">
+                        <div class="m_box" data-num="1">
                             <figure>
                                 <img src="./img/menu01_02.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
-                                <h3>상하이 진한 짬뽕밥</h3>
-                                <p>다양한 해산물과 돼지고기와<br />
-                                    야채가 푸짐하세 더해진 짬뽕밥
+                                <h3>나가사키짬뽕</h3>
+                                <p>진한 사골육수에 야채와<br /> 해산물이 듬뿍 들어간 흰짬뽕
                                 </p>
                                 <a href="">주문하기</a>
                             </div>
                         </div>
-                        <div class="m_box">
+                        <div class="m_box" data-num="3">
                             <figure>
                                 <img src="./img/menu01_03.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
-                                <h3>상하이 진한 짬뽕밥</h3>
-                                <p>다양한 해산물과 돼지고기와<br />
-                                    야채가 푸짐하세 더해진 짬뽕밥
+                                <h3>베트남소고기쌀국수</h3>
+                                <p>숙주와 양파, 소고기 토핑이<br /> 어우러진 베트남식 쌀국수
                                 </p>
                                 <a href="">주문하기</a>
                             </div>
@@ -210,41 +209,38 @@
                 </li>
                 <li>
                     <div class="inner">
-                        <div class="m_box">
+                        <div class="m_box" data-num="2">
                             <figure>
                                 <img src="./img/menu02_01.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
-                                <h3>상하이 진한 짬뽕밥</h3>
-                                <p>다양한 해산물과 돼지고기와<br />
-                                    야채가 푸짐하세 더해진 짬뽕밥
+                                <h3>김치찌개돈까스</h3>
+                                <p>
+                                    김치찌개와 등심 돈까스를<br />
+                                    동시에 즐길 수 있어 푸짐함도 두배
                                 </p>
                                 <a href="">주문하기</a>
                             </div>
                         </div>
-                        <div class="m_box">
+                        <div class="m_box" data-num="1">
                             <figure>
                                 <img src="./img/menu02_02.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
-                                <h3>상하이 진한 짬뽕밥</h3>
-                                <p>다양한 해산물과 돼지고기와<br />
-                                    야채가 푸짐하세 더해진 짬뽕밥
+                                <h3>아쿠아돈까스</h3>
+                                <p>아삭아삭 신선한 야채와 돈까스,<br />상큼한 유자드레싱, 갈릭 소스의 조화
                                 </p>
                                 <a href="">주문하기</a>
                             </div>
                         </div>
-                        <div class="m_box">
+                        <div class="m_box" data-num="3">
                             <figure>
                                 <img src="./img/menu02_03.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
-                                <h3>상하이 진한 짬뽕밥</h3>
-                                <p>다양한 해산물과 돼지고기와<br />
-                                    야채가 푸짐하세 더해진 짬뽕밥
+                                <h3>돈까스카레덮밥</h3>
+                                <p>등심 돈까스와 카레덮밥을<br />
+                                    동시에 즐겨 더욱 푸짐한 돈까스카레덮밥
                                 </p>
                                 <a href="">주문하기</a>
                             </div>
@@ -253,12 +249,11 @@
                 </li>
                 <li>
                     <div class="inner">
-                        <div class="m_box">
+                        <div class="m_box" data-num="2">
                             <figure>
                                 <img src="./img/menu03_01.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
                                 <h3>상하이 진한 짬뽕밥</h3>
                                 <p>다양한 해산물과 돼지고기와<br />
                                     야채가 푸짐하세 더해진 짬뽕밥
@@ -266,12 +261,11 @@
                                 <a href="">주문하기</a>
                             </div>
                         </div>
-                        <div class="m_box">
+                        <div class="m_box" data-num="1">
                             <figure>
                                 <img src="./img/menu03_02.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
                                 <h3>상하이 진한 짬뽕밥</h3>
                                 <p>다양한 해산물과 돼지고기와<br />
                                     야채가 푸짐하세 더해진 짬뽕밥
@@ -279,12 +273,11 @@
                                 <a href="">주문하기</a>
                             </div>
                         </div>
-                        <div class="m_box">
+                        <div class="m_box" data-num="3">
                             <figure>
                                 <img src="./img/menu03_03.png" alt="">
                             </figure>
                             <div class="des">
-                                <div class="tag">신메뉴</div>
                                 <h3>상하이 진한 짬뽕밥</h3>
                                 <p>다양한 해산물과 돼지고기와<br />
                                     야채가 푸짐하세 더해진 짬뽕밥
@@ -299,9 +292,9 @@
         </div>
     </section>
     <!-- sc_bg -->
-    <div class="sc_bg">
+    <section class="sc_bg">
         <img src="./img/section_bg_01.png" alt="">
-    </div>
+    </section>
     <!-- season -->
     <section class="season">
         <div class="box sm01">
@@ -328,10 +321,10 @@
             </div>
         </div>
     </section>
-    <!-- sc_bg -->
-    <div class="sc_bg">
-        <img src="./img/section_bg_02.png" alt="">
-    </div>
+    <!-- sc_bg02-->
+    <section class="sc_bg">
+        <img src="./img/section_bg_01.png" alt="">
+    </section>
     <!-- notice -->
     <section class="notice">
         <div class="container">
@@ -372,22 +365,26 @@
                     <img src="./img/share_psd01.png" alt="">
                     <i class="xi-plus"></i>
                     <div class="txt">
-                        <h3>창업설명회</h3>
-                        <p>국수나무로 창업을 시작해보세요.<br />
-                            하나부터 열까지 창업에 대해 모든걸 들을 수 있습니다.
-                        </p>
-                        <a href="">신청하러가기</a>
+                        <div class="inner">
+                            <h3>창업설명회</h3>
+                            <p>국수나무로 창업을 시작해보세요.<br />
+                                하나부터 열까지 창업에 대해 모든걸 들을 수 있습니다.
+                            </p>
+                            <a href="">신청하러가기</a>
+                        </div>
                     </div>
                 </figure>
                 <figure>
                     <img src="./img/share_psd02.png" alt="">
                     <i class="xi-plus"></i>
                     <div class="txt">
-                        <h3>창업설명회</h3>
-                        <p>국수나무로 창업을 시작해보세요.<br />
-                            하나부터 열까지 창업에 대해 모든걸 들을 수 있습니다.
-                        </p>
-                        <a href="">신청하러가기</a>
+                        <div class="inner">
+                            <h3>NEWS &amp; EVENT</h3>
+                            <p>국수나무의 새로운 소실들<br />
+                                다양한 소식 및 이벤트를 알려드립니다.
+                            </p>
+                            <a href="">이벤트보기</a>
+                        </div>
                     </div>
                 </figure>
             </div>

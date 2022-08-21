@@ -24,4 +24,33 @@ $(function () {
 
     })
 
+    //@media(max-width:768px)
+    $('.mbtn').on('click', function () {
+        $('.mbtn').toggleClass('on');
+        $('.gnb').toggleClass('on');
+        $('.gnb>ul>li>a').next().stop().slideUp();
+    });
+
+    $('.gnb>ul>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+            $('.gnb>ul>li>ul').stop().slideUp();
+            $(this).next().stop().slideToggle();
+        }
+    });
+
+    $('.gnb>ul>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+            $('.gnb>ul>li>a').next().hide();
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('ul').stop().slideUp();
+        }
+    });
+
+    $(window).on('resize', function () {
+        $('.gnb.on').removeClass('on');
+        $('.gnb>ul').removeAttr('style')
+    });
+
 })//the end
