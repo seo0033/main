@@ -566,9 +566,9 @@
 
     .season .box figure {
         position: absolute;
-        top: -20%;
+        top: -10%;
         transform-origin: center;
-        width: 30rem;
+        width: 27rem;
         padding: 1.5rem;
         background: #555;
         border-radius: 50%;
@@ -596,7 +596,7 @@
     .season .box h2 {
         position: absolute;
         top: -2.7rem;
-        right: 15%;
+        right: 10%;
         font-size: 3.1rem;
         font-weight: 900;
         color: #555;
@@ -918,19 +918,21 @@
     }
 
     footer .center {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 200;
         margin: 0 auto 2rem auto;
     }
 
     footer .center ul {
         display: flex;
+        flex-direction: column;
+        gap: 1rem;
         margin: 0 0 10px 0;
     }
 
     footer .center ul>li~li::before {
         content: "";
-        display: inline-block;
+        display: none;
         width: 1px;
         height: 1rem;
         background: #999;

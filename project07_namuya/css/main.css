@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Noto Serif KR', serif;
-    outline: 1px solid rgb(180, 190, 204);
+    outline: 1px solid rgb(180, 190, 204)-;
 }
 
 html {
@@ -512,11 +512,11 @@ header .gnb>ul>li>ul>li~li {
 }
 
 .season .sm01 figure {
-    left: 15%;
+    left: 10%;
 }
 
 .season .sm02 figure {
-    right: 15%;
+    right: 10%;
 }
 
 .season .box h2 {
@@ -617,7 +617,7 @@ header .gnb>ul>li>ul>li~li {
 }
 
 .notice .left h2 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 300;
 }
 
@@ -632,7 +632,7 @@ header .gnb>ul>li>ul>li~li {
 
 .notice .left p {
     margin: 0 0 3rem 0;
-    font-size: 2.7rem;
+    font-size: 3.1rem;
     font-weight: 600;
     letter-spacing: 0.5rem;
 }
@@ -753,7 +753,8 @@ header .gnb>ul>li>ul>li~li {
 }
 
 .notice .right .txt h3 {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
+    font-weight: 600;
 }
 
 .notice .right .txt h3::after {
@@ -767,7 +768,8 @@ header .gnb>ul>li>ul>li~li {
 
 .notice .right .txt p {
     margin: 0 0 2rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 200;
     line-height: 1.2;
 }
 
@@ -778,7 +780,8 @@ header .gnb>ul>li>ul>li~li {
     overflow: hidden;
     border: 1px solid #fff;
     padding: 1rem 3rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 200;
     transition: 0.5s;
 }
 
