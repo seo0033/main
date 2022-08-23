@@ -1,24 +1,24 @@
 $(function () {
     //special_center
-    $('.special_center .tap_menu>li>a').on('click', function (e) {
+    $('.special_center .tab_menu>li>a').on('click', function (e) {
         e.preventDefault();
         var idx = $(this).parent().index();
-        $('.special_center .tap_content>li').removeClass('on');
-        $('.special_center .tap_content>li').eq(idx).addClass('on');
-        $('.special_center .tap_menu>li').removeClass('on');
+        $('.special_center .tab_content>li').removeClass('on');
+        $('.special_center .tab_content>li').eq(idx).addClass('on');
+        $('.special_center .tab_menu>li').removeClass('on');
         $(this).parent().addClass('on')
     });
 
-    $('.special_center .right .tap_slider').slick({
+    $('.special_center .right .tab_slider').slick({
         arrows: false,
     });
 
-    $('.special_center .right .tap_content .left_ar').on('click', function () {
-        $('.special_center .right .tap_slider').slick('slickPrev')
+    $('.special_center .right .tab_content .left_ar').on('click', function () {
+        $('.special_center .right .tab_slider').slick('slickPrev')
     });
 
-    $('.special_center .right .tap_content .right_ar').on('click', function () {
-        $('.special_center .right .tap_slider').slick('slickNext')
+    $('.special_center .right .tab_content .right_ar').on('click', function () {
+        $('.special_center .right .tab_slider').slick('slickNext')
     });
 
     //site_map

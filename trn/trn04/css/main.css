@@ -110,15 +110,15 @@ main {
 }
 
 #MainVisual .MainSlider .itm01 {
-    background: url(../images/bg_intro01.jpg) no-repeat center center/cover;
+    background: url(../img/bg_intro01.jpg) no-repeat center center/cover;
 }
 
 #MainVisual .MainSlider .itm02 {
-    background: url(../images/bg_intro02.jpg) no-repeat center center/cover;
+    background: url(../img/bg_intro02.jpg) no-repeat center center/cover;
 }
 
 #MainVisual .MainSlider .itm03 {
-    background: url(../images/bg_intro03.jpg) no-repeat center center/cover;
+    background: url(../img/bg_intro03.jpg) no-repeat center center/cover;
 }
 
 #MainVisual .swiper-pagination {
@@ -259,7 +259,7 @@ main {
 
 #Customer {
     padding: 100px 0 400px 0;
-    background: url(../images/bg_main2.jpg) no-repeat center bottom/cover;
+    background: url(../img/bg_main2.jpg) no-repeat center bottom/cover;
     color: #fff;
     text-align: center;
 }

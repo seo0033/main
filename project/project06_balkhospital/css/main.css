@@ -335,46 +335,46 @@ nav .gnb>ul:hover:after {
     width: 80%;
 }
 
-.special_center .right .tap_slider .slick-list {
+.special_center .right .tab_slider .slick-list {
     padding: 60px 0;
 }
 
-.special_center .right .tap_slider .box {
+.special_center .right .tab_slider .box {
     position: relative;
     border-radius: 100px 0 0 0;
     /* background: #2162ad; */
 }
 
-.special_center .right .tap_slider .des {
+.special_center .right .tab_slider .des {
     padding: 60px 0 60px 60px;
     margin: 0 200px 0 0;
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
 }
 
-.special_center .tap_content {
+.special_center .tab_content {
     position: relative;
 }
 
-.special_center .tap_content>li {
+.special_center .tab_content>li {
     height: 0;
     overflow: hidden;
     visibility: hidden;
 }
 
-.special_center .tap_content>li.on {
+.special_center .tab_content>li.on {
     height: auto;
     visibility: visible;
 }
 
-.special_center .tap_content .des h3 {
+.special_center .tab_content .des h3 {
     display: inline-block;
     margin: 0 0 10px 0;
     font-size: 29px;
     font-weight: 500;
 }
 
-.special_center .tap_content .des h3::after {
+.special_center .tab_content .des h3::after {
     content: "";
     display: inline-block;
     width: 2px;
@@ -383,18 +383,18 @@ nav .gnb>ul:hover:after {
     margin: 0 10px 0 20px;
 }
 
-.special_center .tap_content .des span {
+.special_center .tab_content .des span {
     display: inline-block;
     font-size: 15px;
     font-weight: 300;
 }
 
-.special_center .tap_content .des h4 {
+.special_center .tab_content .des h4 {
     margin: 30px 0 15px 0;
     font-size: 19px;
 }
 
-.special_center .tap_content .des p {
+.special_center .tab_content .des p {
     position: relative;
     padding: 0 0 0 15px;
     margin: 0 0 10px 0;
@@ -402,7 +402,7 @@ nav .gnb>ul:hover:after {
     font-weight: 300;
 }
 
-.special_center .tap_content .des p::before {
+.special_center .tab_content .des p::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -414,7 +414,7 @@ nav .gnb>ul:hover:after {
     background: #fff;
 }
 
-.special_center .tap_content .des a {
+.special_center .tab_content .des a {
     display: inline-block;
     border: 1px solid #fff;
     padding: 10px 30px;
@@ -424,18 +424,18 @@ nav .gnb>ul:hover:after {
     transition: 0.5s;
 }
 
-.special_center .tap_content .des a:hover {
+.special_center .tab_content .des a:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.special_center .tap_content figure {
+.special_center .tab_content figure {
     position: absolute;
     bottom: -60px;
     right: -10px;
     width: 470px;
 }
 
-.special_center .tap_content .arrow>div {
+.special_center .tab_content .arrow>div {
     position: absolute;
     top: 10px;
     left: 0;
@@ -445,7 +445,7 @@ nav .gnb>ul:hover:after {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.special_center .tap_content .right_ar {
+.special_center .tab_content .right_ar {
     margin: 0 0 0 60px;
 }
 

@@ -1,0 +1,211 @@
+* {
+    outline: 1px solid rgb(161, 229, 250);
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header .top {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+header .top h1 {
+    font-size: 0;
+}
+
+header .top .right {
+    font-size: 2.5rem;
+}
+
+header .top .right i {
+    margin: 0 0 0 1rem;
+}
+
+/* nav(gnb) */
+header .gnb {
+    position: relative;
+}
+
+header .gnb>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 120rem;
+    margin: 0 auto;
+    line-height: 5.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+header .gnb>ul::after {
+    position: absolute;
+    top: 5.2rem;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #fff;
+    z-index: 998;
+}
+
+header .gnb>ul:hover::after {
+    height: 40rem;
+    transition: 0.5s;
+}
+
+header .gnb>ul>li {
+    position: relative;
+    flex: 1;
+    line-height: 5.5rem;
+    text-align: center;
+}
+
+header .gnb>ul>li>ul {
+    position: absolute;
+    top: 5.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    line-height: 5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    z-index: 999;
+}
+
+header .gnb>ul:hover>li>ul {
+    height: 40rem;
+    transition: 0.5s;
+}
+
+header .gnb>ul>li a {
+    display: block;
+}
+
+/* main_visual */
+.main_visual .inner {
+    display: flex;
+}
+
+.main_visual .inner figure {
+    width: 60%;
+}
+
+.main_visual .inner figure img {
+    width: 100%;
+}
+
+.main_visual .inner .right {
+    position: relative;
+    width: 40%;
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8rem;
+}
+
+.main_visual .inner .right::before {
+    position: absolute;
+    bottom: 5rem;
+    left: -7rem;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid transparent;
+    border-right: 7rem solid #333;
+    border-bottom: 3rem solid transparent;
+}
+
+.main_visual .inner .right span {
+    font-size: 1.5rem;
+}
+
+.main_visual .inner .right span:first-child:after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background: #fff;
+    margin: 1.5rem 0;
+}
+
+.main_visual .inner .right p {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0 2.5rem 0;
+    font-size: 1.5rem;
+    background: #999;
+}
+
+.main_visual .inner .right h2 {
+    margin: 0 0 3rem 0;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.main_visual .inner .right a {
+    display: inline-block;
+    margin: 0 0 8rem 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.main_visual .inner .right .arrow {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    margin: 0 0 0 10px;
+}
+
+.main_visual .inner .right .arrow::after {
+    position: absolute;
+    bottom: 4px;
+    right: -1px;
+    display: inline-block;
+    content: "";
+    width: 13px;
+    height: 3px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    background: #fff;
+}
+
+.main_visual .inner .right a:hover~.arrow {
+    width: 55px;
+    transition: 0.5s;
+}
+
+.main_visual .inner .right .logo {
+    display: flex;
+}
+
+.main_visual .inner .right img {
+    width: 8rem;
+}
+
+.main_visual .inner .right .logo span {
+    line-height: 8rem;
+    margin: 0 0 0 2rem;
+}
+
+/* today */
+.today .pd_slider figure {
+    width: 500px;
+    height: 500px;
+    background: url(../img/todaysale01.jpg);
+}
