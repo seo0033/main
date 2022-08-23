@@ -146,11 +146,12 @@ header .gnb>ul>li a {
     padding: 0.5rem 1rem;
     margin: 0 0 2.5rem 0;
     font-size: 1.5rem;
-    background: #999;
+    background: #f00;
 }
 
 .main_visual .inner .right h2 {
     margin: 0 0 3rem 0;
+    line-height: 1.25;
     font-size: 3.5rem;
     font-weight: 600;
 }
@@ -199,13 +200,168 @@ header .gnb>ul>li a {
 }
 
 .main_visual .inner .right .logo span {
-    line-height: 8rem;
     margin: 0 0 0 2rem;
+    line-height: 8rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.main_visual .swiper-pagination {
+    bottom: 100px;
+    z-index: 999;
+}
+
+.main_visual .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.main_visual .swiper-pagination span.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
 }
 
 /* today */
-.today .pd_slider figure {
-    width: 500px;
-    height: 500px;
-    background: url(../img/todaysale01.jpg);
+.today {
+    padding: 10rem 0;
 }
+
+.today .container {
+    display: flex;
+}
+
+.today .tit {
+    margin: auto 0;
+}
+
+.today .tit h2 {
+    margin: 0 0 0.5rem 0;
+    color: #f00;
+    font-size: 8rem;
+    font-weight: 900;
+}
+
+.today .tit h2>span {
+    margin: 0 0 0 0.5rem;
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.today .tit h3 {
+    margin: 0 0 3rem 0;
+    color: #000;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.today .tit p {
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0 3rem 0;
+    color: #fff;
+    background: #f00;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.today .tit p::after {
+    position: absolute;
+    top: 0;
+    right: -1.5rem;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 1.75rem solid transparent;
+    border-left: 1.5rem solid #f00;
+    border-bottom: 1.7rem solid transparent;
+}
+
+.today .pd {
+    text-align: center;
+}
+
+.today .pd figure {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 0 2rem 0;
+}
+
+.today .pd .front {
+    position: relative;
+    background: url(../img/todaysale01.jpg)no-repeat center center/cover;
+}
+
+.today .pd .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: url(../img/todaysale01_2.jpg)no-repeat center center/cover;
+    transition: 0.5s;
+}
+
+.today .pd:hover .back {
+    opacity: 1;
+}
+
+.today .pd h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.today .pd p {
+    color: #999;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.7rem;
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+.today .pd a {
+    display: inline-block;
+    border: 3px solid #f00;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    transition: 0.5s;
+}
+
+.today .pd a:hover {
+    background: #f00;
+    color: #fff;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    padding: 0 0 20rem 0;
+}
+
+.banner .left {
+    flex: 1;
+}
+
+.banner .right {
+    flex: 1;
+}
+
+.banner .left .txt {
+    padding: 1.5rem 0 1.5rem 5rem;
+    background: url(../img/banner_psd01.png)no-repeat center center/cover;
+    font-size: 2rem;
+}
+
+.banner .left .txt span {}
