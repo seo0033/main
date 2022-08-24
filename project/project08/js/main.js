@@ -17,4 +17,18 @@ window.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 30,
     })//today
 
+    const Tab = document.querySelectorAll('.tab_menu li');
+
+    Tab.forEach((el, idx) => {
+        el.addEventListener('click', (e) => {
+            Tab.forEach(el =>
+                el.classList.remove('on'));
+            el.classList.add('on');
+
+            const TAB = document.querySelectorAll('.tab_content .box');
+            TAB.forEach(el => el.classList.remove('on'))
+            TAB[idx].classList.add('on');
+        })
+    })//friend
+
 })
