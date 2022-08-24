@@ -2,6 +2,7 @@ import TopBanner from "./pages/TopBanner";
 import ListTest from "./pages/ListTest";
 import './basic.css';
 import { useEffect, useState } from "react";
+import Tab from "./pages/Tab01";
 
 const App = () => {
     const [data, setData] = useState([]);
@@ -18,6 +19,8 @@ const App = () => {
             {/* <TopBanner />
             <ListTest /> */}
             {/* {data[0].id} */}
+            <Tab/>
+
         </>
     )
 }

@@ -99,7 +99,7 @@ header .gnb>ul>li>ul {
     width: 100%;
     height: 0;
     overflow: hidden;
-    background: #fff;
+    background: rgba(255, 255, 255, );
     line-height: 5rem;
     font-size: 1.7rem;
     font-weight: 400;
@@ -151,11 +151,12 @@ header .gnb>ul>li a {
     border-bottom: 3rem solid transparent;
 }
 
-.main_visual .inner .right span {
+.main_visual .right .txt>span {
+    display: block;
     font-size: 1.5rem;
 }
 
-.main_visual .inner .right span:first-child:after {
+.main_visual .right .txt>span:after {
     content: "";
     display: block;
     width: 3rem;
@@ -166,10 +167,16 @@ header .gnb>ul>li a {
 
 .main_visual .inner .right p {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
     margin: 0 0 2.5rem 0;
-    font-size: 1.5rem;
-    background: #f00;
+    font-size: 1.7rem;
+    font-weight: 700;
+    background: var(--red);
+}
+
+.main_visual .inner .right p>span {
+    margin: 0 0.5rem 0 0;
+    font-size: 1.3rem;
 }
 
 .main_visual .inner .right h2 {
@@ -198,9 +205,8 @@ header .gnb>ul>li a {
 
 .main_visual .inner .right .arrow::after {
     position: absolute;
-    bottom: 4px;
-    right: -1px;
-    display: inline-block;
+    bottom: -1rem;
+    right: 0;
     content: "";
     width: 11px;
     height: 2px;
@@ -239,7 +245,7 @@ header .gnb>ul>li a {
     text-align: center;
     line-height: 20px;
     font-size: 12px;
-    color: #000;
+    color: var(--bl);
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
 }
@@ -259,25 +265,25 @@ header .gnb>ul>li a {
 }
 
 .today .tit {
-    margin: auto 0;
+    margin: auto 5rem auto 0;
 }
 
 .today .tit h2 {
     margin: 0 0 0.5rem 0;
-    color: #f00;
+    color: var(--red);
     font-size: 8rem;
     font-weight: 900;
 }
 
 .today .tit h2>span {
     margin: 0 0 0 0.5rem;
-    color: #000;
+    color: var(--bl);
     font-size: 2.5rem;
 }
 
 .today .tit h3 {
     margin: 0 0 3rem 0;
-    color: #000;
+    color: var(--bl);
     font-size: 4rem;
     font-weight: 800;
 }
@@ -288,7 +294,7 @@ header .gnb>ul>li a {
     padding: 1rem;
     margin: 0 0 3rem 0;
     color: #fff;
-    background: #f00;
+    background: var(--red);
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -301,7 +307,7 @@ header .gnb>ul>li a {
     width: 0;
     height: 0;
     border-top: 1.75rem solid transparent;
-    border-left: 1.5rem solid #f00;
+    border-left: 1.5rem solid var(--red);
     border-bottom: 1.7rem solid transparent;
 }
 
@@ -310,7 +316,7 @@ header .gnb>ul>li a {
 }
 
 .today .pd figure {
-    width: 30rem;
+    width: 100%;
     height: 30rem;
     border-radius: 50%;
     overflow: hidden;
@@ -320,6 +326,18 @@ header .gnb>ul>li a {
 .today .pd .front {
     position: relative;
     background: url(../img/todaysale01.jpg)no-repeat center center/cover;
+}
+
+.today .pd:nth-child(2) .front {
+    background: url(../img/todaysale02.jpg)no-repeat center center/cover;
+}
+
+.today .pd:nth-child(3) .front {
+    background: url(../img/todaysale03.jpg)no-repeat center center/cover;
+}
+
+.today .pd:nth-child(4) .front {
+    background: url(../img/todaysale04.jpg)no-repeat center center/cover;
 }
 
 .today .pd .back {
@@ -333,6 +351,18 @@ header .gnb>ul>li a {
 
 .today .pd:hover .back {
     opacity: 1;
+}
+
+.today .pd:nth-child(2) .back {
+    background: url(../img/todaysale02_2.jpg)no-repeat center center/cover;
+}
+
+.today .pd:nth-child(3) .back {
+    background: url(../img/todaysale03_2.jpg)no-repeat center center/cover;
+}
+
+.today .pd:nth-child(4) .back {
+    background: url(../img/todaysale04_2.jpg)no-repeat center center/cover;
 }
 
 .today .pd h3 {
@@ -352,7 +382,7 @@ header .gnb>ul>li a {
 
 .today .pd a {
     display: inline-block;
-    border: 3px solid #f00;
+    border: 3px solid var(--red);
     border-radius: 2rem;
     padding: 1rem 2.5rem;
     font-size: 1.5rem;
@@ -362,7 +392,7 @@ header .gnb>ul>li a {
 }
 
 .today .pd a:hover {
-    background: #f00;
+    background: var(--red);
     color: #fff;
 }
 
@@ -444,6 +474,8 @@ header .gnb>ul>li a {
     display: inline-block;
     border: 2px solid var(--bl);
     border-radius: 2rem;
+    background: var(--bl);
+    color: #fff;
     padding: 1rem 3rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -451,11 +483,231 @@ header .gnb>ul>li a {
 }
 
 .banner .right .txt a:hover {
-    background: var(--bl);
-    color: #fff;
+    background: #fff;
+    color: var(--bl);
 }
 
 /* new */
 .new {
     padding: 15rem 0;
+}
+
+.new .title {
+    margin: 0 0 8.5rem 0;
+}
+
+.new .title h2 {
+    margin: 0 0 1.5rem 0;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+.new .title a {
+    display: block;
+    margin: 0 1rem 0 0;
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-align: end;
+}
+
+.new .title a>i {
+    padding: 0.5rem;
+    margin: 0 0.5rem 0 0;
+    border-radius: 50%;
+    background: var(--red);
+    color: #fff;
+    font-size: 1.7rem;
+    transition: 0.5s;
+}
+
+.new .title a:hover i {
+    transform: rotate(180deg);
+}
+
+.new .n_pd>div {
+    display: flex;
+    gap: 5rem;
+    margin: 0 0 6.5rem 0;
+}
+
+.new .n_pd>div figure {
+    position: relative;
+    border: 3px solid var(--bl);
+}
+
+.new .n_pd>div figure>div {
+    position: relative;
+    overflow: hidden;
+}
+
+.new .n_pd>div figure::before {
+    position: absolute;
+    top: -3.5rem;
+    left: -3px;
+    content: attr(data-num);
+    display: block;
+    width: 10rem;
+    height: 3.5rem;
+    border: 3px solid var(--bl);
+    border-radius: 1rem 1rem 0 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.new .n_pd>div .des {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(14.7rem);
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.new .n_pd>div figure:hover .des {
+    transform: translateY(0);
+}
+
+.new .n_pd>div .des h3,
+.new .n_pd>div .des p {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.new .n_pd>div .des p {
+    font-size: 1.9rem;
+}
+
+.new .n_pd>div .des a {
+    display: block;
+    font-size: 2.1rem;
+}
+
+.new .n_pd>div .des a i {
+    transition: 0.5s;
+}
+
+.new .n_pd>div .des a:hover i {
+    transform: rotate(180deg);
+}
+
+.new .n_pd>div strong {
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    border: 3px solid var(--bl);
+    background: var(--red);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.new .n_pd>div figure:hover strong {
+    opacity: 0;
+}
+
+/* friend */
+.friend {
+    padding: 5rem 0;
+    margin: 0 0 50rem 0;
+    background: #ddd;
+}
+
+.friend .character {
+    text-align: center;
+    align-self: center;
+}
+
+.friend .character figure{
+    margin: 0 0 3rem 0;
+}
+
+.friend .character h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.friend .character p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.friend .tab_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friend .tab_content .character {
+    width: 30%;
+    margin: 0 5rem 0 0;
+}
+
+.friend .tab_content .f_pd {
+    width: 70%;
+}
+
+.friend .tab_content .f_pd>div {
+    display: flex;
+    gap: 5rem;
+}
+
+.friend .tab_content .f_pd>div:nth-child(1) {
+    margin: 0 0 5rem 0;
+}
+
+.friend .f_pd figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.friend .f_pd figure .des {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(14.7rem);
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.friend .f_pd figure:hover .des {
+    transform: translateY(0);
+}
+
+.friend .f_pd .des h3,
+.friend .f_pd .des p {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.friend .f_pd .des p {
+    font-size: 1.5rem;
+}
+
+.friend .f_pd .des a {
+    display: block;
+    font-size: 1.7rem;
+}
+
+.friend .f_pd .des a i {
+    transition: 0.5s;
+}
+
+.friend .f_pd .des a:hover i {
+    transform: rotate(180deg);
 }
