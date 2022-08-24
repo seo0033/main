@@ -2,8 +2,14 @@
     outline: 1px solid rgb(161, 229, 250);
 }
 
+:root {
+    --bl: #1a1818;
+    --red: #e50019;
+}
+
 html {
     font-size: 10px;
+    color: var(--bl);
 }
 
 .container {
@@ -68,6 +74,23 @@ header .gnb>ul>li {
     text-align: center;
 }
 
+header .gnb>ul>li::after {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    display: inline-block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    opacity: 0;
+    background: var(--red);
+    transition: 0.5s;
+}
+
+header .gnb>ul>li:hover::after {
+    opacity: 1;
+}
+
 header .gnb>ul>li>ul {
     position: absolute;
     top: 5.2rem;
@@ -108,7 +131,7 @@ header .gnb>ul>li a {
 .main_visual .inner .right {
     position: relative;
     width: 40%;
-    background: #333;
+    background: var(--bl);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -124,7 +147,7 @@ header .gnb>ul>li a {
     width: 0;
     height: 0;
     border-top: 3rem solid transparent;
-    border-right: 7rem solid #333;
+    border-right: 7rem solid var(--bl);
     border-bottom: 3rem solid transparent;
 }
 
@@ -138,7 +161,7 @@ header .gnb>ul>li a {
     width: 3rem;
     height: 2px;
     background: #fff;
-    margin: 1.5rem 0;
+    margin: 1rem 0 1.5rem 0;
 }
 
 .main_visual .inner .right p {
@@ -159,7 +182,7 @@ header .gnb>ul>li a {
 .main_visual .inner .right a {
     display: inline-block;
     margin: 0 0 8rem 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 300;
 }
 
@@ -167,7 +190,7 @@ header .gnb>ul>li a {
     position: relative;
     display: inline-block;
     width: 30px;
-    height: 3px;
+    height: 2px;
     border-radius: 2px;
     background: #fff;
     margin: 0 0 0 10px;
@@ -179,8 +202,8 @@ header .gnb>ul>li a {
     right: -1px;
     display: inline-block;
     content: "";
-    width: 13px;
-    height: 3px;
+    width: 11px;
+    height: 2px;
     transform: rotate(45deg);
     border-radius: 2px;
     background: #fff;
@@ -203,7 +226,6 @@ header .gnb>ul>li a {
     margin: 0 0 0 2rem;
     line-height: 8rem;
     font-size: 1.7rem;
-    font-weight: 500;
 }
 
 .main_visual .swiper-pagination {
@@ -229,7 +251,7 @@ header .gnb>ul>li a {
 
 /* today */
 .today {
-    padding: 10rem 0;
+    padding: 15rem 0;
 }
 
 .today .container {
@@ -347,7 +369,6 @@ header .gnb>ul>li a {
 /* banner */
 .banner {
     display: flex;
-    padding: 0 0 20rem 0;
 }
 
 .banner .left {
@@ -359,9 +380,82 @@ header .gnb>ul>li a {
 }
 
 .banner .left .txt {
-    padding: 1.5rem 0 1.5rem 5rem;
+    padding: 5rem 0 5rem 20rem;
     background: url(../img/banner_psd01.png)no-repeat center center/cover;
-    font-size: 2rem;
 }
 
-.banner .left .txt span {}
+.banner .left .txt span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.banner .left .txt>span::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 2px;
+    margin: 1rem 0 1.5rem 0;
+    background: var(--bl);
+}
+
+.banner .left .txt h2 {
+    margin: 0 0 3.5rem 0;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.banner .left .txt h2>span {
+    margin: 0 0 0 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.banner .left .txt p {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.banner .left .txt p>span {
+    margin: 0 0.5rem 0 0;
+    font-size: 1.7rem;
+}
+
+.banner .right .txt {
+    height: 100%;
+    padding: 5rem 20rem 5rem 0;
+    background: url(../img/banner_psd02.png)no-repeat center center/cover;
+    text-align: end;
+}
+
+.banner .right .txt p {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.banner .right .txt p>span {
+    margin: 0 0.5rem 0 0;
+    font-size: 3.1rem;
+    font-weight: 900;
+}
+
+.banner .right .txt a {
+    display: inline-block;
+    border: 2px solid var(--bl);
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.banner .right .txt a:hover {
+    background: var(--bl);
+    color: #fff;
+}
+
+/* new */
+.new {
+    padding: 15rem 0;
+}
