@@ -32,7 +32,7 @@
                     <ul>
                         <li>
                             <a href="">문구</a>
-                            <ul>
+                            <ul class="smenu">
                                 <li><a href="">필기구</a></li>
                                 <li><a href="">필통</a></li>
                                 <li><a href="">그래픽스티커</a></li>
@@ -115,6 +115,9 @@
                 </nav>
             </div>
         </header>
+        <div class="mopen">
+            <button></button>
+        </div>
         <main>
             <!-- main_visual -->
             <section class="main_visual">
@@ -126,7 +129,7 @@
                                 <div class="txt">
                                     <span>사무용품/데스크용품</span>
                                     <p><span>UP TO</span>46%</p>
-                                    <h2>일 잘하는 사람들은 정리에 강합니다</h2>
+                                    <h2>일 잘하는 사람들은<br/>정리에 강합니다</h2>
                                     <a href="">상점으로 GO</a>
                                     <span class="arrow"></span>
                                     <div class="logo">
@@ -201,9 +204,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+
             </section>
             <!-- today -->
             <section class="today">
@@ -212,15 +216,31 @@
                         <h2>1<span>DAY</span></h2>
                         <h3>SALE</h3>
 
-                        <p>남은시간</p>
-                        <div id="timeDeal"></div>
+                        <!-- <p>남은시간</p>
+                        <div class="timeDeal">14 : 09 : 52</div> -->
                     </div>
 
                     <div class="swiper pd_slider">
                         <div class="swiper-wrapper">
                             <div class="pd swiper-slide">
                                 <figure class="front">
-                                    <figure class="back"></figure>
+                                    <img src="./img/todaysale01.jpg" alt="">
+                                    <figure class="back">
+                                        <img src="./img/todaysale01_2.jpg" alt="">
+                                    </figure>
+                                </figure>
+
+                                <h3>아이스크림<br />형광펜세트 6입</h3>
+                                <p>13,600</p>
+                                <a href="!#">ADD TO CART</a>
+                            </div>
+
+                            <div class="pd swiper-slide">
+                                <figure class="front">
+                                    <img src="./img/todaysale02.jpg" alt="">
+                                    <figure class="back">
+                                        <img src="./img/todaysale02_2.jpg" alt="">
+                                    </figure>
                                 </figure>
                                 <h3>사계절 무릎담요<br />블루 곰돌이패턴</h3>
                                 <p>13,600</p>
@@ -228,58 +248,63 @@
                             </div>
                             <div class="pd swiper-slide">
                                 <figure class="front">
-                                    <figure class="back"></figure>
+                                    <img src="./img/todaysale03.jpg" alt="">
+                                    <figure class="back">
+                                        <img src="./img/todaysale03_2.jpg" alt="">
+                                    </figure>
                                 </figure>
-                                <h3>사계절 무릎담요<br />블루 곰돌이패턴</h3>
+                                <h3>디데이<br />스탑워치 비숑</h3>
                                 <p>13,600</p>
                                 <a href="!#">ADD TO CART</a>
                             </div>
                             <div class="pd swiper-slide">
                                 <figure class="front">
-                                    <figure class="back"></figure>
+                                    <img src="./img/todaysale04.jpg" alt="">
+                                    <figure class="back">
+                                        <img src="./img/todaysale04_2.jpg" alt="">
+                                    </figure>
                                 </figure>
-                                <h3>사계절 무릎담요<br />블루 곰돌이패턴</h3>
+                                <h3>충전식<br />온수팩 곰돌이</h3>
                                 <p>13,600</p>
                                 <a href="!#">ADD TO CART</a>
                             </div>
                             <div class="pd swiper-slide">
                                 <figure class="front">
-                                    <figure class="back"></figure>
+                                    <img src="./img/todaysale05.jpg" alt="">
+                                    <figure class="back">
+                                        <img src="./img/todaysale05_02.jpg" alt="">
+                                    </figure>
                                 </figure>
-                                <h3>사계절 무릎담요<br />블루 곰돌이패턴</h3>
-                                <p>13,600</p>
+                                <h3>타포린가방<br />블랙후드베어</h3>
+                                <p>5,600</p>
                                 <a href="!#">ADD TO CART</a>
                             </div>
-                            <div class="pd swiper-slide">
-                                <figure class="front">
-                                    <figure class="back"></figure>
-                                </figure>
-                                <h3>사계절 무릎담요<br />블루 곰돌이패턴</h3>
-                                <p>13,600</p>
-                                <a href="!#">ADD TO CART</a>
-                            </div>
+                        </div>
+                        <div class="td_arrow">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- banner -->
             <section class="banner">
-                <div class="left">
+                <figure class="left">
                     <div class="txt">
                         <span>SEASON OFF</span>
                         <h2>SUMMER<span>아이템</span><br />
                             SALE</h2>
                         <p><span>UP TO</span>67%</p>
                     </div>
-                </div>
-                <div class="right">
+                </figure>
+                <figure class="right">
                     <div class="txt">
                         <p>무슨 선물할까 늘 고민인 당신<br />
                             <span>GIFT CARD</span>로 마음을 전하세요
                         </p>
                         <a href="">선물하기</a>
                     </div>
-                </div>
+                </figure>
             </section>
             <!-- new -->
             <section class="new">
@@ -290,73 +315,69 @@
                     </div>
 
                     <div class="n_pd">
-                        <div>
-                            <figure data-num="~12%">
-                                <div>
-                                    <img src="./img/new01.jpg" alt="">
-                                    <div class="des">
-                                        <h3>2단 곰돌이 데코 스티커 하드 케이스</h3>
-                                        <p>6,900</p>
-                                        <a href=""><i class="xi-plus"></i></a>
-                                    </div>
+                        <figure data-num="~12%">
+                            <div>
+                                <img src="./img/new01.jpg" alt="">
+                                <div class="des">
+                                    <h3>2단 곰돌이<br />데코 스티커 하드 케이스</h3>
+                                    <p>6,900</p>
+                                    <a href=""><i class="xi-plus"></i></a>
                                 </div>
-                            </figure>
-                            <figure data-num="~35%">
-                                <div>
-                                    <img src="./img/new02.jpg" alt="">
-                                    <div class="des">
-                                        <h3>오리알림장</h3>
-                                        <p>1,900</p>
-                                        <a href=""><i class="xi-plus"></i></a>
-                                    </div>
-                                    <strong>무료배송</strong>
+                            </div>
+                        </figure>
+                        <figure data-num="~35%">
+                            <div>
+                                <img src="./img/new02.jpg" alt="">
+                                <div class="des">
+                                    <h3>오리알림장</h3>
+                                    <p>1,900</p>
+                                    <a href=""><i class="xi-plus"></i></a>
                                 </div>
-                            </figure>
-                            <figure data-num="~24%">
-                                <div>
-                                    <img src="./img/new03.jpg" alt="">
-                                    <div class="des">
-                                        <h3>서있는 곰돌이 필통 베이지</h3>
-                                        <p>10,800</p>
-                                        <a href=""><i class="xi-plus"></i></a>
-                                    </div>
+                                <strong>무료배송</strong>
+                            </div>
+                        </figure>
+                        <figure data-num="~24%">
+                            <div>
+                                <img src="./img/new03.jpg" alt="">
+                                <div class="des">
+                                    <h3>서있는 곰돌이 필통 베이지</h3>
+                                    <p>10,800</p>
+                                    <a href=""><i class="xi-plus"></i></a>
                                 </div>
-                            </figure>
-                        </div>
-                        <div>
-                            <figure data-num="~12%">
-                                <div>
-                                    <img src="./img/new04.jpg" alt="">
-                                    <div class="des">
-                                        <h3>레코드 멀티파우치</h3>
-                                        <p>23,800</p>
-                                        <a href=""><i class="xi-plus"></i></a>
-                                    </div>
-                                    <strong>무료배송</strong>
+                            </div>
+                        </figure>
+                        <figure data-num="~12%">
+                            <div>
+                                <img src="./img/new04.jpg" alt="">
+                                <div class="des">
+                                    <h3>레코드 멀티파우치</h3>
+                                    <p>23,800</p>
+                                    <a href=""><i class="xi-plus"></i></a>
                                 </div>
-                            </figure>
-                            <figure data-num="~35%">
-                                <div>
-                                    <img src="./img/new05.jpg" alt="">
-                                    <div class="des">
-                                        <h3>미니 서랍장 9칸 핑크</h3>
-                                        <p>5,700</p>
-                                        <a href=""><i class="xi-plus"></i></a>
-                                    </div>
+                                <strong>무료배송</strong>
+                            </div>
+                        </figure>
+                        <figure data-num="~35%">
+                            <div>
+                                <img src="./img/new05.jpg" alt="">
+                                <div class="des">
+                                    <h3>미니 서랍장 9칸 핑크</h3>
+                                    <p>5,700</p>
+                                    <a href=""><i class="xi-plus"></i></a>
                                 </div>
-                            </figure>
-                            <figure data-num="~24%">
-                                <div>
-                                    <img src="./img/new06.jpg" alt="">
-                                    <div class="des">
-                                        <h3>체리 글리터 듀얼 손거울</h3>
-                                        <p>3,800</p>
-                                        <a href=""><i class="xi-plus"></i></a>
-                                    </div>
-                                    <strong>무료배송</strong>
+                            </div>
+                        </figure>
+                        <figure data-num="~24%">
+                            <div>
+                                <img src="./img/new06.jpg" alt="">
+                                <div class="des">
+                                    <h3>체리 글리터 듀얼 손거울</h3>
+                                    <p>3,800</p>
+                                    <a href=""><i class="xi-plus"></i></a>
                                 </div>
-                            </figure>
-                        </div>
+                                <strong>무료배송</strong>
+                            </div>
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -386,64 +407,62 @@
                             <div class="container">
                                 <div class="character">
                                     <figure><img src="./img/friend01.png" alt=""></figure>
-                                    <h3>BABICHON</h3>
-                                    <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
-                                        비숑 아가씨의 러블리 라이프!
-                                    </p>
+                                    <div class="name">
+                                        <h3>BABICHON</h3>
+                                        <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
+                                            비숑 아가씨의 러블리 라이프!
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="f_pd">
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend01_01.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend01_02.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend01_03.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend01_04.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend01_05.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend01_06.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
+                                    <figure>
+                                        <img src="./img/friend01_01.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend01_02.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend01_03.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend01_04.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend01_05.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend01_06.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -451,64 +470,62 @@
                             <div class="container">
                                 <div class="character">
                                     <figure><img src="./img/friend02.png" alt=""></figure>
-                                    <h3>BABICHON</h3>
-                                    <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
-                                        비숑 아가씨의 러블리 라이프!
-                                    </p>
+                                    <div class="name">
+                                        <h3>BABICHON</h3>
+                                        <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
+                                            비숑 아가씨의 러블리 라이프!
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="f_pd">
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend02_01.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend02_02.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend02_03.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend02_04.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend02_05.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend02_06.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
+                                    <figure>
+                                        <img src="./img/friend02_01.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend02_02.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend02_03.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend02_04.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend02_05.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend02_06.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -516,64 +533,62 @@
                             <div class="container">
                                 <div class="character">
                                     <figure><img src="./img/friend03.png" alt=""></figure>
-                                    <h3>BABICHON</h3>
-                                    <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
-                                        비숑 아가씨의 러블리 라이프!
-                                    </p>
+                                    <div class="name">
+                                        <h3>BABICHON</h3>
+                                        <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
+                                            비숑 아가씨의 러블리 라이프!
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="f_pd">
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend03_01.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend03_02.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend03_03.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend03_04.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend03_05.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend03_06.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
+                                    <figure>
+                                        <img src="./img/friend03_01.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend03_02.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend03_03.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend03_04.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend03_05.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend03_06.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -581,74 +596,120 @@
                             <div class="container">
                                 <div class="character">
                                     <figure><img src="./img/friend04.png" alt=""></figure>
-                                    <h3>BABICHON</h3>
-                                    <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
-                                        비숑 아가씨의 러블리 라이프!
-                                    </p>
+                                    <div class="name">
+                                        <h3>BABICHON</h3>
+                                        <p>커다란 눈망울과 하얀 솜사탕 같은 털을 가진<br />
+                                            비숑 아가씨의 러블리 라이프!
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="f_pd">
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend04_01.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend04_02.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend04_03.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div>
-                                        <figure>
-                                            <img src="./img/friend04_04.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend04_05.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                        <figure>
-                                            <img src="./img/friend04_06.jpg" alt="">
-                                            <div class="des">
-                                                <h3>바비숑 멀티파우치 퍼플</h3>
-                                                <p>13,800</p>
-                                                <a href=""><i class="xi-plus"></i></a>
-                                            </div>
-                                        </figure>
-                                    </div>
+                                    <figure>
+                                        <img src="./img/friend04_01.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend04_02.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend04_03.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend04_04.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend04_05.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="./img/friend04_06.jpg" alt="">
+                                        <div class="des">
+                                            <h3>바비숑 멀티파우치 퍼플</h3>
+                                            <p>13,800</p>
+                                            <a href=""><i class="xi-plus"></i></a>
+                                        </div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
                     </div>
             </section>
-
         </main>
         <footer>
+            <div class="top">
+                <div class="container">
+                    <ul>
+                        <li><a href="">아트박스</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">청소년보호방침</a></li>
+                        <li><a href="">입점문의</a></li>
+                        <li><a href="">업무제휴/홍보문의</a></li>
+                        <li><a href="">대량구매</a></li>
+                        <li><a href="">매장안내</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <h2><img src="./img/logo.png" alt=""></h2>
+                    <div class="center">
+                        <dl>
+                            <dt>(주)아트박스</dt>
+                            <dl>대표이사 : 조석현 / 서울특별시 서초구 반포대로 12길 41</dl>
+                            <dl>사업자등록번호 : 214-81-06825</dl>
+                            <dl>통신판매업신고 : 제 2011-서울서초-0404호</dl>
+                            <dl>개인정보보호책임자 : 조석현 / 소비자피해보상보험 SGI 서울보증</dl>
+                            <dl>호스팅서비스 : (주)아트박스</dl>
+                            <dl>&copy; ARTBOX ALL RIGHTS RESERVED.</dl>
+                        </dl>
+                    </div>
+                    <div class="right">
+                        <dl>
+                            <dt>고객센터</dt>
+                            <dl class="cs">1577-9081</dl>
+                            <dl>평일 09:00 ~ 18:00</dl>
+                            <dl>점심시간 12:30 ~ 13:30</dl>
+                            <dl>E-mail : customer@artbox.co.kr</dl>
+                            <div class="sns">
+                                <a href="http://www.facebook.com" target="_blank"><i class="xi-facebook"></i></a>
+                                <a href="https://www.instagram.com/"><i class="xi-instagram"></i></a>
+                                <a href="https://www.youtube.com/"><i class="xi-youtube-play"></i></a>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
 
+            <div class="to_top">
+                <i class="xi-arrow-top"></i>
+            </div>
         </footer>
+
     </div>
 </body>
 

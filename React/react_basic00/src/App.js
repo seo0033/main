@@ -3,6 +3,7 @@ import ListTest from "./pages/ListTest";
 import './basic.css';
 import { useEffect, useState } from "react";
 import Tab from "./pages/Tab01";
+import MainVisual from "./pages/Main_Visual";
 
 const App = () => {
     const [data, setData] = useState([]);
@@ -16,11 +17,11 @@ const App = () => {
 
     return (
         <>
-            {/* <TopBanner />
-            <ListTest /> */}
+            {/* <TopBanner /> */}
+            {/* <ListTest /> */}
             {/* {data[0].id} */}
-            <Tab/>
-
+            {/* <Tab/> */}
+            <MainVisual />
         </>
     )
 }

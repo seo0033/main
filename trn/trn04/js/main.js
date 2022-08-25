@@ -34,7 +34,6 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     });
 
-
     document.querySelector('.to_top').addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     });

@@ -115,6 +115,10 @@ header .gnb>ul>li a {
     display: block;
 }
 
+.mopen {
+    display: none;
+}
+
 /* main_visual */
 .main_visual .inner {
     display: flex;
@@ -205,8 +209,8 @@ header .gnb>ul>li a {
 
 .main_visual .inner .right .arrow::after {
     position: absolute;
-    bottom: -1rem;
-    right: 0;
+    bottom: -1.1rem;
+    right: -0.1rem;
     content: "";
     width: 11px;
     height: 2px;
@@ -235,24 +239,25 @@ header .gnb>ul>li a {
 }
 
 .main_visual .swiper-pagination {
-    bottom: 100px;
+    bottom: 30px;
     z-index: 999;
+    text-align: end;
+    padding: 0 100px 0 0;
 }
 
 .main_visual .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     text-align: center;
     line-height: 20px;
     font-size: 12px;
     color: var(--bl);
     opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .main_visual .swiper-pagination span.swiper-pagination-bullet-active {
-    color: #fff;
-    background: #007aff;
+    background: #fff;
 }
 
 /* today */
@@ -265,34 +270,36 @@ header .gnb>ul>li a {
 }
 
 .today .tit {
-    margin: auto 5rem auto 0;
+    margin: auto 12rem auto 0;
 }
 
 .today .tit h2 {
     margin: 0 0 0.5rem 0;
     color: var(--red);
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: 900;
+    letter-spacing: 0.5rem;
 }
 
 .today .tit h2>span {
     margin: 0 0 0 0.5rem;
     color: var(--bl);
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .today .tit h3 {
     margin: 0 0 3rem 0;
     color: var(--bl);
-    font-size: 4rem;
-    font-weight: 800;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
 }
 
 .today .tit p {
     position: relative;
     display: inline-block;
-    padding: 1rem;
-    margin: 0 0 3rem 0;
+    padding: 1rem 2rem;
+    margin: 0 0 1rem 0;
     color: #fff;
     background: var(--red);
     font-size: 1.5rem;
@@ -308,7 +315,16 @@ header .gnb>ul>li a {
     height: 0;
     border-top: 1.75rem solid transparent;
     border-left: 1.5rem solid var(--red);
-    border-bottom: 1.7rem solid transparent;
+    border-bottom: 1.75rem solid transparent;
+}
+
+.today .tit .timeDeal {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.today .swiper {
+    width: 100%;
 }
 
 .today .pd {
@@ -316,8 +332,6 @@ header .gnb>ul>li a {
 }
 
 .today .pd figure {
-    width: 100%;
-    height: 30rem;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 0 2rem 0;
@@ -325,19 +339,6 @@ header .gnb>ul>li a {
 
 .today .pd .front {
     position: relative;
-    background: url(../img/todaysale01.jpg)no-repeat center center/cover;
-}
-
-.today .pd:nth-child(2) .front {
-    background: url(../img/todaysale02.jpg)no-repeat center center/cover;
-}
-
-.today .pd:nth-child(3) .front {
-    background: url(../img/todaysale03.jpg)no-repeat center center/cover;
-}
-
-.today .pd:nth-child(4) .front {
-    background: url(../img/todaysale04.jpg)no-repeat center center/cover;
 }
 
 .today .pd .back {
@@ -345,24 +346,11 @@ header .gnb>ul>li a {
     top: 0;
     left: 0;
     opacity: 0;
-    background: url(../img/todaysale01_2.jpg)no-repeat center center/cover;
     transition: 0.5s;
 }
 
 .today .pd:hover .back {
     opacity: 1;
-}
-
-.today .pd:nth-child(2) .back {
-    background: url(../img/todaysale02_2.jpg)no-repeat center center/cover;
-}
-
-.today .pd:nth-child(3) .back {
-    background: url(../img/todaysale03_2.jpg)no-repeat center center/cover;
-}
-
-.today .pd:nth-child(4) .back {
-    background: url(../img/todaysale04_2.jpg)no-repeat center center/cover;
 }
 
 .today .pd h3 {
@@ -373,7 +361,7 @@ header .gnb>ul>li a {
 }
 
 .today .pd p {
-    color: #999;
+    color: #555;
     margin: 0 0 1.5rem 0;
     font-size: 1.7rem;
     font-weight: 900;
@@ -386,7 +374,7 @@ header .gnb>ul>li a {
     border-radius: 2rem;
     padding: 1rem 2.5rem;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.25;
     transition: 0.5s;
 }
@@ -396,12 +384,16 @@ header .gnb>ul>li a {
     color: #fff;
 }
 
+.swiper-button-next,
+.swiper-button-prev {}
+
 /* banner */
 .banner {
     display: flex;
 }
 
 .banner .left {
+    position: relative;
     flex: 1;
 }
 
@@ -410,8 +402,8 @@ header .gnb>ul>li a {
 }
 
 .banner .left .txt {
+    background: url(../img/test01.png)no-repeat right center/cover;
     padding: 5rem 0 5rem 20rem;
-    background: url(../img/banner_psd01.png)no-repeat center center/cover;
 }
 
 .banner .left .txt span {
@@ -451,9 +443,9 @@ header .gnb>ul>li a {
 }
 
 .banner .right .txt {
+    background: url(../img/test02.png) no-repeat left center/cover;
     height: 100%;
     padding: 5rem 20rem 5rem 0;
-    background: url(../img/banner_psd02.png)no-repeat center center/cover;
     text-align: end;
 }
 
@@ -515,7 +507,6 @@ header .gnb>ul>li a {
 .new .title a>i {
     padding: 0.5rem;
     margin: 0 0.5rem 0 0;
-    border-radius: 50%;
     background: var(--red);
     color: #fff;
     font-size: 1.7rem;
@@ -526,23 +517,26 @@ header .gnb>ul>li a {
     transform: rotate(180deg);
 }
 
-.new .n_pd>div {
+.new .n_pd {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 5rem;
     margin: 0 0 6.5rem 0;
 }
 
-.new .n_pd>div figure {
+.new .n_pd figure {
     position: relative;
     border: 3px solid var(--bl);
+    width: 30%;
 }
 
-.new .n_pd>div figure>div {
+.new .n_pd figure>div {
     position: relative;
     overflow: hidden;
 }
 
-.new .n_pd>div figure::before {
+.new .n_pd figure::before {
     position: absolute;
     top: -3.5rem;
     left: -3px;
@@ -558,48 +552,49 @@ header .gnb>ul>li a {
     line-height: 2.5rem;
 }
 
-.new .n_pd>div .des {
+.new .n_pd .des {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 3rem 0;
     background: rgba(0, 0, 0, 0.5);
-    transform: translateY(14.7rem);
+    transform: translateY(20rem);
     color: #fff;
     text-align: center;
     transition: 0.5s;
 }
 
-.new .n_pd>div figure:hover .des {
+.new .n_pd figure:hover .des {
     transform: translateY(0);
 }
 
-.new .n_pd>div .des h3,
-.new .n_pd>div .des p {
+.new .n_pd .des h3,
+.new .n_pd .des p {
     margin: 0 0 1.5rem 0;
     font-size: 1.9rem;
     font-weight: 700;
+    line-height: 1.25;
 }
 
-.new .n_pd>div .des p {
+.new .n_pd .des p {
     font-size: 1.9rem;
 }
 
-.new .n_pd>div .des a {
+.new .n_pd .des a {
     display: block;
     font-size: 2.1rem;
 }
 
-.new .n_pd>div .des a i {
+.new .n_pd .des a i {
     transition: 0.5s;
 }
 
-.new .n_pd>div .des a:hover i {
+.new .n_pd .des a:hover i {
     transform: rotate(180deg);
 }
 
-.new .n_pd>div strong {
+.new .n_pd strong {
     position: absolute;
     bottom: -3px;
     right: -3px;
@@ -612,28 +607,27 @@ header .gnb>ul>li a {
     transition: 0.3s;
 }
 
-.new .n_pd>div figure:hover strong {
+.new .n_pd figure:hover strong {
     opacity: 0;
 }
 
 /* friend */
 .friend {
     position: relative;
-    margin: 0 0 50rem 0;
 }
 
 .friend .tab_menu {
     position: absolute;
-    top: -7.3rem;
+    top: -7rem;
     left: 5rem;
     display: flex;
 
 }
 
 .friend .tab_menu>li {
-    border-top:3px solid var(--bl) ;
-    border-left:3px solid var(--bl) ;
-    border-right:3px solid var(--bl) ;
+    /* border-top: 3px solid var(--bl);
+    border-left: 3px solid var(--bl);
+    border-right: 3px solid var(--bl); */
     border-radius: 2rem 2rem 0 0;
     padding: 1rem 2.5rem;
     background: #b4c6de;
@@ -658,7 +652,7 @@ header .gnb>ul>li a {
 
 .friend .character figure {
     margin: 0 0 3rem 0;
-    border: 3px solid var(--bl);
+    /* border: 3px solid var(--bl); */
     border-radius: 50%;
 }
 
@@ -667,10 +661,10 @@ header .gnb>ul>li a {
     font-weight: 900;
 }
 
-.friend .character h3::after{
+.friend .character h3::after {
     content: "";
     display: block;
-    width: 2px;
+    width: 3px;
     height: 1.5rem;
     background: var(--bl);
     margin: 1rem auto;
@@ -685,12 +679,12 @@ header .gnb>ul>li a {
 .friend .tab_content .box {
     display: none;
     padding: 5rem 0;
-    border-top: 3px solid var(--bl);
-    background:#b4c6de;
+    /* border-top: 3px solid var(--bl); */
+    background: #b4c6de;
     overflow: hidden;
 }
 
-.friend .tab_content .box.on{
+.friend .tab_content .box.on {
     display: block;
 }
 
@@ -720,23 +714,18 @@ header .gnb>ul>li a {
 }
 
 .friend .tab_content .f_pd {
-    width: 70%;
-}
-
-.friend .tab_content .f_pd>div {
     display: flex;
-    gap: 5rem;
-}
-
-.friend .tab_content .f_pd>div:nth-child(1) {
-    margin: 0 0 5rem 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
 }
 
 .friend .f_pd figure {
     position: relative;
-    border: 3px solid var(--bl);
+    /* border: 3px solid var(--bl); */
     border-radius: 10%;
     overflow: hidden;
+    width: 30%;
 }
 
 .friend .f_pd figure .des {
@@ -777,4 +766,82 @@ header .gnb>ul>li a {
 
 .friend .f_pd .des a:hover i {
     transform: rotate(180deg);
+}
+
+/* footer */
+footer .top {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer .top ul {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer .top ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1.3rem;
+    background: #ddd;
+    margin: 0 1rem;
+}
+
+footer .top ul>li:hover a {
+    color: var(--red);
+}
+
+footer .bottom {
+    padding: 5rem 0;
+}
+
+footer .bottom .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom h2 {
+    align-self: center;
+}
+
+footer .bottom dt {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+footer .bottom dl {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.3rem;
+}
+
+footer .right .cs {
+    font-size: 3.1rem;
+    font-weight: 900;
+}
+
+footer .right .sns {
+    margin: 2rem 0 0 0;
+}
+
+footer .right .sns i {
+    border-radius: 50%;
+    background: var(--bl);
+    color: #fff;
+    padding: 0.8rem;
+    margin: 0 1rem 0 0;
+    font-size: 1.9rem;
+}
+
+footer .to_top i {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    padding: 1rem;
+    background: var(--bl);
+    color: #fff;
+    font-size: 2.5rem;
 }
