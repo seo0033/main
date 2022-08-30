@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    outline: 1px solid rgb(137, 206, 238);
+}
+
+:root {
+    --mc: #3d3b7d;
+}
+
+html {
+    font-size: 10px;
+    color: #222222;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header .top {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+header .top .container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 5rem;
+}
+
+header .top h2 {
+    width: 6rem;
+}
+
+header .top .right ul {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+header .top .right ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    margin: 0 1.5rem;
+}
+
+header .gnb h1 {
+    width: 18rem;
+    line-height: 15rem;
+    margin: 0 auto;
+}
+
+header .gnb>ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.1rem;
+    font-family: 'Cafe24Ssurround';
+    line-height: 4rem;
+    text-align: center;
+}
+
+header .gnb ul>li {
+    flex: 1;
+}
+
+header .gnb ul>li>ul {
+    background: #333;
+    font-size: 1.;
+}
