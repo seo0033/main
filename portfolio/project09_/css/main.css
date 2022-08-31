@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Cafe24Ssurround';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,16 +32,17 @@ header .top {
 header .top .container {
     display: flex;
     justify-content: space-between;
-    line-height: 5rem;
+    line-height: 3rem;
 }
 
 header .top h2 {
-    width: 6rem;
+    width: 5rem;
+    font-size: 0;
 }
 
 header .top .right ul {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
@@ -58,6 +59,7 @@ header h1 {
     width: 18rem;
     line-height: 15rem;
     margin: 0 auto;
+    font-size: 0;
 }
 
 header .gnb {
@@ -74,7 +76,7 @@ header .gnb>ul {
     width: 1200px;
     margin: 0 auto;
     font-size: 2.1rem;
-    font-family: 'Cafe24Ssurround';
+    font-family: 'BMJUA';
     line-height: 5rem;
     text-align: center;
 }
@@ -151,8 +153,392 @@ header .gnb>ul>li>ul>li:hover>a::after {
     width: 100%;
 }
 
+/* season */
+.season {
+    padding: 1rem 0;
+    border-bottom: 3px solid #ddd;
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.season label {
+    vertical-align: middle;
+    font-weight: 700;
+    margin: 0 1rem 0 0;
+}
+
+.season label::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1.2rem;
+    background: #999;
+    margin: 0 0 0 1rem;
+}
+
+.season select {
+    outline: none;
+    border: transparent;
+}
+
 /* video */
 
 .video {
-    padding: 100px 0;
+    display: flex;
+    gap: 5rem;
+    padding: 10rem 0;
+}
+
+.video>div {
+    flex: 1;
+}
+
+.video .left {
+    position: relative;
+}
+
+.video .left::after {
+    position: absolute;
+    top: 50%;
+    right: -2.5rem;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 105%;
+    background: #ddd;
+}
+
+main h2 {
+    margin: 0 0 3rem 0;
+    font-size: 3.1rem;
+    font-family: 'BMJUA';
+}
+
+main h2::before {
+    content: url(../assets/title_icon.png);
+    margin: 0 1rem 0 0;
+}
+
+main h2::after {
+    content: url(../assets/title_icon.png);
+    margin: 0 0 0 1rem;
+}
+
+.video .left video {
+    margin: 0 0 3rem 0;
+}
+
+.video .left h3 {
+    margin: 0 0 2rem 0;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.video .left .subtit {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 1rem 0;
+    margin: 0 0 2.5rem 0;
+}
+
+.video .left .subtit p {
+    align-self: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.video .left .subtit i {
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: var(--mc);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.video .left .des {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.video .left .des>div {
+    margin: 0 0 1rem 0;
+}
+
+.video .left strong {
+    display: block;
+    margin: 3rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.video .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video .right figure {
+    display: flex;
+    gap: 2rem;
+}
+
+.video .right figure .thumb {
+    position: relative;
+    display: inline;
+    flex: 1.5;
+}
+
+.video .right figure .thumb i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.video .right figure .thumb:hover i {
+    font-size: 6rem;
+}
+
+.video .right figure .des {
+    margin: auto 0;
+    flex: 1;
+}
+
+.video .right figure .tit {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 0.5rem 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.video .right figure .tit h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.video .right figure .tit strong {
+    display: inline-block;
+    align-self: flex-end;
+    font-size: 1.3rem;
+}
+
+.video .right figure p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    word-break: break-word;
+}
+
+/* character */
+.character {
+    background: #f9f9f9;
+    padding: 5rem 0;
+}
+
+.character h2 {
+    text-align: center;
+    margin: 0 0 5rem 0;
+}
+
+.character .container {
+    display: flex;
+}
+
+.character .left {
+    width: 50%;
+}
+
+.swiper-3d .swiper-slide-shadow {
+    background: none;
+}
+
+.character .left .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.character .left .swiper-slide figure {
+    position: relative;
+}
+
+.character .left .swiper-slide .photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.character .left .swiper-slide .name {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.character .left .swiper-slide .name>* {
+    text-align: center;
+    font-weight: 700;
+}
+
+.character .left .name strong {
+    display: block;
+    font-size: 1.9rem;
+}
+
+.character .left .name strong::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #999;
+    margin: 0.8rem auto;
+}
+
+.character .left .name p {
+    font-size: 1.5rem;
+}
+
+.character .right {
+    display: flex;
+    justify-content: center;
+}
+
+.character .right .box {
+    display: none;
+    border-radius: 1.5rem;
+    border: 3px solid var(--mc);
+    background: #fff;
+    padding: 4rem 6rem;
+
+}
+
+.character .right .box.on {
+    display: block;
+}
+
+
+.character .right .box h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.character .right h3>span {
+    font-size: 1.7rem;
+}
+
+.character .right hr {
+    border: 0;
+    height: 2px;
+    background: var(--mc);
+    margin: 0 0 2rem 0;
+}
+
+.character .right .hash {
+    margin: 0 0 2.5rem 0;
+}
+
+.character .right .hash strong {
+    display: inline-block;
+    margin: 0 1.5rem 0 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.character .right .des {
+    margin: 0 0 2.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.character .right .des p~p {
+    margin: 2rem 0 0 0;
+}
+
+.character .right .box a {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.character .right .box a>i {
+    border-radius: 50%;
+    background: var(--mc);
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0 0 0 1rem;
+}
+
+/* ost */
+.ost {
+    padding: 10rem 0;
+}
+
+.ost h2 {
+    text-align: center;
+}
+
+.ost .ost_slider {
+    padding: 5.5rem 0 2rem 0;
+}
+
+.ost .swiper-slide figure div {
+    display: none;
+}
+
+.ost .swiper-slide-active figure {
+    position: relative;
+}
+
+.ost .swiper-slide-active figure div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    color: var(--mc);
+    border: 3px solid var(--mc);
+    background: #fff;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.ost .swiper-slide-active figure:hover div {
+    top: -5.5rem;
+    opacity: 1;
+}
+
+.ost .swiper-slide figure div>i {
+    margin: 0 0.5rem 0 0;
+}
+
+/* photo */
+.photo {
+    padding: 5rem 0;
+    background: #f9f9f9;
+}
+
+.photo h2 {
+    text-align: center;
+}
+
+.photo .flow{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.photo ul {
+    display: flex;
+    gap: 3rem;
 }

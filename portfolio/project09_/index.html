@@ -20,6 +20,7 @@
 
 <body>
     <div class="wrap">
+        <!-- header -->
         <header>
             <div class="top">
                 <div class="container">
@@ -34,7 +35,9 @@
                     </div>
                 </div>
             </div>
-            <h1><img src="./assets/title_logo.png" alt=""></h1>
+            <a href="">
+                <h1><img src="./assets/title_logo.png" alt=""></h1>
+            </a>
             <nav class="gnb">
                 <ul>
                     <li>
@@ -76,8 +79,9 @@
                 </ul>
             </nav>
         </header>
+        <!-- main -->
         <main>
-            <!-- main_visual -->
+            <!--section01 main_visual -->
             <section class="main_visual">
                 <div class="swiper main_slider">
                     <div class="swiper-wrapper">
@@ -90,15 +94,406 @@
                     </div>
                 </div>
             </section>
-            <section class="video">
-                <div class="left">
 
+            <!--section02 season -->
+            <section class="season container">
+                <label for="ss">시즌 선택</label>
+                <select name="" id="ss">
+                    <option value="">슬기로운 의사생활 시즌 1</option>
+                    <option value="">슬기로운 의사생활 시즌 2</option>
+                </select>
+            </section>
+
+            <!--section03 video -->
+            <section class="video container">
+                <div class="left">
+                    <a href="#!">
+                        <h2>예고편</h2>
+                    </a>
+                    <video src="./assets/preview.mp4" width="100%" autoplay muted></video>
+                    <h3>[ 최종화 예고 ]</h3>
+                    <div class="subtit">
+                        <p>'할 말 있지?' 99즈가 우리에게 하고 싶은 말</p>
+                        <a href="#!"><i class="xi-angle-right"></i></a>
+                    </div>
+                    <div class="des">
+                        <div>
+                            병원에서는 한 사람의 의사로,<br />
+                            인생에서는 마흔 살의 성장통을 겪고 있는 99학번 5인방들.<br />
+                        </div>
+                        <div>
+                            그들을 찾아온 인생의 크나큰 숙제 앞에 이들은 어떤 선택을 하게 될까,<br />
+                            그리고 그 선택은 그들의 삶을 어떤 방향으로 향하게 할까?
+                        </div>
+                    </div>
+                    <strong>5월 28일 (목) 밤 9시 최종화</strong>
                 </div>
                 <div class="right">
-                    
+                    <a href="#!">
+                        <h2>다시보기</h2>
+                    </a>
+                    <figure>
+                        <div class="thumb">
+                            <a href="">
+                                <img src="./assets/replay_thumb01.png" alt="">
+                                <i class="xi-play-circle-o"></i>
+                            </a>
+                        </div>
+                        <div class="des">
+                            <div class="tit">
+                                <h3>11화</h3>
+                                <strong>2021.05.21 방송</strong>
+                            </div>
+                            <p>
+                                누구보다 간절한 마음으로 익준을 찾
+                                아온 환자와 보호자. 그러나 그들의
+                                이유를 알 수 없는 한 마디 말에 익준
+                                은 말문이 막히고...
+                                이제는 맑을 것만 같던 석형의 삶에
+                                뜻밖의 소식이 전해진다.
+                            </p>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="thumb">
+                            <a href="">
+                                <img src="./assets/replay_thumb02.png" alt="">
+                                <i class="xi-play-circle-o"></i>
+                            </a>
+                        </div>
+                        <div class="des">
+                            <div class="tit">
+                                <h3>10화</h3>
+                                <strong>2021.05.14 방송</strong>
+                            </div>
+                            <p>
+                                재학은 의사로서 찾아오는 고민의 순간들을 마주하게 되고, 준완에게 고민 상담을 청한다.
+                                준완의 따끔한 충고에 본인의 의사생활을 다시 한번 돌아보게 되고...
+                                한편, 익준은 그동안 은밀하게 숨겨온 비밀을 눈치채게 되는데...
+                            </p>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="thumb">
+                            <a href="">
+                                <img src="./assets/replay_thumb03.png" alt="">
+                                <i class="xi-play-circle-o"></i>
+                            </a>
+                        </div>
+                        <div class="des">
+                            <div class="tit">
+                                <h3>9화</h3>
+                                <strong>2021.05.07 방송</strong>
+                            </div>
+                            <p>
+                                매사에 똑 부러지는 겨울인데... 평소와 달리 정원 앞에서 실수를 저지르고, 어깨가 축 처지고 만다. 응급콜에 다급하게 달려온 송화는 예상치 못한 환자의
+                                모습에 깜짝 놀라고. 한편, 익준은 보호자의 표정에서 뭔가 불안한 기운을 감지하는데...
+                            </p>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section04 character -->
+            <section class="character">
+                <a href="#!">
+                    <h2>99즈</h2>
+                </a>
+                <div class="container">
+                    <div class="left">
+                        <div class="swiper card_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./assets/nametag_bg.png" alt="">
+                                        <img src="./assets/nametag01.png" alt="" class="photo">
+                                        <div class="name">
+                                            <strong>이익준</strong>
+                                            <p>간담췌외과 조교수</p>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./assets/nametag_bg.png" alt="">
+                                        <img src="./assets/nametag02.png" alt="" class="photo">
+                                        <div class="name">
+                                            <strong>안정원</strong>
+                                            <p>소아외과 조교수</p>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./assets/nametag_bg.png" alt="">
+                                        <img src="./assets/nametag03.png" alt="" class="photo">
+                                        <div class="name">
+                                            <strong>김준완</strong>
+                                            <p>흉부외과 부교수</p>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./assets/nametag_bg.png" alt="">
+                                        <img src="./assets/nametag04.png" alt="" class="photo">
+                                        <div class="name">
+                                            <strong>양석형</strong>
+                                            <p>산부인과 조교수</p>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./assets/nametag_bg.png" alt="">
+                                        <img src="./assets/nametag05.png" alt="" class="photo">
+                                        <div class="name">
+                                            <strong>채송화</strong>
+                                            <p>신경외과 조교수</p>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="box on">
+                            <h3>이익준<span>( 40세 )</span></h3>
+                            <hr />
+                            <div class="hash">
+                                <strong># 간담췌외과 조교수</strong>
+                                <strong># 의대 99학번</strong>
+                                <strong># 99즈</strong>
+                            </div>
+                            <div class="des">
+                                <p>
+                                    천재들이 인정하는 천재 중 천재!<br />
+                                    공부도, 수술도, 하물며 기타까지도! 못 하는 게 없는 만능맨.
+                                </p>
+                                <p>
+                                    노는 자리엔 절대 빠지지 않고서도, 항상 전교 1등!<br />
+                                    타고난 머리도 좋고 집중력도 놀랍다.<br />
+                                    의대에 수석으로 입학, 수석으로 졸업했으며<br />
+                                    동기 중 가장 빠른 승진으로 승승장구 중이다.
+                                </p>
+                            </div>
+                            <hr />
+                            <a href="">인물관계도 및 주변인물<i class="xi-angle-right"></i></a>
+                        </div>
+                        <div class="box">
+                            <h3>안정원<span>( 40세 )</span></h3>
+                            <hr />
+                            <div class="hash">
+                                <strong># 소아외과 조교수</strong>
+                                <strong># 의대 99학번</strong>
+                                <strong># 99즈</strong>
+                            </div>
+                            <div class="des">
+                                <p>
+                                    슈바이처, 아니 공자, 맹자도 이겨 먹을<br />
+                                    천사같은 성품의 소유자<br />
+                                    천주교가 모태신앙임에도 불구하고, 별명은 ‘부처’
+                                </p>
+                                <p>
+                                    부모의 품보다, 병원 침대가 익숙한 아이들의 울음소리.<br />
+                                    어디로 향할지 모르는 공허한 부모들의 애끓는 분노로,<br />
+                                    소아외과의 눈물은 마음을 찢는다.
+                                </p>
+                            </div>
+                            <hr />
+                            <a href="">인물관계도 및 주변인물<i class="xi-angle-right"></i></a>
+                        </div>
+                        <div class="box">
+                            <h3>김준완<span>( 40세 )</span></h3>
+                            <hr />
+                            <div class="hash">
+                                <strong># 흉부외과 부교수</strong>
+                                <strong># 의대 99학번</strong>
+                                <strong># 99즈</strong>
+                            </div>
+                            <div class="des">
+                                <p>
+                                    의대 돌아이만 지원한다는 흉부외과의 전설적 돌아이.<br />
+                                    레지던트에겐 악마로,환자들에겐 더 악마로 통하는<br />
+                                    ‘사탄’의 의사
+                                </p>
+                                <p>
+                                    심장은 하트고, 하트는 사랑인데...<br />
+                                    병원의 심장 ‘흉부외과’는 몇 년째 미달 신세다.<br />
+                                    그야말로 병원의 희귀템!
+                                </p>
+                            </div>
+                            <hr />
+                            <a href="">인물관계도 및 주변인물<i class="xi-angle-right"></i></a>
+                        </div>
+                        <div class="box">
+                            <h3>양석형<span>( 40세 )</span></h3>
+                            <hr />
+                            <div class="hash">
+                                <strong># 산부인과 조교수</strong>
+                                <strong># 의대 99학번</strong>
+                                <strong># 99즈</strong>
+                            </div>
+                            <div class="des">
+                                <p>
+                                    속을 알 수 없는 은둔형 외톨이<br />
+                                    자발적 아웃사이더로, 숨 쉬고 사는 게 신기한<br />
+                                    귀차니즘의 대명사.
+                                </p>
+                                <p>
+                                    병원 내 유일하게, 누군가의 울음을 기쁘게 맞이하는 곳.<br />
+                                    탄생의 신비와 생의 경이로움이 찬란하게 빛나는 곳.<br />
+                                    바로 산부인과다.
+                                </p>
+                            </div>
+                            <hr />
+                            <a href="">인물관계도 및 주변인물<i class="xi-angle-right"></i></a>
+                        </div>
+                        <div class="box">
+                            <h3>채송화<span>( 40세 )</span></h3>
+                            <hr />
+                            <div class="hash">
+                                <strong># 신경외과 부교수</strong>
+                                <strong># 의대 99학번</strong>
+                                <strong># 99즈</strong>
+                            </div>
+                            <div class="des">
+                                <p>
+                                    작은 체구에서 나오는 카리스마!<br />
+                                    후배들의 존경을 한 몸에 받는 교수<br />
+                                    병원 붙박이로, 언제 먹고 자는지가 의문인, 일명 ‘귀신’
+                                </p>
+                                <p>
+                                    유난스런 의대 99학번 4인방을<br />
+                                    한 방에 제압하는 리더십의 소유자이자,<br />
+                                    환자에겐 친절한 의사, 후배들에겐 믿고 따를만한 교수다.
+                                </p>
+                            </div>
+                            <hr />
+                            <a href="">인물관계도 및 주변인물<i class="xi-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section05 ost -->
+            <section class="ost">
+                <a href="">
+                    <h2>슬기로운 OST</h2>
+                </a>
+                <div class="container">
+                    <div class="swiper ost_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href=""><img src="./assets/ost_thumb01.jpg" /></a>
+                                    <a href="">
+                                        <div><i class="xi-mouse-pointer"></i>Click</div>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href=""><img src="./assets/ost_thumb02.jpg" /></a>
+                                    <a href="">
+                                        <div><i class="xi-mouse-pointer"></i>Click</div>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href=""><img src="./assets/ost_thumb03.jpg" /></a>
+                                    <a href="">
+                                        <div><i class="xi-mouse-pointer"></i>Click</div>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href=""><img src="./assets/ost_thumb04.jpg" /></a>
+                                    <a href="">
+                                        <div><i class="xi-mouse-pointer"></i>Click</div>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href=""><img src="./assets/ost_thumb05.jpg" /></a>
+                                    <a href="">
+                                        <div><i class="xi-mouse-pointer"></i>Click</div>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href=""><img src="./assets/ost_thumb06.jpg" /></a>
+                                    <a href="">
+                                        <div><i class="xi-mouse-pointer"></i>Click</div>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--section06 photo -->
+            <section class="photo">
+                <a href="">
+                    <h2>현장 포토</h2>
+                </a>
+                <div class="flow">
+                    <ul>
+                        <li>
+                            <a href=""><img src="./assets/photo01.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/photo02.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/photo03.png" alt=""></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href=""><img src="./assets/photo04.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/photo05.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/photo06.png" alt=""></a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
+        <!-- footer -->
+        <footer>
+            <div class="top">
+                <ul>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">청소년 보호정책</a></li>
+                    <li><a href="">법적고지</a></li>
+                    <li><a href="">인재채용</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <dl>
+                    <dd>대표이사 : YANG JIEUL</dd>
+                    <dd>개인정보관리책임자 : 고창남</dd>
+                    <dd>사업자등록번호 : 188-88-01893</dd>
+                    <dd>통신판매신고번호 : 2020-서울마포-3641호</dd>
+                    <dd>사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브 15층(상암동)</dd>
+                    <dd>대표메일 : tving@cj.net</dd>
+                    <dd>고객센터 : 1670-1525 (평일/주말 09시~18시, 공휴일 휴무)</dd>
+                </dl>
+            </div>
+            <div class="sns">
+
+            </div>
+        </footer>
     </div>
 
 </body>
