@@ -367,11 +367,12 @@ main h2::after {
     position: relative;
 }
 
-.character .left .swiper-slide .photo {
+.character .left .swiper-slide .nt_photo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
+    width: 60%;
 }
 
 .character .left .swiper-slide .name {
@@ -379,6 +380,7 @@ main h2::after {
     bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
+    width: 60%;
 }
 
 .character .left .swiper-slide .name>* {
@@ -407,6 +409,7 @@ main h2::after {
 .character .right {
     display: flex;
     justify-content: center;
+    padding: 0 2rem;
 }
 
 .character .right .box {
@@ -478,7 +481,7 @@ main h2::after {
 
 /* ost */
 .ost {
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .ost h2 {
@@ -532,7 +535,7 @@ main h2::after {
     text-align: center;
 }
 
-.photo .flow{
+.photo .flow {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -541,4 +544,61 @@ main h2::after {
 .photo ul {
     display: flex;
     gap: 3rem;
+}
+
+/* footer */
+footer {
+    padding: 5rem 0;
+}
+
+footer .top ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+footer .top ul li:hover {
+    color: var(--mc);
+}
+
+footer .center {
+    margin: 0 0 1.5rem 0;
+}
+
+footer .center dl {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+footer .center dl>dd~dd::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1.2rem;
+    background: #ddd;
+    margin: 0 1rem;
+}
+
+footer .sns {
+    text-align: center;
+}
+
+footer .sns a>i {
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    font-size: 1.7rem;
+    transition: 0.4s;
+}
+
+footer .sns a:hover>i {
+    background: var(--mc);
 }

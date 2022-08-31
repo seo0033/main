@@ -31,9 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const Ost_slider = new Swiper(".ost_slider", {
         effect: "coverflow",
-        // grabCursor: true,
+        grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 3,
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
@@ -45,6 +44,14 @@ window.addEventListener('DOMContentLoaded', () => {
             el: ".swiper-pagination",
             dynamicBullets: true,
         },
+        breakpoints: {
+            220: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            }
+        }
     });
 
     Ost_slider.on()
