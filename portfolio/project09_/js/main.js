@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+
     const Main_slider = new Swiper(".main_slider", {
         loop: true,
         autoplay: {
@@ -54,10 +55,34 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    Ost_slider.on()
+    const ButtonOST = document.querySelector("button");
+    // ButtonOST.onclick = function (event) {
+    //     console.log(1111)
+    // };
+    console.log(ButtonOST)
 
+    const Flow_slider = new Swiper(".flow_slider", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        speed: 2000,
+        //effect: 'none',
+        //cssMode: true,
 
+        autoplay: {
+            delay: 0,
+            waitForTransition: false,
+        },
 
+        on: {
+
+            slideChangeTransitionEnd: function () {
+                console.log(1111)
+            },
+        },
+    }
+    );
 
 
 });// the end
+

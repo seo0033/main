@@ -525,6 +525,10 @@ main h2::after {
     margin: 0 0.5rem 0 0;
 }
 
+.photo .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
 /* photo */
 .photo {
     padding: 5rem 0;
@@ -535,20 +539,17 @@ main h2::after {
     text-align: center;
 }
 
-.photo .flow {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
 
-.photo ul {
-    display: flex;
-    gap: 3rem;
-}
 
 /* footer */
 footer {
     padding: 5rem 0;
+    width: 100%;
+}
+
+footer h2 {
+    width: 15rem;
+    margin: 0 auto 2.5rem auto;
 }
 
 footer .top ul {
