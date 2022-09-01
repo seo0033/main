@@ -6,7 +6,7 @@
 }
 
 * {
-    outline: 1px solid rgb(137, 206, 238);
+    outline: 1px solid rgb(137, 206, 238)-;
 }
 
 :root {
@@ -186,7 +186,7 @@ header .gnb>ul>li>ul>li:hover>a::after {
 .video {
     display: flex;
     gap: 5rem;
-    padding: 10rem 0;
+    padding: 10rem 0 7rem 0;
 }
 
 .video>div {
@@ -338,7 +338,7 @@ main h2::after {
 /* character */
 .character {
     background: #f9f9f9;
-    padding: 5rem 0;
+    padding: 7rem 0;
 }
 
 .character h2 {
@@ -481,7 +481,7 @@ main h2::after {
 
 /* ost */
 .ost {
-    padding: 5rem 0;
+    padding: 7rem 0;
 }
 
 .ost h2 {
@@ -492,7 +492,7 @@ main h2::after {
     padding: 5.5rem 0 2rem 0;
 }
 
-.ost .swiper-slide figure div {
+.ost .swiper-slide figure .click {
     display: none;
 }
 
@@ -500,7 +500,7 @@ main h2::after {
     position: relative;
 }
 
-.ost .swiper-slide-active figure div {
+.ost .swiper-slide-active figure .click {
     position: absolute;
     top: 0;
     left: 50%;
@@ -516,22 +516,53 @@ main h2::after {
     transition: 0.5s;
 }
 
-.ost .swiper-slide-active figure:hover div {
+.ost .swiper-slide-active figure:hover .click {
     top: -5.5rem;
     opacity: 1;
 }
 
-.ost .swiper-slide figure div>i {
+.ost .swiper-slide .click>i {
     margin: 0 0.5rem 0 0;
 }
 
-.photo .swiper-wrapper {
-    transition-timing-function: linear !important;
+/* .ost .container {
+    position: relative;
 }
+
+.ost .swiper-slide .pop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    opacity: 0;
+    border: 3px solid var(--mc);
+    border-radius: 1.5rem;
+    background: #fff;
+    width: 130%;
+    height: 50%;
+    padding: 5rem;
+    transition: 0.5s;
+}
+
+.ost .swiper-slide .pop.on{
+    opacity: 1;
+    height: 50%;
+}
+.ost .swiper-slide .pop>div{
+    flex: 1;
+}
+
+.ost .swiper-slide .pop>i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.1rem;
+} */
 
 /* photo */
 .photo {
-    padding: 5rem 0;
+    padding: 7rem 0;
     background: #f9f9f9;
 }
 
@@ -539,6 +570,26 @@ main h2::after {
     text-align: center;
 }
 
+.photo .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.photo .swiper-slide {
+    border: 5px solid transparent;
+    transition: 0.4s;
+}
+
+.photo .swiper-slide:hover {
+    border: 5px solid var(--mc);
+}
+
+.photo .itm01 {
+    margin: 0 0 3rem 0;
+}
+
+.photo .itm02 .swiper-slide {
+    transform: translateX(50%);
+}
 
 
 /* footer */
@@ -594,7 +645,7 @@ footer .sns a>i {
     border-radius: 50%;
     background: #333;
     color: #fff;
-    padding: 0.5rem;
+    padding: 0.8rem;
     margin: 0 0.5rem;
     font-size: 1.7rem;
     transition: 0.4s;

@@ -502,7 +502,7 @@
         padding: 5.5rem 0 2rem 0;
     }
 
-    .ost .swiper-slide figure div {
+    .ost .swiper-slide figure .click {
         display: none;
     }
 
@@ -510,7 +510,7 @@
         position: relative;
     }
 
-    .ost .swiper-slide-active figure div {
+    .ost .swiper-slide-active figure .click {
         position: absolute;
         top: 0;
         left: 50%;
@@ -526,12 +526,12 @@
         transition: 0.5s;
     }
 
-    .ost .swiper-slide-active figure:hover div {
+    .ost .swiper-slide-active figure:hover .click {
         top: -5.5rem;
         opacity: 1;
     }
 
-    .ost .swiper-slide figure div>i {
+    .ost .swiper-slide figure .click>i {
         margin: 0 0.3rem 0 0;
     }
 

@@ -55,33 +55,49 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const ButtonOST = document.querySelector("button");
-    // ButtonOST.onclick = function (event) {
-    //     console.log(1111)
+    // const Pop_open = document.querySelector(".ost .swiper-slide figure");
+
+    // Pop_open.onclick = function () {
+    //     document.querySelector('.ost .swiper-slide .pop').classList.add('on');
+
+    //     document.querySelector('.ost .swiper-slide .pop>i').addEventListener('click', function () {
+    //         // console.log(this)
+    //         document.querySelector('.ost .swiper-slide .pop').classList.remove('on')
+    //     });
     // };
-    console.log(ButtonOST)
+
 
     const Flow_slider = new Swiper(".flow_slider", {
         loop: true,
-        slidesPerView: 3,
         spaceBetween: 30,
-        speed: 2000,
-        //effect: 'none',
-        //cssMode: true,
+        speed: 4000,
 
         autoplay: {
-            delay: 0,
-            waitForTransition: false,
+            delay: 1,
+            enabled: true,
+            disableOnInteraction: false,
         },
 
-        on: {
-
-            slideChangeTransitionEnd: function () {
-                console.log(1111)
+        breakpoints: {
+            220: {
+                slidesPerView: 1.5,
             },
-        },
+            768: {
+                slidesPerView: 3,
+            }
+        }
     }
     );
+
+    // const Hover = document.querySelectorAll('.flow_slider .swiper-slide');
+
+    // Hover.addEventListener('mouseover', function () {
+    //     swiper.autoplay.stop();
+    // });
+    // Hover.addEventListener('mouseout', function () {
+    //     swiper.autoplay.start();
+    // });
+
 
 
 });// the end
