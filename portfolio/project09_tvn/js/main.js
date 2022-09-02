@@ -68,8 +68,8 @@ window.addEventListener('DOMContentLoaded', () => {
             Pop.classList.remove('on')
         });
 
-        if (Pop.classList.contains('on'))
-            return (Pop_open.sytle.display = 'none')
+        // if (Pop.classList.contains('on'))
+        //     return (Pop_open.sytle.display = 'none')
     };
 
 
