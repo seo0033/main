@@ -8,7 +8,7 @@
     }
 
     * {
-        outline: 1px solid rgb(186, 137, 238);
+        outline: 1px solid rgb(186, 137, 238)-;
     }
 
     :root {
@@ -65,9 +65,26 @@
         font-size: 0;
     }
 
-    header .gnb {
+    header nav {
         position: relative;
     }
+
+    header .gnb {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        padding: 10px 30px;
+        width: calc(100% - 80px);
+        height: 100vh;
+        background: var(--mc);
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    header .gnb.on {
+        left: 0;
+    }
+
 
     header .gnb a {
         display: block;
@@ -75,20 +92,25 @@
 
     header .gnb>ul {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        width: 1200px;
+        width: auto;
+        transform: translateY(50%);
         margin: 0 auto;
+        color: #fff;
         font-size: 2.1rem;
         font-family: 'BMJUA';
         line-height: 5rem;
         text-align: center;
     }
 
+
     header .gnb>ul::before {
         position: absolute;
         top: 5rem;
         left: 0;
         content: "";
+        display: none;
         width: 100%;
         height: 0;
         background: rgba(0, 0, 0, 0.4);
@@ -100,27 +122,43 @@
         height: 16.5rem;
     }
 
+    header .gnb>ul>li:not(:first-child)>ul::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        content: "";
+        display: none;
+        width: 1px;
+        height: 80%;
+        background: #ddd;
+    }
+
     header .gnb>ul>li {
         position: relative;
-        flex: 1;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     header .gnb>ul>li>ul {
-        position: absolute;
+        position: static;
         top: 5rem;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        transform: translateX(0);
         width: 100%;
         height: 0;
         overflow: hidden;
-        font-size: 1.9rem;
-        line-height: 5.5rem;
+        font-size: 1.7rem;
+        line-height: 4rem;
         z-index: 999;
         transition: 0.5s;
     }
 
     header .gnb>ul:hover>li>ul {
-        height: 16.5rem;
+        height: 0;
+    }
+
+    header .gnb>ul>li.on>ul {
+        height: 100%;
     }
 
     header .gnb>ul>li>ul>li {
@@ -129,7 +167,7 @@
     }
 
     header .gnb>ul>li>ul>li:hover {
-        color: var(--mc);
+        color: #999;
     }
 
     header .gnb>ul>li>ul>li>a {
@@ -141,7 +179,7 @@
         top: 0;
         right: 1rem;
         content: url(../assets/title_icon.png);
-        display: inline-block;
+        display: none;
         margin: 0 0 0 1rem;
         opacity: 0;
         transition: 0.4s;
@@ -150,6 +188,72 @@
     header .gnb>ul>li>ul>li:hover>a::after {
         opacity: 1;
     }
+
+    .mopen {
+        display: none;
+    }
+
+    .mopen {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        z-index: 999;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+        background: var(--mc);
+        border-radius: 3px;
+    }
+
+    .mopen button {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .mopen::before,
+    .mopen::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 2px;
+        background: #fff;
+    }
+
+    .mopen::before {
+        top: 7px;
+    }
+
+    .mopen::after {
+        bottom: 7px;
+    }
+
+    .mopen button::before,
+    .mopen button::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 2px;
+        background: #fff;
+        top: calc(50% - 1px);
+    }
+
+    .mopen.on::before,
+    .mopen.on::after {
+        opacity: 0;
+    }
+
+    .mopen.on button::before {
+        transform: rotate(45deg);
+    }
+
+    .mopen.on button::after {
+        transform: rotate(-45deg);
+    }
+
 
     /* main_visual */
     .main_visual .swiper-slide img {
@@ -207,7 +311,7 @@
         right: -2.5rem;
         transform: translateY(-50%);
         content: "";
-        display: inline-block;
+        display: none;
         width: 3px;
         height: 105%;
         background: #ddd;
@@ -362,6 +466,44 @@
         flex-direction: column;
     }
 
+    .character>p {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    .character .down {
+        position: relative;
+        width: auto;
+        margin: 0 auto 2rem auto;
+        animation: down 1s infinite ease;
+    }
+
+    .character .down span {
+        display: block;
+        text-align: center;
+        font-size: 2.1rem;
+    }
+
+    .character span:nth-child(2) {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @keyframes down {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(5px);
+        }
+    }
+
     .character .left {
         width: 50%;
         margin: 0 auto 3rem auto;
@@ -491,7 +633,7 @@
 
     /* ost */
     .ost {
-        padding: 5rem 0;
+        padding: 7rem 0;
     }
 
     .ost h2 {
@@ -499,7 +641,7 @@
     }
 
     .ost .ost_slider {
-        padding: 5.5rem 0 2rem 0;
+        padding: 5rem 0 2rem 0;
     }
 
     .ost .swiper-slide figure .click {
@@ -519,20 +661,137 @@
         color: var(--mc);
         border: 3px solid var(--mc);
         background: #fff;
-        padding: 1rem 1.5rem;
-        font-size: 1.7rem;
-        font-weight: 700;
+        padding: 0.8rem 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
         opacity: 0;
         transition: 0.5s;
     }
 
     .ost .swiper-slide-active figure:hover .click {
-        top: -5.5rem;
+        top: -4.5rem;
         opacity: 1;
     }
 
-    .ost .swiper-slide figure .click>i {
-        margin: 0 0.3rem 0 0;
+    .ost .swiper-slide .click>i {
+        margin: 0 0.2rem 0 0;
+    }
+
+    .ost .container {
+        position: relative;
+    }
+
+    .ost .swiper-slide .pop {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        border: 3px solid var(--mc);
+        border-radius: 1.5rem;
+        background: #fff;
+        width: 130%;
+        padding: 2rem 5rem;
+        transition: 0.5s;
+    }
+
+    .ost .swiper-slide .pop .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .ost .swiper-slide .pop.on {
+        opacity: 1;
+    }
+
+    .ost .swiper-slide .pop .inner>div {
+        flex: 1;
+    }
+
+    .ost .swiper-slide .pop .inner figure {
+        width: 50%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .ost .swiper-slide .pop .inner .play {
+        text-align: center;
+    }
+
+    .ost .pop .inner .play i {
+        font-size: 2.5rem;
+        margin: 0 0.2rem;
+    }
+
+    .ost .pop .inner .play a {
+        display: inline-block;
+    }
+
+    /* .ost .pop .inner .play a:nth-child(1){
+        position: relative;
+    }
+    .ost .pop .inner .play a:nth-child(1)::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "\ea40";
+        display: block;
+        font-size: 2.7rem;
+    } */
+
+    .ost .pop .inner .play i:hover {
+        color: var(--mc);
+    }
+
+    .ost .swiper-slide .pop .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .ost .swiper-slide .pop .inner h3 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .ost .swiper-slide .pop .inner h3::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        display: none;
+        background: var(--mc);
+        margin: 1rem 0;
+    }
+
+    .ost .swiper-slide .pop>i {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.1rem;
+    }
+
+    .ost .swiper-slide .pop table {
+        display: none;
+        border-spacing: 0.5rem 1rem;
+        border-collapse: separate;
+    }
+
+    .ost .swiper-slide .pop table tr {
+        margin: 0 0 1rem 0;
+
+    }
+
+    .ost .swiper-slide .pop table td {
+        font-size: 1.3rem;
+    }
+
+    .ost .swiper-slide .pop table td:first-child {
+        width: 30%;
+        border-right: 2px solid #ddd;
     }
 
     /* footer */

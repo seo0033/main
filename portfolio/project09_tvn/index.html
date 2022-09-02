@@ -39,47 +39,52 @@
             <a href="">
                 <h1><img src="./assets/title_logo.png" alt=""></h1>
             </a>
-            <nav class="gnb">
-                <ul>
-                    <li>
-                        <a href="">슬기로운 의사생활</a>
-                        <ul>
-                            <li><a href="">기획의도</a></li>
-                            <li><a href="">프로그램 소개</a></li>
-                            <li><a href="">등장인물 소개</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">방송보기</a>
-                        <ul>
-                            <li><a href="">예고편</a></li>
-                            <li><a href="">다시보기</a></li>
-                            <li><a href="">명장면 클립</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">현장스케치</a>
-                        <ul>
-                            <li><a href="">대표이미지</a></li>
-                            <li><a href="">메이킹필름</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">시청자참여</a>
-                        <ul>
-                            <li><a href="">이벤트</a></li>
-                            <li><a href="">시청자 게시판</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">OST</a>
-                        <ul>
-                            <li><a href="">OST 발매앨범</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <nav>
+                <div class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#!">슬기로운 의사생활</a>
+                            <ul>
+                                <li><a href="">기획의도</a></li>
+                                <li><a href="">프로그램 소개</a></li>
+                                <li><a href="">등장인물 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">방송보기</a>
+                            <ul>
+                                <li><a href="">예고편</a></li>
+                                <li><a href="">다시보기</a></li>
+                                <li><a href="">명장면 클립</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">현장스케치</a>
+                            <ul>
+                                <li><a href="">대표이미지</a></li>
+                                <li><a href="">메이킹필름</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">시청자참여</a>
+                            <ul>
+                                <li><a href="">이벤트</a></li>
+                                <li><a href="">시청자 게시판</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">OST</a>
+                            <ul>
+                                <li><a href="">OST 발매앨범</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
+        <div class="mopen">
+            <button>모바일메뉴열기</button>
+        </div>
         <!-- main -->
         <main>
             <!--section01 main_visual -->
@@ -111,7 +116,7 @@
                     <a href="#!">
                         <h2>예고편</h2>
                     </a>
-                    <video src="./assets/preview.mp4" width="100%" autoplay muted></video>
+                    <video src="./assets/preview.mp4" width="100%" autoplay muted loop></video>
                     <h3>[ 최종화 예고 ]</h3>
                     <div class="subtit">
                         <p>'할 말 있지?' 99즈가 우리에게 하고 싶은 말</p>
@@ -198,8 +203,13 @@
             <!-- section04 character -->
             <section class="character">
                 <a href="#!">
-                    <h2>99즈</h2>
+                    <h2>율제병원 99즈</h2>
                 </a>
+                <p>카드를 옆으로 넘겨보세요</p>
+                <div class="down">
+                    <span><i class="xi-angle-down"></i></span>
+                    <span><i class="xi-angle-down"></i></span>
+                </div>
                 <div class="container">
                     <div class="left">
                         <div class="swiper card_slider">
@@ -280,6 +290,9 @@
                             </div>
                             <hr />
                             <a href="">인물관계도 및 주변인물<i class="xi-angle-right"></i></a>
+                            <!-- <div class="mark">
+                                <figure><img src="./assets/yulje.png" alt=""></figure>
+                            </div> -->
                         </div>
                         <div class="box">
                             <h3>안정원<span>( 40세 )</span></h3>
@@ -387,11 +400,11 @@
                             <div class="swiper-slide">
                                 <figure>
                                     <a href="#!"><img src="./assets/ost_thumb01.jpg" /></a>
-                                    <a href="">
+                                    <a href="#!">
                                         <div class="click"><i class="xi-mouse-pointer"></i>Click</div>
                                     </a>
-
-                                    <!-- <div class="pop">
+                                    <div class="pop">
+                                        <div class="inner">
                                             <div class="left">
                                                 <figure><img src="./assets/ost_thumb01.jpg" /></figure>
                                                 <div class="play">
@@ -401,50 +414,263 @@
                                                 </div>
                                             </div>
                                             <div class="right">
-                                                <p>슬기로운 의사생활 OST Part 1</p>
-                                            </div> 
+                                                <h3>슬기로운 의사생활 OST Part 1</h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>아티스트</td>
+                                                        <td>조정석</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>장르</td>
+                                                        <td>드라마 / OST</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매사</td>
+                                                        <td>지니뮤직, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>기획사</td>
+                                                        <td>스튜디오 마음C, 에그이즈커밍, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매일</td>
+                                                        <td>2020.03.27</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                         <i class="xi-close"></i>
-                                    </div> -->
+                                    </div>
                                 </figure>
                             </div>
                             <div class="swiper-slide">
                                 <figure>
                                     <a href="#!"><img src="./assets/ost_thumb02.jpg" /></a>
-                                    <a href="">
+                                    <a href="#!">
                                         <div class="click"><i class="xi-mouse-pointer"></i>Click</div>
                                     </a>
+                                    <div class="pop">
+                                        <div class="inner">
+                                            <div class="left">
+                                                <figure><img src="./assets/ost_thumb02.jpg" /></figure>
+                                                <div class="play">
+                                                    <a href=""><i class="xi-play-circle-o"></i></a>
+                                                    <a href=""><i class="xi-pause-circle-o"></i></a>
+                                                    <a href=""><i class="xi-recording-stop"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <h3>슬기로운 의사생활 OST Part 1</h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>아티스트</td>
+                                                        <td>조정석</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>장르</td>
+                                                        <td>드라마 / OST</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매사</td>
+                                                        <td>지니뮤직, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>기획사</td>
+                                                        <td>스튜디오 마음C, 에그이즈커밍, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매일</td>
+                                                        <td>2020.03.27</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <i class="xi-close"></i>
+                                    </div>
                                 </figure>
                             </div>
                             <div class="swiper-slide">
                                 <figure>
                                     <a href="#!"><img src="./assets/ost_thumb03.jpg" /></a>
-                                    <a href="">
+                                    <a href="#!">
                                         <div class="click"><i class="xi-mouse-pointer"></i>Click</div>
                                     </a>
+                                    <div class="pop">
+                                        <div class="inner">
+                                            <div class="left">
+                                                <figure><img src="./assets/ost_thumb03.jpg" /></figure>
+                                                <div class="play">
+                                                    <a href=""><i class="xi-play-circle-o"></i></a>
+                                                    <a href=""><i class="xi-pause-circle-o"></i></a>
+                                                    <a href=""><i class="xi-recording-stop"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <h3>슬기로운 의사생활 OST Part 1</h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>아티스트</td>
+                                                        <td>조정석</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>장르</td>
+                                                        <td>드라마 / OST</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매사</td>
+                                                        <td>지니뮤직, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>기획사</td>
+                                                        <td>스튜디오 마음C, 에그이즈커밍, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매일</td>
+                                                        <td>2020.03.27</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <i class="xi-close"></i>
+                                    </div>
                                 </figure>
                             </div>
                             <div class="swiper-slide">
                                 <figure>
                                     <a href="#!"><img src="./assets/ost_thumb04.jpg" /></a>
-                                    <a href="">
+                                    <a href="#!">
                                         <div class="click"><i class="xi-mouse-pointer"></i>Click</div>
                                     </a>
+                                    <div class="pop">
+                                        <div class="inner">
+                                            <div class="left">
+                                                <figure><img src="./assets/ost_thumb04.jpg" /></figure>
+                                                <div class="play">
+                                                    <a href=""><i class="xi-play-circle-o"></i></a>
+                                                    <a href=""><i class="xi-pause-circle-o"></i></a>
+                                                    <a href=""><i class="xi-recording-stop"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <h3>슬기로운 의사생활 OST Part 1</h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>아티스트</td>
+                                                        <td>조정석</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>장르</td>
+                                                        <td>드라마 / OST</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매사</td>
+                                                        <td>지니뮤직, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>기획사</td>
+                                                        <td>스튜디오 마음C, 에그이즈커밍, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매일</td>
+                                                        <td>2020.03.27</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <i class="xi-close"></i>
+                                    </div>
                                 </figure>
                             </div>
                             <div class="swiper-slide">
                                 <figure>
                                     <a href="#!"><img src="./assets/ost_thumb05.jpg" /></a>
-                                    <a href="">
+                                    <a href="#!">
                                         <div class="click"><i class="xi-mouse-pointer"></i>Click</div>
                                     </a>
+                                    <div class="pop">
+                                        <div class="inner">
+                                            <div class="left">
+                                                <figure><img src="./assets/ost_thumb05.jpg" /></figure>
+                                                <div class="play">
+                                                    <a href=""><i class="xi-play-circle-o"></i></a>
+                                                    <a href=""><i class="xi-pause-circle-o"></i></a>
+                                                    <a href=""><i class="xi-recording-stop"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <h3>슬기로운 의사생활 OST Part 1</h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>아티스트</td>
+                                                        <td>조정석</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>장르</td>
+                                                        <td>드라마 / OST</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매사</td>
+                                                        <td>지니뮤직, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>기획사</td>
+                                                        <td>스튜디오 마음C, 에그이즈커밍, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매일</td>
+                                                        <td>2020.03.27</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <i class="xi-close"></i>
+                                    </div>
                                 </figure>
                             </div>
                             <div class="swiper-slide">
                                 <figure>
                                     <a href="#!"><img src="./assets/ost_thumb06.jpg" /></a>
-                                    <a href="">
+                                    <a href="#!">
                                         <div class="click"><i class="xi-mouse-pointer"></i>Click</div>
                                     </a>
+                                    <div class="pop">
+                                        <div class="inner">
+                                            <div class="left">
+                                                <figure><img src="./assets/ost_thumb06.jpg" /></figure>
+                                                <div class="play">
+                                                    <a href=""><i class="xi-play-circle-o"></i></a>
+                                                    <a href=""><i class="xi-pause-circle-o"></i></a>
+                                                    <a href=""><i class="xi-recording-stop"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <h3>슬기로운 의사생활 OST Part 1</h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>아티스트</td>
+                                                        <td>조정석</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>장르</td>
+                                                        <td>드라마 / OST</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매사</td>
+                                                        <td>지니뮤직, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>기획사</td>
+                                                        <td>스튜디오 마음C, 에그이즈커밍, Stone Music Ent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>발매일</td>
+                                                        <td>2020.03.27</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <i class="xi-close"></i>
+                                    </div>
                                 </figure>
                             </div>
                         </div>

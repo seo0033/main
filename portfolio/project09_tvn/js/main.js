@@ -55,16 +55,22 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // const Pop_open = document.querySelector(".ost .swiper-slide figure");
+    const Pop_open = document.querySelector('.ost .swiper-slide-active .click');
+    const Pop = document.querySelector('.ost .swiper-slide .pop');
 
-    // Pop_open.onclick = function () {
-    //     document.querySelector('.ost .swiper-slide .pop').classList.add('on');
+    Pop_open.onclick = function (e) {
+        e.preventDefault();
 
-    //     document.querySelector('.ost .swiper-slide .pop>i').addEventListener('click', function () {
-    //         // console.log(this)
-    //         document.querySelector('.ost .swiper-slide .pop').classList.remove('on')
-    //     });
-    // };
+        Pop.classList.add('on');
+
+        document.querySelector('.ost .swiper-slide .pop>i').addEventListener('click', function () {
+            // console.log(this)
+            Pop.classList.remove('on')
+        });
+
+        if (Pop.classList.contains('on'))
+            return (Pop_open.sytle.display = 'none')
+    };
 
 
     const Flow_slider = new Swiper(".flow_slider", {
@@ -89,15 +95,26 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     );
 
-    // const Hover = document.querySelectorAll('.flow_slider .swiper-slide');
+    const Hover = document.querySelectorAll('.flow_slider');
 
-    // Hover.addEventListener('mouseover', function () {
-    //     swiper.autoplay.stop();
-    // });
-    // Hover.addEventListener('mouseout', function () {
-    //     swiper.autoplay.start();
-    // });
+    Hover.mouseover = function () {
+        swiper.autoplay.stop();
+    };
+    Hover.mouseout = function () {
+        swiper.autoplay.start();
+    };
 
+
+    document.querySelector('.mopen').addEventListener('click', (e) => {
+        const TG = e.currentTarget;
+        TG.classList.toggle('on');
+        document.querySelector('header .gnb').classList.toggle('on')
+    });
+
+    // document.querySelector('.header .gnb>ul>li').addEventListener('click', function (e) {
+    //     e.preventDefault();
+    //     document.querySelector(this).classList.toggle('on')
+    // });
 
 
 });// the end
