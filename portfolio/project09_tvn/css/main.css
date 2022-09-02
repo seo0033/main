@@ -715,12 +715,12 @@ main h2::after {
     transition-timing-function: linear !important;
 }
 
-.photo .swiper-slide {
+.photo .swiper-slide img {
     border: 5px solid transparent;
     transition: 0.4s;
 }
 
-.photo .swiper-slide:hover {
+.photo .swiper-slide:hover img {
     border: 5px solid var(--mc);
 }
 
