@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-
+    //main_slider
     const Main_slider = new Swiper(".main_slider", {
         loop: true,
         autoplay: {
@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
         },
     });
 
+    //card_slider
     const Card_slider = new Swiper(".card_slider", {
         effect: "cards",
         grabCursor: true,
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
         //let current = document.querySelector('.swiper-slide-active');
     });
 
+    //ost_slider
     const Ost_slider = new Swiper(".ost_slider", {
         effect: "coverflow",
         grabCursor: true,
@@ -72,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
         //     return (Pop_open.sytle.display = 'none')
     };
 
-
+    // flow_slider
     const Flow_slider = new Swiper(".flow_slider", {
         loop: true,
         spaceBetween: 30,
@@ -105,16 +107,17 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
 
+    // 반응형
     document.querySelector('.mopen').addEventListener('click', (e) => {
         const TG = e.currentTarget;
         TG.classList.toggle('on');
         document.querySelector('header .gnb').classList.toggle('on')
     });
 
-    // document.querySelector('.header .gnb>ul>li').addEventListener('click', function (e) {
-    //     e.preventDefault();
-    //     document.querySelector(this).classList.toggle('on')
-    // });
+    const Main_menu = [...document.querySelector('.header .gnb>ul').children];
+    const Sub_menu = document.querySelectorAll('.header .gnb .sub_m');
+
+    console.log(Main_menu, Sub_menu);
 
 
 });// the end

@@ -1,0 +1,8 @@
+메뉴 border top 추가
+다단메뉴 수정=>폰트/호버시 +이미지
+
+main슬라이드 이미지화질
+
+시즌 border 1px
+
+ost click버튼 위치수정=>아래겹치기 or 중앙
