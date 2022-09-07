@@ -1,0 +1,11 @@
+리액트 수업
+
+html 을 함수에 넣어서 전달
+데이터는 전달 못하기 때문에 props에 넣어서 전달
+
+1. 해당파일로 가기 : cd 파일명
+2. 페이지 열기 : npm start
+
+새폴더만들기 : npx-create-react-app 파일명
+
+node_modules 없을때 다시npm install

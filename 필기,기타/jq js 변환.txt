@@ -1,0 +1,46 @@
+$(function () { }); 
+=> window.addEventListener('DOMContentLoaded', () => { });
+
+--------------------------------------------------------------------
+
+$('.Wrap').css({color:'red'});
+=> document.querySelector('.Wrap').style.color = 'red';
+
+--------------------------------------------------------------------
+
+- const에 담아두고 쓰는 방법(재사용(지정)많을 때)
+=> const TBTN = document.querySelectorAll('.top_close_btn')
+    TBTN.addEventListener
+
+- 바로 지정해서 쓰는 방법
+=> document.querySelectorAll('.top_close_btn').addEventListener
+
+--------------------------------------------------------------------
+
+.addEventListener('click', function(){ });
+= .addEventListener('click', () => { }) >this 사용못함
+
+--------------------------------------------------------------------
+
+ document.querySelector('.top_close_btn').addEventListener('click', function () {
+        console.log(this, e.target, e.currentTarget);
+    });
+ 
+= const TopHandler = function () {
+        console.log(this, e.target, e.currentTarget)
+    }
+
+    document.querySelector('.top_close_btn').addEventListener('click', TopHandler);
+(함수 담아두고 쓰는 방법)
+
+--------------------------------------------------------------------
+
+$(this).addClass('on')
+=> this.classList.classList.add('on')
+
++)
+classList.add
+classList.remove
+classList.toggle
+classList.contain
+
